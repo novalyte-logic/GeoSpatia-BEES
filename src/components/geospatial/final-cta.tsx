@@ -1,17 +1,12 @@
 "use client";
 
+import Link from "next/link";
 import { Section } from "./section";
 import { Button } from "@/components/ui/button";
 import { ArrowRight, FileText } from "lucide-react";
 import { TopographicParcelBg } from "./topographic-bg";
 
-export function FinalCta({
-  onRequest,
-  onSample,
-}: {
-  onRequest: () => void;
-  onSample: () => void;
-}) {
+export function FinalCta() {
   return (
     <Section
       id="final-cta"
@@ -34,35 +29,39 @@ export function FinalCta({
           </h2>
           <p className="mt-4 max-w-2xl text-[1.0625rem] leading-relaxed text-muted-foreground text-pretty">
             Send us a candidate California BESS site and tell us what you are
-            evaluating. We’ll review whether it fits the current screening scope
-            — and if it does, we’ll return a structured preliminary intelligence
+            evaluating. We'll review whether it fits the current screening scope
+            — and if it does, we'll return a structured preliminary intelligence
             brief with sources, findings, unknowns, and next-step questions.
           </p>
 
           <div className="mt-8 flex flex-col gap-3 sm:flex-row sm:items-center">
             <Button
               size="lg"
-              onClick={onRequest}
+              asChild
               className="gap-2 bg-emerald text-emerald-foreground shadow-sm hover:bg-emerald-soft"
             >
-              Request a Site Screen
-              <ArrowRight className="size-4" />
+              <Link href="/request">
+                Request a Site Screen
+                <ArrowRight className="size-4" />
+              </Link>
             </Button>
             <Button
               size="lg"
               variant="outline"
-              onClick={onSample}
+              asChild
               className="gap-2 border-line bg-card hover:bg-muted"
             >
-              <FileText className="size-4" />
-              See a Sample Report
+              <Link href="/sample-report">
+                <FileText className="size-4" />
+                What a Brief Covers
+              </Link>
             </Button>
           </div>
 
           <p className="mt-6 text-sm text-muted-foreground">
             Privacy: we use the information you submit solely to evaluate and
-            respond to your request. We don’t sell data and won’t pretend a
-            submission succeeded when it hasn’t.
+            respond to your request. We don't sell data and won't pretend a
+            submission succeeded when it hasn't.
           </p>
         </div>
       </div>

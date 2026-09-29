@@ -15,7 +15,7 @@ export function Section({
       className={cn("scroll-mt-24", className)}
       {...props}
     >
-      <div className={cn("mx-auto w-full max-w-6xl px-5 sm:px-6 lg:px-8", containerClassName)}>
+      <div className={cn("mx-auto w-full max-w-[1600px] px-5 sm:px-6 lg:px-10 xl:px-16", containerClassName)}>
         {children}
       </div>
     </section>

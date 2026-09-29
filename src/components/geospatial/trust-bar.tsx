@@ -29,7 +29,7 @@ export function TrustBar({ className }: { className?: string }) {
   ];
   return (
     <section className={cn("border-b border-line bg-background", className)}>
-      <div className="mx-auto w-full max-w-6xl px-5 py-10 sm:px-6 lg:px-8">
+      <div className="mx-auto w-full max-w-[1600px] px-5 sm:px-6 lg:px-10 xl:px-16 py-10">
         <p className="text-center text-sm font-medium uppercase tracking-[0.14em] text-emerald">
           What you’re actually getting
         </p>

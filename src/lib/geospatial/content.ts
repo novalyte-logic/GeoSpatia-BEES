@@ -2,31 +2,31 @@
 
 export type ViewId = "home" | "sample-report" | "request";
 
-export const navLinks: { label: string; target: string; view?: ViewId }[] = [
-  { label: "Product", target: "product" },
-  { label: "Methodology", target: "methodology" },
-  { label: "Sample Report", target: "sample-report", view: "sample-report" },
-  { label: "Who It’s For", target: "audience" },
-  { label: "About", target: "about" },
+export const navLinks: { label: string; href: string; target?: string }[] = [
+  { label: "Product", href: "/#product", target: "product" },
+  { label: "Methodology", href: "/#methodology", target: "methodology" },
+  { label: "What a Brief Covers", href: "/sample-report" },
+  { label: "Who It's For", href: "/#audience", target: "audience" },
+  { label: "About", href: "/#about", target: "about" },
 ];
 
 export const footerNav = {
   Product: [
-    { label: "What it brings together", target: "product" },
-    { label: "How it works", target: "how-it-works" },
-    { label: "Sample report", target: "sample-report", view: "sample-report" as const },
-    { label: "Request a site screen", target: "request", view: "request" as const },
+    { label: "What it brings together", href: "/#product" },
+    { label: "How it works", href: "/#how-it-works" },
+    { label: "What a brief covers", href: "/sample-report" },
+    { label: "Request a site screen", href: "/request" },
   ],
   Methodology: [
-    { label: "Evidence-first approach", target: "methodology" },
-    { label: "Why early screening matters", target: "why-screening" },
-    { label: "Source handling", target: "methodology" },
-    { label: "Scope & limitations", target: "sample-report", view: "sample-report" as const },
+    { label: "Evidence-first approach", href: "/#methodology" },
+    { label: "Why early screening matters", href: "/#why-screening" },
+    { label: "Source handling", href: "/#methodology" },
+    { label: "Scope & limitations", href: "/sample-report#scope" },
   ],
   Company: [
-    { label: "About Geospatial Labs", target: "about" },
-    { label: "Who it’s for", target: "audience" },
-    { label: "FAQ", target: "faq" },
-    { label: "Contact", target: "request", view: "request" as const },
+    { label: "About Geospatial Labs", href: "/#about" },
+    { label: "Who it's for", href: "/#audience" },
+    { label: "FAQ", href: "/#faq" },
+    { label: "Contact", href: "/request" },
   ],
 };

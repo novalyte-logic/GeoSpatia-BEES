@@ -1,21 +1,20 @@
 "use client";
 
+import Link from "next/link";
 import { Logo } from "./brand";
-import { footerNav, type ViewId } from "@/lib/geospatial/content";
+import { footerNav } from "@/lib/geospatial/content";
 import { ShieldCheck } from "lucide-react";
 
-export function SiteFooter({
-  onNavigate,
-}: {
-  onNavigate: (target: string, view?: ViewId) => void;
-}) {
+export function SiteFooter() {
   return (
     <footer className="relative mt-auto border-t border-line bg-muted">
-      <div className="mx-auto w-full max-w-6xl px-5 py-12 sm:px-6 lg:px-8">
+      <div className="mx-auto w-full max-w-[1600px] px-5 py-12 sm:px-6 lg:px-10 xl:px-16">
         <div className="grid grid-cols-2 gap-8 md:grid-cols-12">
           {/* Brand + positioning */}
           <div className="col-span-2 md:col-span-5">
-            <Logo />
+            <Link href="/">
+              <Logo />
+            </Link>
             <p className="mt-4 max-w-sm text-sm leading-relaxed text-muted-foreground">
               Preliminary site intelligence for energy development. We bring the
               evidence together — grid, interconnection, parcel, permitting,
@@ -37,13 +36,12 @@ export function SiteFooter({
               <ul className="mt-3 space-y-2.5">
                 {items.map((item) => (
                   <li key={item.label}>
-                    <button
-                      type="button"
-                      onClick={() => onNavigate(item.target, item.view)}
+                    <Link
+                      href={item.href}
                       className="text-sm text-muted-foreground transition-colors hover:text-ink"
                     >
                       {item.label}
-                    </button>
+                    </Link>
                   </li>
                 ))}
               </ul>
@@ -57,13 +55,12 @@ export function SiteFooter({
             </h3>
             <ul className="mt-3 space-y-2.5 text-sm text-muted-foreground">
               <li>
-                <button
-                  type="button"
-                  onClick={() => onNavigate("request", "request")}
+                <Link
+                  href="/request"
                   className="text-left transition-colors hover:text-ink"
                 >
                   Request a screen
-                </button>
+                </Link>
               </li>
               <li>
                 <a

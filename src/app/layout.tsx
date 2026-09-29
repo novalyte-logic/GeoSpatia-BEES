@@ -2,6 +2,9 @@ import type { Metadata } from "next";
 import { Inter, JetBrains_Mono, Newsreader } from "next/font/google";
 import "./globals.css";
 import { Toaster } from "@/components/ui/toaster";
+import { SiteHeader } from "@/components/geospatial/site-header";
+import { SiteFooter } from "@/components/geospatial/site-footer";
+import { ThemeProvider } from "@/components/theme-provider";
 
 const inter = Inter({
   variable: "--font-sans",
@@ -81,9 +84,21 @@ export default function RootLayout({
       <body
         className={`${inter.variable} ${jetbrains.variable} ${newsreader.variable} antialiased bg-background text-foreground`}
       >
-        {children}
-        <Toaster />
+        <ThemeProvider
+          attribute="class"
+          defaultTheme="system"
+          enableSystem
+          disableTransitionOnChange
+        >
+          <div className="flex min-h-screen flex-col bg-background">
+            <SiteHeader />
+            <main className="flex-1">{children}</main>
+            <SiteFooter />
+          </div>
+          <Toaster />
+        </ThemeProvider>
       </body>
     </html>
   );
 }
+

@@ -1,171 +1,119 @@
 "use client";
 
+import * as React from "react";
 import { Section, SectionHeading } from "./section";
+import { MethodologyWorkflow } from "./methodology-workflow";
 import {
-  Database,
-  FileSearch,
-  ListChecks,
-  GitBranch,
-  UserCheck,
-  FileText,
-  ArrowRight,
+  ShieldCheck,
+  CheckCircle2,
+  FileCheck2,
+  HelpCircle,
+  AlertTriangle,
+  Scale,
+  Sparkles,
 } from "lucide-react";
-
-const flow = [
-  {
-    icon: Database,
-    label: "Authoritative / identified sources",
-    detail: "Public ISO, utility, agency, GIS, planning, and project records.",
-  },
-  {
-    icon: FileSearch,
-    label: "Evidence capture",
-    detail: "Relevant facts pulled, dated, and tagged to a specific source.",
-  },
-  {
-    icon: GitBranch,
-    label: "Validation",
-    detail: "Cross-check across sources. Conflicts flagged, not smoothed over.",
-  },
-  {
-    icon: ListChecks,
-    label: "Structured analysis",
-    detail: "Organized into dimensions: grid, parcel, permitting, environment, project.",
-  },
-  {
-    icon: UserCheck,
-    label: "Human review",
-    detail: "A person reviews the assembled evidence and the brief before delivery.",
-  },
-  {
-    icon: FileText,
-    label: "Preliminary intelligence brief",
-    detail: "Findings, sources, unknowns, conflicts, and next-step questions.",
-  },
-];
 
 export function Methodology() {
   return (
     <Section
       id="methodology"
-      className="border-b border-line bg-muted py-20 md:py-24"
+      className="border-b border-line bg-muted/60 py-20 md:py-24"
     >
       <SectionHeading
-        eyebrow="Methodology"
-        title="Evidence first. AI second."
-        intro="AI can accelerate research. It should not become the source of truth. Geospatial Labs is built around identifiable source evidence, structured validation, and transparent unknowns."
+        eyebrow="Methodology & Diligence Standards"
+        title="Evidence first. Transparent unknowns."
+        intro="Geospatial Labs executes a disciplined, manually prepared research process. We assemble verifiable public records across agencies, identify material unknowns, and surface discrepancies before deeper capital commitments."
       />
 
-      <div className="mt-12 grid grid-cols-1 gap-6 lg:grid-cols-12">
-        {/* Principles */}
-        <div className="lg:col-span-5">
-          <div className="surface-card flex h-full flex-col gap-4 p-6">
-            <h3 className="text-lg font-semibold text-ink">
-              How we keep AI in its place
+      {/* Interactive Workflow Diagram & Stage Inspector */}
+      <div className="mt-12">
+        <MethodologyWorkflow />
+      </div>
+
+      {/* 5 Core Evidence Principles */}
+      <div className="mt-12 grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
+        <div className="surface-card p-6 flex flex-col justify-between">
+          <div>
+            <div className="flex size-9 items-center justify-center rounded-lg bg-emerald/10 text-emerald">
+              <FileCheck2 className="size-5" />
+            </div>
+            <h3 className="mt-4 text-base font-semibold text-ink">
+              1. 100% Traceable Evidence
             </h3>
-            <ul className="space-y-3 text-sm leading-relaxed text-muted-foreground">
-              <li className="flex items-start gap-3">
-                <span className="mt-1.5 size-1.5 shrink-0 rounded-full bg-emerald" />
-                <span>
-                  <span className="font-medium text-ink">
-                    AI organizes and analyzes.
-                  </span>{" "}
-                  Important findings remain traceable to their underlying
-                  sources.
-                </span>
-              </li>
-              <li className="flex items-start gap-3">
-                <span className="mt-1.5 size-1.5 shrink-0 rounded-full bg-emerald" />
-                <span>
-                  <span className="font-medium text-ink">
-                    Unknown information stays unknown.
-                  </span>{" "}
-                  We don’t manufacture certainty where the public record is
-                  silent.
-                </span>
-              </li>
-              <li className="flex items-start gap-3">
-                <span className="mt-1.5 size-1.5 shrink-0 rounded-full bg-emerald" />
-                <span>
-                  <span className="font-medium text-ink">
-                    Conflicts are surfaced, not averaged.
-                  </span>{" "}
-                  If two sources disagree, you see both.
-                </span>
-              </li>
-              <li className="flex items-start gap-3">
-                <span className="mt-1.5 size-1.5 shrink-0 rounded-full bg-emerald" />
-                <span>
-                  <span className="font-medium text-ink">
-                    Source facts and analysis are distinguished.
-                  </span>{" "}
-                  What’s published vs. what Geospatial Labs infers is clearly
-                  labeled.
-                </span>
-              </li>
-              <li className="flex items-start gap-3">
-                <span className="mt-1.5 size-1.5 shrink-0 rounded-full bg-emerald" />
-                <span>
-                  <span className="font-medium text-ink">
-                    Preliminary, not final.
-                  </span>{" "}
-                  Final feasibility and approvals rest with the relevant
-                  utilities, agencies, engineers, and authorities.
-                </span>
-              </li>
-            </ul>
+            <p className="mt-2 text-sm leading-relaxed text-muted-foreground">
+              Every material finding is documented directly to identified statutory records, utility filings, and recorded county documents with exact citations.
+            </p>
+          </div>
+          <div className="mt-4 pt-3 border-t border-line-soft font-mono text-[11px] text-emerald">
+            Rule: Zero uncited claims
           </div>
         </div>
 
-        {/* Flow */}
-        <div className="lg:col-span-7">
-          <div className="surface-quiet h-full p-6">
-            <h3 className="text-base font-semibold text-ink">
-              The evidence flow
-            </h3>
-            <p className="mt-1.5 text-sm text-muted-foreground">
-              From identified sources to a reviewed preliminary brief.
-            </p>
-            <ol className="mt-6 grid grid-cols-1 gap-3 sm:grid-cols-2">
-              {flow.map((f, i) => {
-                const Icon = f.icon;
-                return (
-                  <li
-                    key={f.label}
-                    className="group relative flex items-start gap-3 rounded-lg border border-line-soft bg-card p-4 transition-shadow hover:shadow-sm"
-                  >
-                    <div className="flex size-9 shrink-0 items-center justify-center rounded-md bg-emerald/10 text-emerald">
-                      <Icon className="size-4.5" />
-                    </div>
-                    <div className="min-w-0">
-                      <div className="flex items-center gap-2">
-                        <span className="font-mono text-[10px] font-semibold text-muted-foreground">
-                          {String(i + 1).padStart(2, "0")}
-                        </span>
-                        <p className="text-sm font-semibold text-ink">
-                          {f.label}
-                        </p>
-                      </div>
-                      <p className="mt-1 text-[13px] leading-relaxed text-muted-foreground">
-                        {f.detail}
-                      </p>
-                    </div>
-                    {i < flow.length - 1 && (i + 1) % 2 === 0 && (
-                      <ArrowRight
-                        className="absolute -top-3 left-1/2 size-4 -translate-x-1/2 rotate-90 text-emerald/50 sm:hidden"
-                        aria-hidden="true"
-                      />
-                    )}
-                  </li>
-                );
-              })}
-            </ol>
-            <div className="mt-4 flex items-center gap-2 text-xs text-muted-foreground">
-              <ArrowRight className="size-3.5 text-emerald" />
-              <span>
-                Each stage preserves the link between finding and source.
-              </span>
+        <div className="surface-card p-6 flex flex-col justify-between">
+          <div>
+            <div className="flex size-9 items-center justify-center rounded-lg bg-amber/10 text-amber">
+              <HelpCircle className="size-5" />
             </div>
+            <h3 className="mt-4 text-base font-semibold text-ink">
+              2. Unknowns Stay Unknown
+            </h3>
+            <p className="mt-2 text-sm leading-relaxed text-muted-foreground">
+              We don’t manufacture certainty where the public record is silent. If a noise study or transformer capacity is unlisted, it is labeled Unknown with clear next steps.
+            </p>
+          </div>
+          <div className="mt-4 pt-3 border-t border-line-soft font-mono text-[11px] text-amber">
+            Rule: Zero synthetic certainty
+          </div>
+        </div>
+
+        <div className="surface-card p-6 flex flex-col justify-between">
+          <div>
+            <div className="flex size-9 items-center justify-center rounded-lg bg-rose/10 text-rose">
+              <AlertTriangle className="size-5" />
+            </div>
+            <h3 className="mt-4 text-base font-semibold text-ink">
+              3. Conflicts Are Surfaced
+            </h3>
+            <p className="mt-2 text-sm leading-relaxed text-muted-foreground">
+              If the county planning portal shows a permit open while the state clearinghouse lists it as withdrawn, both records are surfaced side-by-side without averaging.
+            </p>
+          </div>
+          <div className="mt-4 pt-3 border-t border-line-soft font-mono text-[11px] text-rose">
+            Rule: Zero smoothing of discrepancies
+          </div>
+        </div>
+
+        <div className="surface-card p-6 flex flex-col justify-between">
+          <div>
+            <div className="flex size-9 items-center justify-center rounded-lg bg-azure/10 text-azure">
+              <Scale className="size-5" />
+            </div>
+            <h3 className="mt-4 text-base font-semibold text-ink">
+              4. Fact vs Inference Distinction
+            </h3>
+            <p className="mt-2 text-sm leading-relaxed text-muted-foreground">
+              What is published statutory fact versus what Geospatial Labs infers or recommends is clearly demarcated in distinct report sections and confidence tiers.
+            </p>
+          </div>
+          <div className="mt-4 pt-3 border-t border-line-soft font-mono text-[11px] text-azure">
+            Rule: Explicit confidence tiers
+          </div>
+        </div>
+
+        <div className="surface-card p-6 flex flex-col justify-between sm:col-span-2 lg:col-span-2">
+          <div>
+            <div className="flex size-9 items-center justify-center rounded-lg bg-emerald/10 text-emerald">
+              <ShieldCheck className="size-5" />
+            </div>
+            <h3 className="mt-4 text-base font-semibold text-ink">
+              5. Preliminary Intelligence, Not Final Engineering
+            </h3>
+            <p className="mt-2 text-sm leading-relaxed text-muted-foreground">
+              Geospatial Labs arms development teams with early-stage site intelligence to decide whether to advance to option agreements. Final approvals, capacity, and stamps rest with utilities, structural/civil engineers, and regulatory authorities.
+            </p>
+          </div>
+          <div className="mt-4 pt-3 border-t border-line-soft font-mono text-[11px] text-emerald">
+            Rule: Clear legal & diligence boundaries
           </div>
         </div>
       </div>
