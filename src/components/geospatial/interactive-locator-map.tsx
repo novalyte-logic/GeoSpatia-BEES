@@ -36,6 +36,7 @@ import {
   formatPrecisionLabel,
   type GeocodingFeature,
 } from "@/lib/mapbox";
+import { trackEvent } from "@/lib/analytics";
 import "mapbox-gl/dist/mapbox-gl.css";
 
 export const MAP_STYLES = {
@@ -566,6 +567,7 @@ export function InteractiveLocatorMap({
     feature?: GeocodingFeature
   ) => {
     const inCa = isCaliforniaLocation(lng, lat, feature);
+    trackEvent("map_search_used", { is_california: inCa });
 
     setSelectedLocation({
       address,

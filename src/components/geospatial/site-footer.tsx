@@ -64,10 +64,10 @@ export function SiteFooter() {
               </li>
               <li>
                 <a
-                  href="mailto:hello@geospatialabs.com"
+                  href="mailto:admin@geospatialabs.com"
                   className="transition-colors hover:text-ink"
                 >
-                  hello@geospatialabs.com
+                  admin@geospatialabs.com
                 </a>
               </li>
             </ul>

@@ -109,6 +109,10 @@ export default function PrivacyPage() {
                 proceeds.
               </li>
               <li>
+                To dispatch an internal notification to our review team so your
+                inquiry is screened promptly.
+              </li>
+              <li>
                 To improve our internal screening processes and understand
                 market demand (in aggregate, without exposing individual
                 candidate locations).
@@ -116,27 +120,69 @@ export default function PrivacyPage() {
             </ul>
           </section>
 
-          {/* 4. Data Processors & Infrastructure */}
+          {/* 4. Privacy-First Website Analytics */}
           <section>
             <h2 className="text-base font-semibold text-ink mb-2">
-              4. Data Processors & Infrastructure
+              4. Privacy-First Website Analytics
             </h2>
             <p className="mb-2">
-              Your inquiry data is processed and stored using the following
-              services:
+              We use a lightweight, privacy-focused analytics service (Plausible
+              Analytics) to understand general website traffic and referral
+              sources. Our analytics implementation adheres strictly to the
+              following privacy principles:
+            </p>
+            <ul className="list-disc list-inside space-y-1 ml-2">
+              <li>
+                <strong className="text-ink">No cookies:</strong> We do not use
+                cookies or persistent local identifiers to track visitors.
+              </li>
+              <li>
+                <strong className="text-ink">No cross-site tracking:</strong> We
+                do not follow you across different websites or build behavioral
+                profiles.
+              </li>
+              <li>
+                <strong className="text-ink">No personal data or coordinates:</strong>{" "}
+                Custom interaction events record only high-level categories
+                (e.g., project stage selection or campaign attribution tags) and
+                never include names, email addresses, search queries, or site
+                coordinates.
+              </li>
+              <li>
+                <strong className="text-ink">Aggregated reporting:</strong> All
+                traffic statistics are aggregated and fully compliant with GDPR,
+                CCPA, and PECR without requiring invasive cookie banners.
+              </li>
+            </ul>
+          </section>
+
+          {/* 5. Data Processors & Infrastructure */}
+          <section>
+            <h2 className="text-base font-semibold text-ink mb-2">
+              5. Data Processors &amp; Infrastructure
+            </h2>
+            <p className="mb-2">
+              Your inquiry data and website interactions are processed using the
+              following services:
             </p>
             <ul className="list-disc list-inside space-y-1 ml-2">
               <li>
                 <strong className="text-ink">Supabase</strong> (database
-                hosting): Your inquiry is stored in a PostgreSQL database
+                hosting): Your inquiry is stored in a secure PostgreSQL database
                 hosted by Supabase with row-level security. Only authorized
                 GeoSpatia Labs team members can read submitted inquiries.
                 Public visitors cannot read, modify, or delete any records.
               </li>
               <li>
+                <strong className="text-ink">Resend</strong> (transactional
+                email): When an inquiry is submitted and recorded in Supabase,
+                a transactional email is securely dispatched to our admin inbox
+                (admin@geospatialabs.com) so our team can follow up promptly.
+              </li>
+              <li>
                 <strong className="text-ink">Vercel</strong> (website
-                hosting): The marketing website and its API endpoints are
-                hosted on Vercel&apos;s global network. Vercel processes HTTP
+                hosting): The marketing website and its serverless API endpoints
+                are hosted on Vercel&apos;s infrastructure. Vercel processes HTTP
                 requests in order to serve pages and receive form submissions.
               </li>
               <li>
@@ -146,13 +192,19 @@ export default function PrivacyPage() {
                 addresses to geographic coordinates. Mapbox processes
                 address queries according to their own privacy policy.
               </li>
+              <li>
+                <strong className="text-ink">Plausible Analytics</strong> (traffic
+                measurement): Collects privacy-preserving, aggregated visitor
+                metrics without tracking personal identities or storing IP
+                addresses.
+              </li>
             </ul>
           </section>
 
-          {/* 5. What We Do NOT Do */}
+          {/* 6. What We Do NOT Do */}
           <section>
             <h2 className="text-base font-semibold text-ink mb-2">
-              5. What We Do Not Do
+              6. What We Do Not Do
             </h2>
             <ul className="list-disc list-inside space-y-1 ml-2">
               <li>
@@ -177,10 +229,10 @@ export default function PrivacyPage() {
             </ul>
           </section>
 
-          {/* 6. Data Retention */}
+          {/* 7. Data Retention */}
           <section>
             <h2 className="text-base font-semibold text-ink mb-2">
-              6. Data Retention
+              7. Data Retention
             </h2>
             <p>
               Inquiry data is retained for as long as necessary to evaluate
@@ -190,10 +242,10 @@ export default function PrivacyPage() {
             </p>
           </section>
 
-          {/* 7. Your Rights */}
+          {/* 8. Your Rights */}
           <section>
             <h2 className="text-base font-semibold text-ink mb-2">
-              7. Your Rights
+              8. Your Rights
             </h2>
             <p>
               You may contact us at any time to request access to, correction
@@ -202,10 +254,10 @@ export default function PrivacyPage() {
             </p>
           </section>
 
-          {/* 8. Contact */}
+          {/* 9. Contact */}
           <section>
             <h2 className="text-base font-semibold text-ink mb-2">
-              8. Contact
+              9. Contact
             </h2>
             <p>
               If you have questions about this privacy policy or your data,
@@ -214,18 +266,18 @@ export default function PrivacyPage() {
             <div className="mt-3 inline-flex items-center gap-2 rounded-md border border-line bg-card px-4 py-2.5 text-sm">
               <Mail className="size-4 text-emerald" />
               <a
-                href="mailto:hello@geospatialabs.com"
+                href="mailto:admin@geospatialabs.com"
                 className="font-medium text-ink hover:text-emerald transition-colors"
               >
-                hello@geospatialabs.com
+                admin@geospatialabs.com
               </a>
             </div>
           </section>
 
-          {/* 9. Changes */}
+          {/* 10. Changes */}
           <section>
             <h2 className="text-base font-semibold text-ink mb-2">
-              9. Changes to This Policy
+              10. Changes to This Policy
             </h2>
             <p>
               We may update this privacy policy from time to time. Material

@@ -25,6 +25,7 @@ import {
   CircleAlert,
 } from "lucide-react";
 import { TopographicParcelBg } from "./topographic-bg";
+import { trackEvent, getUtmParams } from "@/lib/analytics";
 
 type FormState = {
   name: string;
@@ -82,9 +83,19 @@ export function RequestFormView({ onBack }: { onBack?: () => void } = {}) {
   const [serverError, setServerError] = React.useState<string | null>(null);
   const [referenceId, setReferenceId] = React.useState<string | null>(null);
 
-  // Pre-fill location from query param if transferred from Candidate Locator Map
+  const hasTrackedView = React.useRef(false);
+  const hasTrackedStarted = React.useRef(false);
+  const utmRef = React.useRef<Record<string, string>>({});
+
+  // Capture UTM params and track form view on mount
   React.useEffect(() => {
     if (typeof window !== "undefined") {
+      utmRef.current = getUtmParams();
+      if (!hasTrackedView.current) {
+        hasTrackedView.current = true;
+        trackEvent("request_form_view", { ...utmRef.current });
+      }
+
       const params = new URLSearchParams(window.location.search);
       const loc = params.get("location");
       if (loc && loc.trim().length > 0) {
@@ -94,6 +105,12 @@ export function RequestFormView({ onBack }: { onBack?: () => void } = {}) {
   }, []);
 
   const update = <K extends keyof FormState>(key: K, value: FormState[K]) => {
+    // Fire request_form_started once on first field interaction
+    if (!hasTrackedStarted.current && key !== "hp_website") {
+      hasTrackedStarted.current = true;
+      trackEvent("request_form_started");
+    }
+
     setForm((f) => ({ ...f, [key]: value }));
     if (fieldErrors[key]) {
       setFieldErrors((prev) => {
@@ -182,7 +199,7 @@ export function RequestFormView({ onBack }: { onBack?: () => void } = {}) {
         if (data.fieldErrors) setFieldErrors(data.fieldErrors);
         setServerError(
           data.error ??
-            "We were unable to save your inquiry. Please try again or email hello@geospatialabs.com directly."
+            "We were unable to save your inquiry. Please try again or email admin@geospatialabs.com directly."
         );
         return;
       }
@@ -191,6 +208,14 @@ export function RequestFormView({ onBack }: { onBack?: () => void } = {}) {
       setReferenceId(data.referenceId ?? null);
       setSubmitted(true);
       setFieldErrors({});
+
+      // Fire analytics event with strictly non-PII properties
+      trackEvent("request_form_submitted", {
+        project_type: form.projectType || "Unspecified",
+        dev_stage: form.devStage || "Unspecified",
+        ...utmRef.current,
+      });
+
       if (typeof window !== "undefined") {
         window.scrollTo({ top: 0, behavior: "smooth" });
       }
@@ -764,11 +789,11 @@ function SuccessView({
                 </Button>
               )}
               <a
-                href="mailto:hello@geospatialabs.com"
+                href="mailto:admin@geospatialabs.com"
                 className="inline-flex items-center gap-2 rounded-md border border-line bg-card px-4 py-2 text-sm font-medium text-ink-soft transition-colors hover:bg-muted"
               >
                 <Mail className="size-4" />
-                hello@geospatialabs.com
+                admin@geospatialabs.com
               </a>
             </div>
 

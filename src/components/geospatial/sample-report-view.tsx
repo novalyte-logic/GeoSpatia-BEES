@@ -26,9 +26,14 @@ import {
 } from "lucide-react";
 import { TopographicParcelBg } from "./topographic-bg";
 import { cn } from "@/lib/utils";
+import { trackEvent } from "@/lib/analytics";
 
 export function SampleReportView() {
   const [activeTab, setActiveTab] = React.useState<"guide" | "example">("example");
+
+  React.useEffect(() => {
+    trackEvent("sample_brief_view");
+  }, []);
 
   const briefSections = [
     {

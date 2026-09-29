@@ -1,6 +1,7 @@
 import { NextResponse, type NextRequest } from "next/server";
 import { z } from "zod";
 import { insertSiteScreenRequest, isSupabaseConfigured } from "@/lib/supabase";
+import { sendAdminNotification } from "@/lib/email";
 
 /**
  * POST /api/site-screen
@@ -127,7 +128,7 @@ export async function POST(req: NextRequest) {
       {
         ok: false,
         error:
-          "Too many inquiries received from this address. Please wait a few minutes before submitting another request or contact hello@geospatialabs.com directly.",
+          "Too many inquiries received from this address. Please wait a few minutes before submitting another request or contact admin@geospatialabs.com directly.",
       },
       { status: 429 }
     );
@@ -194,7 +195,7 @@ export async function POST(req: NextRequest) {
       {
         ok: false,
         error:
-          "Database connection is currently pending setup. The site administrator must configure NEXT_PUBLIC_SUPABASE_URL and NEXT_PUBLIC_SUPABASE_ANON_KEY. Please email your inquiry directly to hello@geospatialabs.com in the meantime.",
+          "Database connection is currently pending setup. The site administrator must configure NEXT_PUBLIC_SUPABASE_URL and NEXT_PUBLIC_SUPABASE_ANON_KEY. Please email your inquiry directly to admin@geospatialabs.com in the meantime.",
       },
       { status: 503 }
     );
@@ -224,6 +225,23 @@ export async function POST(req: NextRequest) {
       { status: 500 }
     );
   }
+
+  // Attempt admin notification email (non-blocking failure: DB write already succeeded)
+  await sendAdminNotification({
+    referenceId: result.id!,
+    fullName: d.name,
+    workEmail: d.email,
+    company: d.company,
+    role: d.role,
+    candidateSite: d.siteLocation,
+    projectType: d.projectType,
+    approximateCapacityMw: d.projectSizeMw,
+    approximateDurationHours: d.durationHours,
+    developmentStage: d.devStage,
+    primaryDecisionQuestion: d.decision,
+    additionalNotes: d.notes,
+    createdAt: result.createdAt!,
+  });
 
   return NextResponse.json(
     {

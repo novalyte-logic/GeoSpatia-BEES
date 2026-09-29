@@ -109,7 +109,7 @@ export async function insertSiteScreenRequest(
       return {
         success: false,
         error:
-          "Unable to save your request right now. Please try again or reach out to hello@geospatialabs.com.",
+          "Unable to save your request right now. Please try again or reach out to admin@geospatialabs.com.",
       };
     }
 

@@ -96,4 +96,4 @@ The pilot brief does **not** include:
 ## 9. Contact
 
 - **Inquiry form:** [geospatialabs.com/request](https://geospatialabs.com/request)
-- **Email:** hello@geospatialabs.com
+- **Email:** admin@geospatialabs.com
