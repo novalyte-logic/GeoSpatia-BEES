@@ -10,32 +10,48 @@ import { createClient, type SupabaseClient } from "@supabase/supabase-js";
  * - Supports both Next.js (NEXT_PUBLIC_*) and Vite (VITE_*) environment variable conventions.
  */
 
-const supabaseUrl =
-  process.env.NEXT_PUBLIC_SUPABASE_URL ||
-  process.env.VITE_SUPABASE_URL ||
-  "";
+// Fallback to project's public client-safe credentials if env vars are unconfigured in hosting environment
+const DEFAULT_SUPABASE_URL = "https://dkfcbrjpgfflssxmcrkn.supabase.co";
+const DEFAULT_SUPABASE_ANON_KEY =
+  "sb_publishable_nJXxGHJJI_2RT_3l1qQyew_K3gUppMI";
 
-const supabaseAnonKey =
-  process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY ||
-  process.env.NEXT_PUBLIC_SUPABASE_PUBLISHABLE_KEY ||
-  process.env.VITE_SUPABASE_PUBLISHABLE_KEY ||
-  "";
+function getSupabaseConfig(): { url: string; key: string; isConfigured: boolean } {
+  const url =
+    process.env.NEXT_PUBLIC_SUPABASE_URL ||
+    process.env.SUPABASE_URL ||
+    process.env.VITE_SUPABASE_URL ||
+    DEFAULT_SUPABASE_URL;
 
-export const isSupabaseConfigured = Boolean(
-  supabaseUrl &&
-    supabaseAnonKey &&
-    !supabaseUrl.includes("your-project") &&
-    !supabaseAnonKey.includes("your-anon-publishable-key")
-);
+  const key =
+    process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY ||
+    process.env.SUPABASE_ANON_KEY ||
+    process.env.NEXT_PUBLIC_SUPABASE_PUBLISHABLE_KEY ||
+    process.env.SUPABASE_PUBLISHABLE_KEY ||
+    process.env.SUPABASE_KEY ||
+    process.env.VITE_SUPABASE_PUBLISHABLE_KEY ||
+    DEFAULT_SUPABASE_ANON_KEY;
+
+  const isConfigured = Boolean(
+    url &&
+      key &&
+      !url.includes("your-project") &&
+      !key.includes("your-anon-publishable-key")
+  );
+
+  return { url, key, isConfigured };
+}
+
+export const isSupabaseConfigured = true;
 
 let cachedClient: SupabaseClient | null = null;
 
 export function getSupabaseClient(): SupabaseClient | null {
-  if (!isSupabaseConfigured) {
+  const { url, key, isConfigured } = getSupabaseConfig();
+  if (!isConfigured) {
     return null;
   }
   if (!cachedClient) {
-    cachedClient = createClient(supabaseUrl, supabaseAnonKey, {
+    cachedClient = createClient(url, key, {
       auth: {
         persistSession: false,
         autoRefreshToken: false,
