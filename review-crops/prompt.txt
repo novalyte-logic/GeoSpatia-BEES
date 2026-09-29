@@ -1,0 +1,13 @@
+You are doing a strict visual QA review of one vertical tile cropped from a marketing website screenshot for "Geospatial Labs" (a B2B infrastructure-intelligence company). The design brief: light theme #FAFBFC canvas, white cards, dark slate/green-black headings, emerald-green accent, serif headings (Newsreader) for editorial gravitas, Inter for body, subtle topographic/contour-line/parcel-grid SVG motifs, generous whitespace, premium B2B editorial feel (not neon-AI, not generic SaaS).
+
+This tile is one slice of a tall full-page screenshot. Report ONLY what is actually visible in THIS tile, in this compact structured format:
+
+VISIBLE_SECTIONS: list the distinct UI sections visible (e.g. sticky header, hero, trust bar, feature cards, report preview, pricing, final CTA, footer). For each, note background color (off-white #FAFBFC, white card, muted gray, dark slate, emerald) and whether a topographic/contour-line/parcel-grid SVG motif is present behind it.
+HEADINGS_OCR: verbatim text of every heading and eyebrow label visible.
+SERIF_CHECK: Do the headings appear SERIF (Newsreader — little feet on letters, editorial) or SANS-SERIF (Inter — clean, no feet)? Be decisive. Quote a heading as evidence.
+EMERALD_ACCENT: where is green used (buttons, underlines, icons, links, bullets)? Does it feel premium/restrained or jarring/neon/garish?
+DEFECTS: list ANY of — horizontal overflow/clipping at right edge, broken or overlapping text, clipped cards, missing/garbled icons, illegible small text, weird/uneven gutters, wavy or squiggly underlines, misaligned grids, color bugs, empty boxes, broken images. Be specific with vertical position in the tile (top/middle/bottom). If none, say "none".
+HERO_REPORT_PREVIEW: (only if hero visible) Is there a "report preview" card? Are there stacked "depth cards" behind it (visible only on desktop)? Is the phrase "a deeper look" present and is its underline a clean straight line or a wavy/squiggly line? Is the hero cramped or clean?
+TRUSTBAR_EYEBROW: (only if a trust bar / logos strip is visible) What does its eyebrow label say, verbatim?
+SCORE_THIS_TILE: 1-10 for this slice.
+NOTES: anything else relevant.

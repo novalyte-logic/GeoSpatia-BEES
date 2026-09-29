@@ -1,0 +1,60 @@
+// This is your Prisma schema file,
+// learn more about it in the docs: https://pris.ly/d/prisma-schema
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "sqlite"
+  url      = env("DATABASE_URL")
+}
+
+model User {
+  id        String   @id @default(cuid())
+  email     String   @unique
+  name      String?
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+}
+
+model Post {
+  id        String   @id @default(cuid())
+  title     String
+  content   String?
+  published Boolean  @default(false)
+  authorId  String
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+}
+
+/// A lead submission requesting a preliminary site screen.
+/// Stored so the Geospatial Labs team can review and respond.
+/// No fake success states — submission is only acknowledged when
+/// the row actually persists.
+model SiteScreenRequest {
+  id            String   @id @default(cuid())
+  // Contact
+  name          String
+  email         String
+  company       String
+  role          String
+  // Site / project context
+  siteLocation  String
+  projectType   String
+  projectSizeMw String?
+  devStage      String
+  decision      String
+  notes         String?
+  // Optional uploaded file reference (stored filename only if implemented)
+  uploadName    String?
+  // Optional explicit consent flag for privacy notice
+  privacyAck    Boolean  @default(false)
+  // Submission state
+  status        String   @default("received") // received | reviewing | in_scope | out_of_scope | responded
+  createdAt     DateTime @default(now())
+  updatedAt     DateTime @updatedAt
+
+  @@index([createdAt])
+  @@index([email])
+}

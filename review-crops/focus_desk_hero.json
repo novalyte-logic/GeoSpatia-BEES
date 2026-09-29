@@ -1,0 +1,28 @@
+{
+  "choices": [
+    {
+      "finish_reason": "stop",
+      "index": 0,
+      "message": {
+        "content": "1) **Yes.** There is a \"report preview\" card visible on the right side of the hero section. It is titled **\"PRELIMINARY SITE INTELLIGENCE BRIEF\"** with the subtitle **\"Site Screen · Illustrative sample\"** and a **\"DEMO DATA\"** badge. It contains a map placeholder, a list of findings (zoning, interconnection queue, permitting status, adjacent activity), and a footer with evidence counts and an \"Open full brief\" link.\n\n2) **NO stacked depth cards.** The report preview card is a single, flat element with a subtle drop shadow. There are no offset cards behind it or around it creating a layered/stacked depth effect.\n\n3) Yes, the phrase **\"a deeper look\"** is underlined. The underline is a **clean, straight line** (solid green).\n\n4) The hero is **clean and spacious**. It uses a clear two-column layout with ample white space (padding/margins). There is no visible overflow, clipping, or weird gutters; the alignment is precise and professional.",
+        "role": "assistant"
+      }
+    }
+  ],
+  "created": 1790684376,
+  "id": "20260929201930bc268d31863e42b7",
+  "model": "glm-5v-turbo",
+  "object": "chat.completion",
+  "request_id": "20260929201930bc268d31863e42b7",
+  "usage": {
+    "completion_tokens": 229,
+    "completion_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "prompt_tokens": 2509,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "total_tokens": 2738
+  }
+}

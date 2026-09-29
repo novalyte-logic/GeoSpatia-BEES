@@ -1,0 +1,28 @@
+{
+  "choices": [
+    {
+      "finish_reason": "stop",
+      "index": 0,
+      "message": {
+        "content": "1) **Verbatim text of the small legal/privacy disclaimer:**\n\"What we will claim\nThat a source-backed preliminary screen helps teams focus deeper diligence where it's most warranted — and exposes open questions earlier.\"\n\n2) **Apostrophe check:** \"apostrophes OK\"\n\n3) **Other text defects:** No. The text is fully legible, properly wrapped, and shows no signs of overflow, clipping, or broken words.",
+        "role": "assistant"
+      }
+    }
+  ],
+  "created": 1790684390,
+  "id": "202609292019487ffbf46a2b7446b8",
+  "model": "glm-5v-turbo",
+  "object": "chat.completion",
+  "request_id": "202609292019487ffbf46a2b7446b8",
+  "usage": {
+    "completion_tokens": 91,
+    "completion_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "prompt_tokens": 526,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "total_tokens": 617
+  }
+}

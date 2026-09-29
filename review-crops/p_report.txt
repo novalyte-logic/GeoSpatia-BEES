@@ -1,0 +1,5 @@
+This is a high-resolution crop of the MOBILE "Sample Report Preview" section (391px wide, iPhone width) for "Geospatial Labs". Focus ONLY on the report preview data table card. Answer precisely:
+1) Does the table/content get clipped or cut off at the RIGHT edge of the 391px viewport? Specifically: is the "STAT" column header fully visible or cut? Is a "Demo Data" / "DEMO DATA" badge at the top-right fully visible or sliced? Are checkmark icons in the rightmost column sliced?
+2) Is there any visible horizontal scroll indicator, or does the card just hard-clip the content?
+3) Quote any text that is clearly cut mid-word at the right edge.
+4) Is this a real layout/overflow defect or acceptable mobile behavior? Be decisive.

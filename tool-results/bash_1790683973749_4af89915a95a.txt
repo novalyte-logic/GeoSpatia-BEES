@@ -1,0 +1,545 @@
+
+===== desk_t0 =====
+VISIBLE_SECTIONS:
+*   **Sticky Header:** Background is white. No topographic motif visible.
+*   **Hero Section:** Background is off-white #FAFBFC with a subtle, light-gray topographic/contour-line SVG motif in the upper right.
+*   **Feature Cards (What you're actually getting):** Four white cards on an off-white background.
+*   **Evidence Dimensions Section:** Off-white #FAFBFC background with a subtle parcel-grid/topographic SVG motif in the lower right.
+*   **Six Evidence Cards:** White cards on the off-white background.
+
+HEADINGS_OCR:
+*   PRELIMINARY SITE INTELLIGENCE FOR ENERGY DEVELOPMENT
+*   Know what deserves a deeper look.
+*   WHAT YOU'RE ACTUALLY GETTING
+*   Built for early development decisions
+*   Source-backed by default
+*   California BESS today
+*   Preliminary, not final
+*   WHAT A SITE SCREEN BRINGS TOGETHER
+*   One preliminary screen, six evidence dimensions
+*   GRID & INTERCONNECTION
+*   PARCEL & JURISDICTION
+*   PERMITTING & PLANNING
+*   ENVIRONMENTAL / SITING
+*   PROJECT ACTIVITY
+*   SOURCE TRAIL & UNKNOWNS
+
+SERIF_CHECK: SERIF (Newsreader). The main heading "Know what deserves a deeper look." clearly shows serifs on the "K", "w", "d", and "l".
+
+EMERALD_ACCENT:
+*   Used in the "Request a Site Screen" buttons (header and hero).
+*   Used for the text and underline of "a deeper look."
+*   Used for the eyebrow labels ("PRELIMINARY...", "WHAT YOU'RE...", "WHAT A SITE...").
+*   Used for status badges ("Verified", "Conflicting") and source tags at the bottom of cards.
+*   Used for icons (checkmarks, warning triangles).
+*   The accent feels premium and restrained; it provides clear hierarchy without being neon or garish.
+
+DEFECTS: None observed. The layout is clean, gutters are even, text is legible, and no elements are clipped or overlapping.
+
+HERO_REPORT_PREVIEW: Yes, there is a "Site Screen - Illustrative sample" report preview card. There are no stacked "depth cards" visible behind it in this specific crop. The phrase "a deeper look" is present, and its underline is a clean, straight line. The hero section feels clean and spacious.
+
+TRUSTBAR_EYEBROW: Not visible in this tile.
+
+SCORE_THIS_TILE: 9/10. Excellent execution of the design brief. High-quality typography, perfect use of the emerald accent, and sophisticated SVG motifs that reinforce the geospatial brand identity.
+
+NOTES: The transition from the hero to the feature cards uses a very subtle horizontal divider. The "Scope note" at the bottom provides necessary legal/contextual clarity typical of B2B infrastructure intelligence products. The use of status badges (Verified vs. Conflicting) within the evidence cards adds significant functional value to the visual design.
+
+===== desk_t1 =====
+VISIBLE_SECTIONS:
+- **Scope Note / Disclaimer**: Background is off-white #FAFBFC. No topographic motif.
+- **"How It Works" (Workflow Section)**: Background is off-white #FAFBFC. Contains a white card with 4 steps. No topographic motif.
+- **"Sample Report Preview" (Report Section)**: Background is off-white #FAFBFC with a subtle, light-gray dot-grid/parcel-grid SVG motif behind it. Contains a large "Preliminary Site Intelligence Brief" card and a sidebar "What a full brief includes" card.
+- **"Who It's For" (Audience Section - Eyebrow only)**: Background is off-white #FAFBFC. No visible topographic motif in this slice.
+
+HEADINGS_OCR:
+- HOW IT WORKS
+- From candidate site to organized evidence
+- SAMPLE REPORT PREVIEW
+- See what a paid preliminary site screen looks like
+- WHO IT'S FOR
+- Built for teams making expensive site decisions
+
+SERIF_CHECK: **SERIF (Newsreader)**. The headings clearly have serifs (feet). Evidence: "From candidate site to organized evidence" — the 'F', 'r', 'o', 'm', 's', 'i', 't' all show distinct terminal serifs characteristic of an editorial serif font.
+
+EMERALD_ACCENT:
+- Used for the eyebrow labels ("HOW IT WORKS", "SAMPLE REPORT PREVIEW", "WHO IT'S FOR") with a preceding emerald dash.
+- Used for the step numbers (01, 02, 03, 04).
+- Used for the primary CTA button background at the bottom right ("View full sample report").
+- Used for the arrow icon in that button and the "Open full brief" link.
+- Used for the status badges ("Verified", "Conflicting").
+- **Verdict**: It feels premium and restrained. The emerald is a deep, professional forest green, not neon or garish.
+
+DEFECTS:
+- None. The layout is clean, text is well-aligned, gutters are even, and there is no horizontal overflow or clipping at the edges of this tile.
+
+HERO_REPORT_PREVIEW:
+- This is not the hero section, but it *is* a **Report Preview** section.
+- There are no stacked "depth cards" visible behind the main report card in this specific vertical slice (it appears to be a single primary card with a sidebar).
+- The phrase "**a deeper look**" is present inside a light-blue pill-shaped badge within the "Interconnection" row of the table. It does not have an underline (straight or wavy) in this view; it is just text inside a styled container.
+- The section feels clean and spacious, not cramped.
+
+TRUSTBAR_EYEBROW:
+- Not visible in this tile.
+
+SCORE_THIS_TILE: **9/10**
+(The design perfectly matches the brief: premium B2B editorial feel, correct font usage, excellent whitespace, and sophisticated use of the emerald accent. The dot-grid motif in the report section adds great texture without being distracting.)
+
+NOTES:
+- The "Scope note" at the very top suggests this tile starts mid-page or just below a header/hero area.
+- The typography hierarchy is excellent, using the serif for major impact and sans-serif (Inter) for the dense data in the report preview, which aids readability.
+- The use of status badges (Verified vs. Conflicting) inside the report preview adds a layer of realistic "intelligence" UI that fits the brand promise.
+
+===== desk_t2 =====
+VISIBLE_SECTIONS:
+1. **Target Audience / "Who it's for" Section**: Background is off-white #FAFBFC. Contains 4 white cards in a 2x2 grid. No visible topographic/contour-line SVG motif.
+2. **Methodology Section**: Background is off-white #FAFBFC. Contains 2 large white cards side-by-side (left: text list, right: process flow grid). No visible topographic/contour-line SVG motif.
+3. **Value Proposition / "Why early screening matters" Eyebrow**: Background is off-white #FAFBFC. Only the eyebrow and main heading are partially visible at the very bottom.
+
+HEADINGS_OCR:
+- WHO IT'S FOR
+- Built for teams making expensive site decisions
+- Battery storage developers
+- Project development teams
+- Interconnection / origination teams
+- Site acquisition & diligence teams
+- METHODOLOGY
+- Evidence first. AI second.
+- How we keep AI in its place
+- The evidence flow
+- Authoritative / identified sources
+- Evidence capture
+- Validation
+- Structured analysis
+- Human review
+- Preliminary intelligence brief
+- WHY EARLY SCREENING MATTERS
+- Less research friction. Earlier questions.
+
+SERIF_CHECK:
+**SERIF**. The headings clearly use a serif typeface (Newsreader) with distinct "feet" on the letters, providing the requested editorial gravitas.
+*Evidence:* "Built for teams making expensive site decisions" and "Evidence first. AI second."
+
+EMERALD_ACCENT:
+- Used for **eyebrow labels** ("WHO IT'S FOR", "METHODOLOGY", "WHY EARLY SCREENING MATTERS") in uppercase.
+- Used for **icons** inside light green rounded-square containers at the top of each card (e.g., battery icon, building icon, magnifying glass).
+- Used for **bullet points** in the "How we keep AI in its place" list.
+- Used for a small **arrow icon** at the bottom of the evidence flow card ("Each stage preserves...").
+- The accent feels **premium and restrained**, using a muted, sophisticated emerald rather than a bright neon green.
+
+DEFECTS:
+- **None**. The layout is clean, typography is crisp, gutters are even, and there is no horizontal overflow or clipping.
+
+HERO_REPORT_PREVIEW:
+Not applicable (this tile contains body content sections, not the hero).
+
+TRUSTBAR_EYEBROW:
+Not applicable (no trust bar or logo strip is visible in this tile).
+
+SCORE_THIS_TILE:
+9/10
+
+NOTES:
+- The design perfectly matches the brief's "premium B2B editorial feel." The generous whitespace and structured grid layouts convey high-end infrastructure intelligence.
+- The scope note text below the first grid ("Scope note: at launch...") is well-integrated and provides necessary context without cluttering the visual hierarchy.
+- The "Evidence flow" card uses a clever numbered step layout (01-06) inside smaller nested white cards, which looks highly professional and easy to scan.
+
+===== desk_t3 =====
+VISIBLE_SECTIONS:
+- **Feature/Value Prop Section** (top): Background is off-white #FAFBFC. Contains 4 white cards in a 2x2 grid. No visible topographic SVG motif.
+- **FAQ Accordion Section** (middle): Background is off-white #FAFBFC. Contains one large white card with accordion items. No visible topographic SVG motif.
+- **About/Workflow Intro Section** (bottom): Background is off-white #FAFBFC. Contains the start of 2 white cards. No visible topographic SVG motif.
+
+HEADINGS_OCR:
+- WHY EARLY SCREENING MATTERS
+- Less research friction. Earlier questions.
+- Teams evaluate many possibilities
+- Relevant evidence is fragmented
+- Organizing evidence earlier focuses diligence
+- Surface the questions sooner
+- FAQ
+- Straight answers to the obvious questions
+- Is Geospatial Labs an engineering firm?
+- Does a site screen guarantee interconnection capacity or project feasibility?
+- Where does the information come from?
+- What happens when information is missing or sources disagree?
+- What does a site screen cost and how long does it take?
+- Do you cover geographies beyond California BESS at launch?
+- Will you share a real customer reference or case study?
+- ABOUT
+- Building an evidence-first research workflow
+- Geospatial Labs
+- What we won’t claim
+
+SERIF_CHECK: **SERIF (Newsreader)**. The headings clearly have serifs (e.g., the "t" in "Straight" and the "S" in "Surface" have distinct feet).
+
+EMERALD_ACCENT: Used for eyebrow labels ("WHY EARLY SCREENING MATTERS", "FAQ", "ABOUT") and the icons inside the top feature cards (layers, user, filter, question mark) as well as the Geospatial Labs logo icon at the bottom. It feels premium, restrained, and professional.
+
+DEFECTS: None observed. Text is crisp, alignment is perfect, gutters are even, and there is no clipping.
+
+HERO_REPORT_PREVIEW: Not applicable (hero section not in this tile).
+
+TRUSTBAR_EYEBROW: Not applicable (trust bar not in this tile).
+
+SCORE_THIS_TILE: 9/10. Excellent execution of the design brief. Clean, editorial, high-end B2B feel. The only reason it's not a 10 is the absence of the subtle topographic/contour-line SVG motifs mentioned in the brief (the background is purely flat #FAFBFC), though this may be intentional for these specific content-heavy sections to maintain readability.
+
+NOTES: The typography hierarchy is very strong. The use of small caps for the eyebrow labels combined with the serif headings creates a highly authoritative, "editorial" tone. The FAQ accordion is well-spaced and easy to scan. The "No implied savings figures" disclaimer is handled elegantly in small text.
+
+===== desk_t4 =====
+VISIBLE_SECTIONS:
+- **Feature/Claims Cards (Top):** Two white cards on an off-white (#FAFBFC) background. No visible topographic motif.
+- **Final CTA (Middle):** A large white card centered on a light gray/off-white background. A subtle, faint topographic/contour-line SVG motif is visible in the background behind this section.
+- **Footer (Bottom):** A multi-column footer area with a light background (slightly darker than canvas). No visible topographic motif.
+
+HEADINGS_OCR:
+- "What we will claim"
+- "— FINAL CTA"
+- "Before deeper diligence, get the evidence organized."
+- "Geospatial Labs" (Logo)
+- "PRODUCT", "METHODOLOGY", "COMPANY", "CONTACT"
+
+SERIF_CHECK: **SERIF**. The main heading "Before deeper diligence, get the evidence organized." clearly shows serif characteristics (visible "feet" or terminals on letters like 'B', 'd', 'g'). The eyebrow label "FINAL CTA" and footer headers are sans-serif, but the primary editorial heading is serif as per the brief.
+
+EMERALD_ACCENT: 
+- Used for the "Request a Site Screen" button background (solid emerald).
+- Used for the "FINAL CTA" eyebrow label text.
+- Used for the Geospatial Labs logo icon.
+- Used for the small shield icon in the bottom-left tag.
+- The accent feels **premium and restrained**. It is used sparingly for primary actions and branding, avoiding any neon or garish appearance.
+
+DEFECTS: None. The layout is clean, text is well-aligned, gutters are even, and there is no clipping or overflow at the edges of this tile.
+
+HERO_REPORT_PREVIEW: Not applicable (Hero section not visible in this tile).
+
+TRUSTBAR_EYEBROW: Not applicable (Trust bar not visible in this tile).
+
+SCORE_THIS_TILE: 9/10. This slice perfectly captures the "premium B2B editorial" feel requested in the brief. The typography hierarchy (Serif heading + Sans body) is correct, the color palette is professional, and the subtle use of the topographic motif behind the CTA adds depth without being distracting. It looks like a high-fidelity, well-executed design.
+
+NOTES:
+- The "What we will claim" card has a very light mint-green background, which provides a nice subtle contrast to the pure white card next to it.
+- The footer is comprehensive and follows standard B2B SaaS patterns but maintains the clean, airy aesthetic.
+- The disclaimer text at the very bottom is legible and appropriately muted.
+
+===== mob_t0 =====
+VISIBLE_SECTIONS:
+*   **Sticky Header:** Background is white (#FFFFFF). No topographic motif visible.
+*   **Hero Section:** Background is off-white (#FAFBFC). A subtle, light-gray topographic/contour-line SVG motif is visible behind the text and report preview.
+*   **Report Preview (Hero):** White card with a subtle drop shadow. Contains a map snippet and data rows.
+*   **Feature Cards Section (Eyebrow + Grid):** Background is off-white (#FAFBFC). Eyebrow label "WHAT YOU'RE ACTUALLY GETTING" is visible, followed by a vertical stack of white feature cards.
+
+HEADINGS_OCR:
+*   PRELIMINARY SITE INTELLIGENCE FOR ENERGY DEVELOPMENT
+*   Know what deserves a deeper look.
+*   Site Screen · Illustrative sample
+*   Candidate Site · Parcel 142-08-37
+*   WHAT YOU'RE ACTUALLY GETTING
+*   Built for early development decisions
+*   Source-backed by default
+*   California BESS today
+*   Preliminary, not final
+
+SERIF_CHECK: **SERIF**. The headings clearly use a serif typeface (Newsreader), evidenced by the distinct "feet" on the letters in the main headline: *"Know what deserves a deeper look."*
+
+EMERALD_ACCENT: Emerald green is used for the primary CTA button ("Request a Site Screen"), the word "deeper" in the main headline (with a clean straight underline), the eyebrow labels ("PRELIMINARY..." and "WHAT YOU'RE..."), status icons (checkmarks/warnings in the report), and the "Open full brief" link. It feels premium, restrained, and editorial.
+
+DEFECTS: None observed. The layout is clean, typography is well-spaced, gutters are even, and no elements are clipped or overlapping.
+
+HERO_REPORT_PREVIEW: Yes, a detailed "Site Screen" report preview card is present. There are no stacked "depth cards" visible behind it in this specific crop (it appears as a single prominent card). The phrase "a deeper look" is present, and its underline is a **clean, straight line** (not wavy/squiggly). The hero section feels clean and spacious with generous whitespace.
+
+TRUSTBAR_EYEBROW: Not applicable (no trust bar/logos strip is visible in this tile).
+
+SCORE_THIS_TILE: 10/10. This is a flawless execution of the design brief. It perfectly captures the premium B2B editorial aesthetic, uses the specified color palette and typography correctly, and features high-fidelity UI components (the report preview looks excellent).
+
+NOTES: The topographic contour lines in the hero background are very subtle and tasteful, adding texture without distracting from the content. The "Site Screen" card is highly realistic, including details like coordinate strings and source codes (SRC-03, etc.), which adds significant credibility to the "infrastructure-intelligence" positioning.
+
+===== mob_t1 =====
+VISIBLE_SECTIONS:
+*   **Feature Cards Section (Vertical Stack):** A series of white cards on an off-white (#FAFBFC) canvas. A subtle, light-gray parcel-grid/contour-line SVG motif is visible in the background behind the cards.
+
+HEADINGS_OCR:
+*   **Eyebrow Label:** "WHAT A SITE SCREEN BRINGS TOGETHER"
+*   **Main Heading:** "One preliminary screen, six evidence dimensions"
+*   **Card 1 Eyebrow:** "GRID & INTERCONNECTION"
+*   **Card 1 Heading:** "Published interconnection context, assembled"
+*   **Card 2 Eyebrow:** "PARCEL & JURISDICTION"
+*   **Card 2 Heading:** "Parcel, zoning, and jurisdiction basics"
+*   **Card 3 Eyebrow:** "PERMITTING & PLANNING"
+*   **Card 3 Heading:** "Permitting and planning signals"
+*   **Card 4 Eyebrow:** "ENVIRONMENTAL / SITING"
+*   **Card 4 Heading:** "Environmental and siting considerations"
+*   **Card 5 Eyebrow:** "PROJECT ACTIVITY"
+*   **Card 5 Heading:** "Relevant nearby project activity"
+*   **Card 6 Eyebrow:** "SOURCE TRAIL & UNKNOWNS"
+*   **Card 6 Heading:** "Source trail and unresolved questions"
+
+SERIF_CHECK: **SERIF**. The headings clearly feature the Newsreader typeface with distinct serifs (e.g., the feet on the 'l' and 'i' in "Preliminary", the curved terminals in "evidence").
+
+EMERALD_ACCENT:
+*   Used for the main eyebrow label ("WHAT A SITE SCREEN BRINGS...") and all card eyebrow labels.
+*   Used for status badges ("Verified", "Requires deeper diligence").
+*   Used for small bullet/icons inside the source tags at the bottom of each card.
+*   The accent feels **premium and restrained**, using a sophisticated dark emerald rather than a bright neon green. It provides clear hierarchy without being garish.
+
+DEFECTS:
+*   **Top Edge Clipping:** The very top of the tile shows a clipped fragment of text ("next.") and some faint UI elements from a previous section (likely a navigation or pagination bar).
+*   **Bottom Edge Clipping:** The final card ("Source Trail...") is cut off at the bottom, missing its footer/source tags.
+
+HERO_REPORT_PREVIEW: Not applicable (Hero section not fully visible in this slice).
+
+TRUSTBAR_EYEBROW: Not applicable (Trust bar not visible in this slice).
+
+SCORE_THIS_TILE: **9/10**
+(The design execution is excellent—typography is crisp, spacing is generous, and the B2B editorial aesthetic is perfectly hit. Points deducted only for the minor clipping at the absolute top and bottom edges of this specific crop.)
+
+NOTES:
+*   The layout uses a "stacked card" or "accordion-style" list format which feels very organized and "report-like."
+*   The use of specific status badges (Verified vs. Conflicting) adds a layer of professional intelligence to the UI.
+*   The background grid motif is extremely subtle, providing texture without distracting from the readability of the white cards.
+
+===== mob_t2 =====
+VISIBLE_SECTIONS:
+*   **Feature/Process Card (Top):** White card on #FAFBFC background. Contains "Source trail and unresolved questions" section. No visible topographic motif.
+*   **"How It Works" Section (Middle):** Off-white #FAFBFC canvas. Contains a 4-step vertical workflow with individual white cards for each step (01-04). No visible topographic/contour-line SVG motif in this slice.
+*   **"Sample Report Preview" Section (Bottom):** Off-white #FAFBFC canvas. Includes a heading, descriptive text, and the top portion of a white "Report Preview" card. A very faint, subtle dot-grid/parcel-grid motif is visible in the bottom third of the tile behind this section.
+
+HEADINGS_OCR:
+*   UNKNOWN
+*   Source trail and unresolved questions
+*   HOW IT WORKS
+*   From candidate site to organized evidence
+*   01 / Provide the site
+*   02 / We gather and reconcile evidence
+*   03 / Receive a structured brief
+*   04 / Decide where to go deeper
+*   SAMPLE REPORT PREVIEW
+*   See what a paid preliminary site screen looks like
+
+SERIF_CHECK: **SERIF (Newsreader)**. The headings clearly have serifs (e.g., the distinct feet on the 'S' in "Source", the 't' in "trail", and the double-story 'g' in "unresolved").
+
+EMERALD_ACCENT:
+*   Used for eyebrow labels ("UNKNOWN", "HOW IT WORKS", "SAMPLE REPORT PREVIEW") and step numbers (01, 02, 03, 04).
+*   Used for a small icon inside the report preview card at the very bottom.
+*   The accent feels **premium and restrained**. It is a deep, sophisticated emerald rather than a bright neon green, fitting the B2B editorial brief perfectly.
+
+DEFECTS: **None**. The layout is clean, typography is well-spaced, cards are properly contained within their containers, and there is no horizontal overflow or clipping at the edges. The vertical rhythm is consistent and generous.
+
+HERO_REPORT_PREVIEW: Not a hero section, but a **Report Preview card IS visible at the bottom** of the tile. It shows a header ("PRELIMINARY SITE INTELLIGENCE BRIEF"), an icon, a title ("Illustrative sample · California BESS"), and a "DEMO DATA" badge. No stacked "depth cards" are visible behind it in this specific crop. The phrase "a deeper look" is not present in this tile (though "go deeper" is in step 04).
+
+TRUSTBAR_EYEBROW: Not visible in this tile.
+
+SCORE_THIS_TILE: **9/10**. Excellent execution of the design brief. The typography hierarchy (Serif vs Sans-serif) is spot on, the emerald accent is tasteful, and the whitespace is generous. It loses one point only because the subtle topographic/parcel-grid motif is extremely faint and only appears at the very bottom, making most of the "How It Works" section feel slightly flat compared to the intended "premium geospatial" vibe.
+
+NOTES: The use of "TAKES MINUTES", "IDENTIFIED SOURCES ONLY", etc., as pill-shaped badges next to the step numbers is a nice touch that adds to the structured, professional feel. The transition from the explanatory text at the top to the process steps is handled well with clear visual separation.
+
+===== mob_t3 =====
+VISIBLE_SECTIONS:
+*   **Report Preview Card (Top):** White card on #FAFBFC canvas. Contains a detailed "Preliminary Site Intelligence Brief" table. No visible topographic/contour-line SVG motif in this specific crop.
+*   **"What a full brief includes" List Card (Middle):** White card on #FAFBFC canvas. Contains a bulleted list of report contents. No visible topographic/contour-line SVG motif.
+*   **"View full sample report" CTA Card (Lower-Middle):** White card on #FAFBFC canvas. Contains descriptive text and a primary CTA button. No visible topographic/contour-line SVG motif.
+*   **"WHO IT'S FOR" Section / Hero-adjacent (Bottom):** Starts with an eyebrow label and a large serif heading on the #FAFBFC canvas.
+
+HEADINGS_OCR:
+*   PRELIMINARY SITE INTELLIGENCE BRIEF
+*   Illustrative sample · California BESS
+*   Candidate Site · Parcel 142-08-37
+*   DIMENSION, FINDING, STAT (Table Headers)
+*   Candidate site, Utility / jurisdiction, Interconnection, Permitting, Environmental, Project activity (Row Labels)
+*   What a full brief includes
+*   WHO IT'S FOR
+*   Built for teams making expensive site decisions
+
+SERIF_CHECK: **SERIF (Newsreader)**. The headings clearly have serifs ("little feet"). Evidence: The large heading at the bottom reads "**Built for teams making expensive site decisions**" with distinct serif terminals on the 'B', 't', 'i', 'm', etc. The sub-heading "What a full brief includes" is also serif.
+
+EMERALD_ACCENT:
+*   **Buttons:** A solid, deep emerald-green button ("View full sample report →") is present. It feels premium and restrained.
+*   **Icons/Badges:** Small emerald checkmarks (✓) are used in the "STAT" column of the table to indicate positive findings.
+*   **Links:** "Open full brief →" is emerald.
+*   **Eyebrow:** "WHO IT'S FOR" has a small emerald dash/line to its left.
+*   **Verdict:** The green is used sparingly as an accent for positive status and primary actions. It feels premium and professional, not neon or garish.
+
+DEFECTS:
+*   **Horizontal Clipping (Right Edge):** Throughout the top half of the tile (the Report Preview Card), text and UI elements are clipped at the right edge. Specifically, the "STAT" column header is cut off ("STAT..."), the checkmark icons are partially sliced, and the "Demo Data" badge at the very top right is cut off. This suggests the screenshot capture or container width was slightly too narrow for the content.
+*   **Minor Text Wrap:** In the "Interconnection" row, the text "queue position not located" wraps tightly.
+
+HERO_REPORT_PREVIEW: Yes, a "report preview" card is prominently featured at the top. It displays a structured data table mimicking a technical due diligence brief. There are no stacked "depth cards" visible behind it in this specific vertical slice. The phrase "a deeper look" is **not present** in this tile. The layout of the preview card is clean and highly legible, effectively conveying the "premium B2B editorial" feel through its typography and whitespace.
+
+TRUSTBAR_EYEBROW: Not visible in this tile.
+
+SCORE_THIS_TILE: **8/10**
+(The design execution, typography, and color palette perfectly match the premium B2B brief. The only significant deduction is for the horizontal clipping on the right side of the preview table, which looks like a minor screenshot/capture error rather than a design flaw).
+
+NOTES:
+*   The use of a real-looking data table (with specific coordinates like 34.9532°N) adds immense credibility and "gravitas" to the B2B marketing.
+*   The body copy ("No real customers, no fabricated capacity numbers...") is excellent micro-copy that builds trust by being transparent about it being a sample.
+*   The transition from the detailed data table to the high-level "What a full brief includes" list provides a nice rhythm of information density.
+
+===== mob_t4 =====
+VISIBLE_SECTIONS:
+- **Feature Cards Section**: Background is off-white #FAFBFC. Contains four white cards with rounded corners and subtle drop shadows. No visible topographic/contour-line SVG motif in this specific crop.
+- **Methodology Section**: Background remains off-white #FAFBFC. Contains an eyebrow label, a large serif heading, body text, and the start of a final white card.
+- **Scope Note**: Small sans-serif text block between the feature cards and the methodology section.
+
+HEADINGS_OCR:
+- "Battery storage developers"
+- "Project development teams"
+- "Interconnection / origination teams"
+- "Site acquisition & diligence teams"
+- "METHODOLOGY"
+- "Evidence first. AI second."
+- "How we keep AI in its place"
+
+SERIF_CHECK: **SERIF (Newsreader)**. The headings clearly have distinct serifs (feet). Evidence: The heading "**Evidence first. AI second.**" shows clear bracketed serifs on the 'E', 'v', 'd', 'n', 'c', etc.
+
+EMERALD_ACCENT: Used for the icons inside light-green square backgrounds at the top of each card. Also used for the "METHODOLOGY" eyebrow label text and its preceding horizontal line. It feels **premium and restrained**, using a muted, professional emerald tone rather than a neon shade.
+
+DEFECTS:
+- **None**. The layout is clean, typography is well-spaced, gutters are even, and there is no clipping or overflow.
+
+HERO_REPORT_PREVIEW: Not applicable (this tile shows the middle/lower portion of the page).
+
+TRUSTBAR_EYEBROW: Not applicable (no trust bar or logo strip visible in this crop).
+
+SCORE_THIS_TILE: 9/10. Excellent execution of the design brief. The editorial serif typography combined with the clean Inter body text and restrained emerald accents creates a highly premium B2B feel. The "use case" cards are well-structured and easy to scan.
+
+NOTES:
+- The "Scope note" provides a nice layer of transparency regarding the product's current limitations (California focus), which aligns with the "Evidence first" messaging.
+- The internal "Use it to..." callouts within each card are a strong UX pattern for B2B value propositioning.
+- The transition from the grid of cards to the "Methodology" narrative section feels natural and maintains the generous whitespace aesthetic.
+
+===== mob_t5 =====
+VISIBLE_SECTIONS:
+- **Feature Card 1 (AI Principles):** White card on #FAFBFC canvas. No visible topographic/contour-line motif.
+- **Feature Card 2 (Evidence Flow):** White card on #FAFBFC canvas. Contains 6 nested sub-cards (steps). No visible topographic/contour-line motif.
+- **Section Intro (Why Early Screening Matters):** Directly on #FAFBFC canvas (no card container).
+- **Feature Card 3 (Teams evaluate):** White card on #FAFBFC canvas, partially cut off at bottom.
+
+HEADINGS_OCR:
+- How we keep AI in its place
+- The evidence flow
+- Authoritative / identified sources
+- Evidence capture
+- Validation
+- Structured analysis
+- Human review
+- Preliminary intelligence brief
+- WHY EARLY SCREENING MATTERS
+- Less research friction. Earlier questions.
+- Teams evaluate many possibilities
+
+SERIF_CHECK: **SERIF**. The headings clearly use a serif typeface (Newsreader), evidenced by the distinct "feet" on the "l", "d", and "t" in the heading "**The evidence flow**".
+
+EMERALD_ACCENT: Used for bullet points (solid circles) in the first list, numbered step icons (01-06) inside rounded squares, a small arrow icon at the end of the flow, and the uppercase eyebrow label "WHY EARLY SCREENING MATTERS". It feels **premium and restrained**—a deep, professional emerald rather than neon.
+
+DEFECTS: **None**. Layout is clean, text is fully legible, gutters are even, no clipping or overflow is visible within this tile's bounds.
+
+HERO_REPORT_PREVIEW: Not applicable (hero section not present in this tile).
+
+TRUSTBAR_EYEBROW: Not applicable (trust bar not present in this tile).
+
+SCORE_THIS_TILE: **9/10**. Excellent execution of the premium B2B editorial design system. Clean typography hierarchy, generous whitespace, and sophisticated use of the emerald accent. The only reason it isn't a 10 is that the requested topographic/contour-line SVG motifs are not visibly active in this specific slice, making the background slightly flatter than the full brief implies.
+
+NOTES: The "evidence flow" section is particularly well-structured, using clear numbering and icons to guide the eye vertically. The transition from the white cards to the direct-on-canvas eyebrow label creates good visual rhythm.
+
+===== mob_t6 =====
+VISIBLE_SECTIONS:
+*   **Feature/Value Cards (Top):** Four white cards with rounded corners on an off-white (#FAFBFC) background. No visible topographic/contour-line SVG motif in this specific crop.
+*   **Disclaimer Text (Middle):** A block of small, dark gray body text on the off-white background, positioned between the cards and the FAQ section.
+*   **FAQ Section (Bottom):** An "FAQ" eyebrow label followed by a large serif heading ("Straight answers to the obvious questions"), introductory body text, and a vertical stack of white accordion cards. The background remains off-white (#FAFBFC). No visible topographic/contour-line SVG motif.
+
+HEADINGS_OCR:
+*   "...teams evaluate many possibilities" (Partial heading, top card)
+*   "Relevant evidence is fragmented"
+*   "Organizing evidence earlier focuses diligence"
+*   "Surface the questions sooner"
+*   "FAQ" (Eyebrow label)
+*   "Straight answers to the obvious questions"
+*   "Is Geospatial Labs an engineering firm?"
+*   "Does a site screen guarantee interconnection capacity or project feasibility?"
+*   "Where does the information come from?"
+*   "What happens when information is missing or sources disagree?"
+*   "What does a site screen cost..." (Clipped at bottom)
+
+SERIF_CHECK: **SERIF (Newsreader)**. The main FAQ heading "Straight answers to the obvious questions" clearly shows distinct serifs (the "feet" on the 'S', 't', 'a', etc.), providing the requested editorial gravitas. The card headings also appear to be in a bold serif or a very sturdy geometric sans that mimics the weight, but the primary section header is definitively serif.
+
+EMERALD_ACCENT: Emerald green is used for the **icons** inside each of the top four feature cards (stacked layers, location pin, funnel, target/bullseye). It is also used for the **small horizontal line** preceding the "FAQ" eyebrow label. The usage feels **premium and restrained**, matching the B2B editorial brief perfectly. It is not neon or garish.
+
+DEFECTS: 
+*   **Clipping at Top Edge:** The first card's heading is cut off horizontally at the very top of the image ("...teams evaluate...").
+*   **Clipping at Bottom Edge:** The final FAQ accordion item ("What does a site screen cost...") is cut off vertically at the bottom of the tile.
+
+HERO_REPORT_PREVIEW: Not applicable (Hero section not visible in this tile).
+
+TRUSTBAR_EYEBROW: Not applicable (Trust bar not visible in this tile).
+
+SCORE_THIS_TILE: **9/10**
+The design execution is excellent. It strictly follows the premium B2B editorial brief with perfect typography pairing (Serif headings/Sans-serif body), restrained emerald accents, and a clean, high-whitespace layout. Points deducted only for the inevitable edge-clipping inherent in this being a middle-slice of a taller screenshot.
+
+NOTES: The transition from the feature cards to the FAQ section is handled with a simple text disclaimer, which adds a layer of transparency/honesty typical of high-end professional services. The accordion UI in the FAQ section uses clean, minimal chevron icons.
+
+===== mob_t7 =====
+VISIBLE_SECTIONS:
+- **FAQ Accordion**: Background is off-white #FAFBFC. No topographic/contour-line SVG motif visible.
+- **About Section (Editorial Card)**: White card on off-white #FAFBFC canvas. No topographic motif visible.
+- **"What we won't claim" List**: Part of the white card or a continuation of the editorial section.
+
+HEADINGS_OCR:
+- "What happens when information is missing or sources disagree?"
+- "What does a site screen cost and how long does it take?"
+- "Do you cover geographies beyond California BESS at launch?"
+- "Will you share a real customer reference or case study?"
+- "ABOUT"
+- "Building an evidence-first research workflow"
+- "Geospatial Labs"
+- "What we won't claim"
+- "What we will claim"
+
+SERIF_CHECK: **SERIF (Newsreader)**. The headings clearly have serifs (feet). Evidence: The 't' in "**Building** an evidence-first research workflow" and the 'W' in "**What** we won't claim".
+
+EMERALD_ACCENT: 
+- Used for the eyebrow label "ABOUT" and its preceding horizontal rule.
+- Used for the hexagonal shield icon next to "Geospatial Labs".
+- Used for the bullet points in the "What we won't claim" list.
+- Used as a very subtle, pale background tint for the final "What we will claim" callout box.
+- The usage feels **premium and restrained**; it provides clear hierarchy without being garish or neon.
+
+DEFECTS: None observed. Text is legible, gutters are even, alignment is clean, no clipping at edges.
+
+HERO_REPORT_PREVIEW: Not applicable (hero section not visible in this tile).
+
+TRUSTBAR_EYEBROW: Not applicable (trust bar not visible in this tile).
+
+SCORE_THIS_TILE: 9/10. Excellent execution of the premium B2B editorial brief. The typography contrast between serif headings and sans-serif body text is sharp, and the emerald accents are used with great discipline to guide the eye.
+
+NOTES: The transition from the FAQ accordion into the long-form "About" editorial card creates a nice rhythm. The use of a pale emerald background for the final "claim" box is a sophisticated touch that reinforces the brand color without overwhelming the text.
+
+===== mob_t8 =====
+VISIBLE_SECTIONS:
+- **Feature/Value Prop Card (Top):** White card with a light green background inset. Background is off-white #FAFBFC. No visible topographic motif.
+- **Final CTA / Lead Gen Card (Middle):** Large white card on off-white #FAFBFC background. No visible topographic motif.
+- **Footer (Bottom):** Off-white #FAFBFC background containing logo, description, tagline pill, and multi-column link lists. No visible topographic motif.
+
+HEADINGS_OCR:
+- "What we will claim"
+- "FINAL CTA"
+- "Before deeper diligence, get the evidence organized."
+- "Geospatial Labs" (Logo text)
+- "SITE INTELLIGENCE" (Logo subtext)
+- "PRODUCT"
+- "METHODOLOGY"
+- "COMPANY"
+- "CONTACT"
+
+SERIF_CHECK: **SERIF**. The headings clearly use a serif typeface (Newsreader). Evidence: "Before deeper diligence," shows distinct serifs on the 'B', 'd', and 'i'.
+
+EMERALD_ACCENT: Used for the primary "Request a Site Screen" button (solid emerald fill), the "FINAL CTA" eyebrow label text, the Geospatial Labs logo icon, and the tagline pill icon. It feels **premium and restrained**—a deep, professional forest green rather than neon.
+
+DEFECTS: 
+- **Clipped Text at Top:** The top of the tile cuts off the upper portion of the first visible white card (the "What we will claim" section), making it look like a harsh crop rather than a designed edge.
+- **Minor Typo:** In the privacy disclaimer within the CTA card, the word "hasn't" is missing its closing apostrophe/quote mark ("hasn't.).
+
+HERO_REPORT_PREVIEW: Not applicable (Hero section not visible in this tile).
+
+TRUSTBAR_EYEBROW: Not applicable (Trust bar not visible in this tile).
+
+SCORE_THIS_TILE: **8/10**. The design execution within the visible sections is excellent—it perfectly matches the premium B2B editorial brief with clean typography, generous whitespace, and a sophisticated color palette. The only deductions are for the awkward hard-crop at the very top of the image and the minor punctuation error in the legal text.
+
+NOTES: The layout successfully transitions from a high-value lead-generation card into a comprehensive, well-organized footer. The use of the light green inset at the top provides a nice visual "quote" or "insight" feel that complements the main CTA below it.

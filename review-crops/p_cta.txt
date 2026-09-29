@@ -1,0 +1,4 @@
+This is a high-resolution crop of the MOBILE Final CTA + start of footer region (391px wide) for "Geospatial Labs". Answer precisely:
+1) Read verbatim every sentence of small legal/privacy disclaimer text visible in the CTA card.
+2) Is there any word with a missing or broken apostrophe or quote mark (e.g. "hasnt", "hasn t", "hasn" with no closing t, a smart quote that looks wrong)? Quote it exactly. If everything looks correct, say "apostrophes OK".
+3) Any other text defects (broken words, overflow, clipping) in this crop?

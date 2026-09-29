@@ -1,0 +1,354 @@
+
+==============================================================================
+### home_00
+==============================================================================
+Based on the image provided, here is the analysis of the Geospatial Labs homepage segment:
+
+*   **Visible Sections:**
+    *   **Hero Section:** Features the main headline "Know what deserves a deeper look," a sub-description, and primary CTAs.
+    *   **"What You're Actually Getting" (Value Proposition):** A four-column grid explaining the product's core benefits (e.g., "Built for early development decisions").
+    *   **"What a Site Screen Brings Together" (Feature/Methodology):** A detailed breakdown of the "six evidence dimensions" using a 2x3 grid of cards.
+    *   **"How It Works" (Header only):** The heading "From candidate site to organized evidence" is visible at the very bottom.
+
+*   **Background Treatment:**
+    *   **Hero:** Light, off-white/canvas background with a subtle, faint **topo-map** style pattern visible on the right side behind the report preview.
+    *   **Value Proposition ("What You're Actually Getting"):** **Plain white** background.
+    *   **Evidence Dimensions:** Light grey/muted background with a more prominent **topo-map** backdrop pattern.
+    *   **How It Works:** Appears to be returning to a **plain white** or very light canvas background.
+
+*   **Typography:**
+    *   **Yes.** The design uses a clear typographic hierarchy: **Serif** fonts (resembling a modern serif like *Source Serif* or *Playfair*) are used for all major headings (H1, H2, H3), while **Sans-serif** fonts (clean and geometric, similar to *Inter*) are used for body text, navigation, and UI labels.
+
+*   **Hero Report Preview:**
+    *   **Yes.** There is a "Preliminary Site Intelligence Brief" card on the right. While the specific "stacked depth cards" peeking from the top-right corner are not aggressively prominent in this specific render, there is a distinct visual layering effect where the main report card sits on top of the background elements, and the layout implies depth consistent with that design pattern.
+
+*   **Visual Defects:**
+    *   **Minor Clipping/Overflow:** In the Hero section's report preview, the text "substation [approx.]" and the small icon below it appear slightly cramped or overlapping the border of the box they sit in.
+    *   **Text Truncation:** Several descriptions in the "What You're Actually Getting" and "Evidence Dimensions" sections end abruptly with ellipses (e.g., "...withdr...", "...available l..."), indicating intentional truncation for layout fit, though it can look slightly abrupt.
+    *   **Alignment:** Overall alignment is professional, though the "Scope note" text at the bottom of the evidence section is left-aligned while the content above it is in a grid.
+    *   **Contrast:** Text contrast is generally high and readable. No major broken areas or missing images are visible.
+
+==============================================================================
+### home_01
+==============================================================================
+Based on the provided image, here is the analysis:
+
+*   **Visible Sections:**
+    *   **How It Works:** Titled "From candidate site to organized evidence," featuring a 4-step workflow.
+    *   **Sample Report Preview:** Titled "See what a paid preliminary site screen looks like," showing a mockup of an intelligence brief and a "What a full brief includes" list.
+    *   **Who It's For (Target Audience):** Titled "Built for teams making expensive site decisions," showing user personas (Battery storage developers, Project development teams).
+
+*   **Background Treatment:**
+    *   **How It Works:** Plain white/canvas background.
+    *   **Sample Report Preview:** Muted/grey (light grey) background with a subtle dot-grid pattern.
+    *   **Who It's For:** Plain white/canvas background.
+
+*   **Typography:**
+    *   Yes, the section headings ("From candidate site...", "See what a paid...", "Built for teams...") use a **serif** font, while all body text, labels, and UI elements use a clean **sans-serif** font (similar to Inter).
+
+*   **Hero Section:**
+    *   The hero section is **not visible** in this segment; the image begins with the "How It Works" section. Consequently, there is no "report preview" card with stacked depth cards in this view.
+
+*   **Visual Defects:**
+    *   **Clipping/Overflow:** In the "Sample Report Preview" table, the text in the "Source" column for the "Permitting" row appears slightly truncated or tightly wrapped ("SRC-05 / 06").
+    *   **Bottom Cut-off:** The "Who It's For" section is cut off at the bottom of the image; only the top portions of the first two persona cards are fully visible.
+
+==============================================================================
+### home_02
+==============================================================================
+Based on the provided image, here is the analysis of the vertical segment:
+
+*   **Visible Sections:**
+    *   **Use Cases / Target Audience Grid:** A 2x2 grid of cards targeting "Battery storage developers," "Project development teams," etc.
+    *   **Methodology ("How it works"):** A section titled "Evidence first. AI second." featuring a list of principles and a 6-step "evidence flow" diagram.
+    *   **Value Proposition ("Why screening matters"):** A section titled "Less research friction. Earlier questions." with a grid of benefit cards.
+
+*   **Background Treatment:**
+    *   The entire visible segment uses a **plain, light grey/off-white (canvas)** background. There are no topo-map backdrops or high-contrast color blocks in this specific view.
+
+*   **Typography:**
+    *   **Yes.** The main section headings (e.g., "Evidence first. AI second.") use a **serif** typeface, while all body text, card titles, and UI elements use a clean **sans-serif** font (resembling Inter or a similar system font).
+
+*   **Hero Section & Report Preview:**
+    *   **No.** The hero section is **not visible** in this segment; the image begins further down the page with the audience targeting cards. Consequently, there is no report preview card or stacked depth cards present.
+
+*   **Visual Defects:**
+    *   **No significant defects.** The layout is clean and well-aligned.
+    *   **Minor Observation:** The bottom-most row of the final section ("Why early screening matters") appears to be cut off at the very bottom edge of the image, but this is simply due to the crop of the screenshot rather than a layout error. Text contrast and spacing appear professional and legible throughout.
+
+==============================================================================
+### home_03
+==============================================================================
+*   **Visible Sections:** The segment displays the bottom portion of a "Why Screening" (or value proposition) section, a full **FAQ** section, and an **About** section. The very top edge of a **CTA or Footer** area is also visible at the bottom.
+*   **Background Treatment:**
+    *   **Why Screening (top):** Muted/grey background (`#f3f4f6` approx).
+    *   **FAQ:** Plain white/canvas background.
+    *   **About:** Muted/grey background.
+    *   **Bottom Edge (CTA/Footer):** Appears to be a light topo-map backdrop with subtle contour lines.
+*   **Typography:** Yes. Headings (e.g., "Straight answers to the obvious questions", "Building an evidence-first research workflow") use a **serif** font. Body text, labels ("FAQ", "ABOUT"), and list items use a clean **sans-serif** font (Inter-like).
+*   **Hero Section:** The hero section is **not visible** in this segment; therefore, no report preview card is present.
+*   **Visual Defects:** No significant visual defects are present. The layout is clean, text is well-aligned within cards, contrast is good, and there is no noticeable clipping or overflow. The spacing between sections and internal padding appears consistent and professional.
+
+==============================================================================
+### home_04
+==============================================================================
+Based on the image provided, here is the analysis:
+
+*   **Visible Sections:** The segment displays the **Final CTA** (Call to Action) section and the **Footer**.
+*   **Background Treatment:**
+    *   **CTA Section:** Features a large, centered white card with a subtle drop shadow, set against a light grey background that has a faint **topo-map** or grid-like pattern visible on the right side.
+    *   **Footer:** Uses a plain, solid **light grey/canvas** background.
+*   **Typography:** Yes. The main heading ("Before deeper diligence...") uses a **Serif** font, while all body text, navigation links, and button labels use a clean **Sans-serif** font (resembling Inter).
+*   **Hero/Report Preview:** The Hero section is not visible in this segment; only the bottom CTA and Footer are shown.
+*   **Visual Defects:**
+    *   There are two empty, rounded rectangular outlines at the very top of the image, suggesting missing navigation elements or search bars from a previous section.
+    *   A small, isolated circle icon (likely a scroll indicator or decorative element) appears to be floating awkwardly in the whitespace to the right of the CTA card.
+    *   Otherwise, the layout is clean with no text overlap or clipping within the visible sections.
+
+==============================================================================
+### mobile_00
+==============================================================================
+Based on the provided 391px wide mobile screenshot of the "Geospatial Labs" homepage:
+
+*   **Visible Sections:**
+    *   **Header:** Logo ("Geospatial Labs SITE INTELLIGENCE") and a hamburger menu icon.
+    *   **Hero Section:** Includes a tagline ("PRELIMINARY SITE INTELLIGENCE FOR ENERGY DEVELOPMENT"), the main headline ("Know what deserves a deeper look."), descriptive text, and two primary CTAs: "Request a Site Screen" and "View Sample Report".
+    *   **Sample Report Preview:** A detailed card titled "Site Screen · Illustrative sample" (marked as "DEMO DATA") containing candidate site info, a map snippet, and several evidence cards (e.g., "Parcel zoned for utility-scale storage", "Interconnection queue position", "Conflicting permitting status").
+    *   **Value Propositions ("WHAT YOU'RE ACTUALLY GETTING"):** A list of four key benefits including "Built for early development decisions," "Source-backed by default," "California BESS today," and "Preliminary, not final."
+    *   **Features/Methodology ("WHAT A SITE SCREEN BRINGS TOGETHER"):** An introductory section starting with "One preliminary screen, six evidence dimensions" and the first feature card, "Published interconnection context, assembled."
+
+*   **Layout Reflow:**
+    *   Yes, the layout reflows cleanly into a single column. There is no visible horizontal overflow; content is contained within the 391px width with appropriate margins.
+
+*   **Sample Report Data Table Status:**
+    *   **Visibility:** The table/card is fully visible. While it contains dense data (like coordinates "34.9532°N, 118.1234°W"), the layout uses wrapping and vertical stacking to ensure nothing is clipped on the right.
+    *   **Scrolling/Hint:** There is no "Swipe to view all columns" hint. The component does not appear to be a horizontally scrolling table; instead, it is designed as a vertically stacked list of cards that fit the mobile viewport.
+
+*   **Mobile Defects to Flag:**
+    *   **Potential Clipping/Density in Report Preview:** The "Candidate Site" row containing the parcel number and coordinates is very densely packed. On slightly smaller screens or with larger system fonts, the coordinates might wrap awkwardly or force horizontal expansion.
+    *   **Map Snippet:** The map preview inside the sample report is quite small and low-resolution at this width, making details like the "substation (approx)" label difficult to read.
+    *   **Button Styling:** The "Request a Site Screen" button is full-width, which is standard, but the secondary "View Sample Report" button has a very thin border that might lack sufficient touch-target visibility for some users.
+    *   **Text Hierarchy:** The headline "Know what deserves a deeper look." uses a large serif font that creates slightly loose line spacing, taking up significant vertical real estate on mobile.
+
+==============================================================================
+### mobile_01
+==============================================================================
+Based on the provided 391px wide mobile segment, here is the evaluation:
+
+*   **Visible Sections:**
+    *   **Report Data Cards:** A vertical stack of detailed screening categories including "GRID & INTERCONNECTION", "PARCEL & JURISDICTION", "PERMITTING & PLANNING", "ENVIRONMENTAL / SITING", "PROJECT ACTIVITY", and "SOURCE TRAIL & UNKNOWNS". Each card contains a status badge (e.g., "Requires deeper diligence", "Verified", "Conflicting"), a title, descriptive text, and source tags (e.g., "SRC-01").
+    *   **Scope Note:** A block of fine-print text starting with "Scope note: Source availability varies by site..."
+    *   **"HOW IT WORKS" Section:** A process overview beginning with the header "From candidate site to organized evidence" and the first two steps of the workflow ("01 Provide the site" and "02 We gather and reconcile evidence").
+
+*   **Layout Reflow:**
+    *   Yes, the layout reflows cleanly into a single column. There is no visible horizontal overflow; all content is contained within the 391px width with appropriate margins.
+
+*   **Sample Report Preview (Data Table):**
+    *   **Not Visible:** The image displays individual data *cards* rather than a traditional wide data table. 
+    *   **Clipping/Scrolling:** Because the information is presented in stacked cards rather than a table, there is no right-side clipping or horizontal scrolling required to view columns. All text and tags are fully legible.
+    *   **Hint:** No "Swipe to view all columns" hint is present or necessary for this card-based layout.
+
+*   **Mobile Defects to Flag:**
+    *   **Potential Text Density:** The "Scope note" and the descriptions within the report cards (e.g., "Conditional use, reclamation, site plan...") contain long lines of text that may be difficult to read on small screens if the font size is not optimized for mobile.
+    *   **Tag Wrapping:** The source tags at the bottom of the cards (e.g., "CDFW BIOS · SRC-07 · Cal-Adapt · SRC-08") wrap onto multiple lines, which is functional but creates uneven bottom margins across the different cards.
+    *   **No Critical Breakage:** There are no instances of horizontal overflow, white edges, broken buttons, or images overflowing the viewport in this specific segment. The hierarchy is clear, and the "Verified" vs. "Conflicting" badges provide good visual distinction.
+
+==============================================================================
+### mobile_02
+==============================================================================
+Based on the provided 391px wide mobile screenshot of the "Geospatial Labs" homepage, here is the analysis:
+
+*   **Visible Sections:**
+    *   **Process Steps (02-04):** Steps for gathering evidence ("We gather and reconcile evidence"), receiving a brief ("Receive a structured brief"), and deciding on next steps ("Decide where to go deeper").
+    *   **Sample Report Preview:** A section titled "See what a paid preliminary site screen looks like" containing an illustrative data table.
+    *   **Full Brief Includes:** A bulleted list detailing the components of a full brief (e.g., "Executive summary", "Findings table").
+    *   **Call to Action (CTA):** A concluding section with descriptive text and a green button labeled "**View full sample report →**".
+
+*   **Layout Reflow:**
+    *   **Yes**, the layout reflows cleanly to a single column. There is no visible horizontal overflow; content is centered with appropriate margins within the 391px viewport.
+
+*   **Sample Report Preview Data Table:**
+    *   **Column Visibility:** The table is **clipped on the right**. While the "DIMENSION" and "FINDING" headers are fully visible, the text in the "FINDING" column (e.g., "CUP open in county porta...") and the final row ("Operational 50 MW BESS...") are clearly truncated.
+    *   **Swipe Hint:** **Yes**, there is a specific hint below the table that reads: "**◉ Swipe to view all columns →**".
+    *   **Scrolling:** It appears to be designed to scroll horizontally to reveal the hidden data.
+
+*   **Mobile Defects to Flag:**
+    *   **Clipped Content:** The "Sample Report Preview" table has significant horizontal clipping. Text such as "state portal shows withdrawn" is cut off to "state portal shows withdraw...", and coordinates are partially hidden.
+    *   **Tiny Text:** The coordinate data ("34.9532°N, 118.1234°W") and the fine print below the table ("6 evidence cards · 14 sources...") are very small and may be difficult to read on a mobile device.
+    *   **Awkward Stacking:** In the "Candidate Site" row of the table, the location icon and address stack vertically while the coordinates sit to the right, creating a slightly unbalanced look within the narrow container.
+
+==============================================================================
+### mobile_03
+==============================================================================
+Based on the provided 391px wide mobile segment of the "Geospatial Labs" homepage:
+
+*   **Visible Sections:**
+    *   A partial view of a "Sample Report" or introductory section (showing the end of a description and a green CTA button: "**View full sample report →**").
+    *   The "**WHO IT'S FOR**" section, featuring the headline "**Built for teams making expensive site decisions**" and four detailed user persona cards: "**Battery storage developers**," "**Project development teams**," "**Interconnection / origination teams**," and "**Site acquisition & diligence teams**."
+    *   The beginning of the "**METHODOLOGY**" section, with the headline "**Evidence first. AI second.**" and a sub-section titled "**How we keep AI in its place**."
+
+*   **Layout Reflow:**
+    *   Yes, the layout reflows cleanly into a single column. All text, icons, and card containers are contained within the 391px width without any visible horizontal overflow.
+
+*   **Sample Report Data Table:**
+    *   No data table is visible in this specific vertical segment; only the button to view it is present.
+
+*   **Mobile Defects to Flag:**
+    *   **No critical defects found:** There is no horizontal overflow, white edge, or clipped content. Text is legible (not tiny), buttons are properly styled full-width elements, and the stacking of the cards is logical and clean.
+
+==============================================================================
+### mobile_04
+==============================================================================
+Based on the provided 391px wide mobile screenshot of the "Geospatial Labs" homepage, here is the analysis:
+
+*   **Visible Sections:**
+    *   **"How we keep AI in its place":** A bulleted list detailing AI's role (e.g., "AI organizes and analyzes...", "Unknown information stays unknown.").
+    *   **"The evidence flow":** A vertical step-by-step process flow with six numbered cards (01 Authoritative / identified sources through 06 Preliminary intelligence brief).
+    *   **"WHY EARLY SCREENING MATTERS":** A section starting with the headline "Less research friction. Earlier questions." followed by an introductory paragraph.
+    *   **Problem/Solution Cards:** The beginning of a list of value propositions, including "Teams evaluate many possibilities", "Relevant evidence is fragmented", "Organizing evidence earlier focuses diligence", and "Surface the questions".
+
+*   **Layout Reflow:**
+    *   Yes, the layout reflows cleanly into a single column. There is no visible horizontal overflow; content is well-contained within the 391px viewport with appropriate margins.
+
+*   **Sample Report Preview Data Table:**
+    *   **Not Visible:** There is no data table or "Sample Report Preview" visible in this specific vertical segment of the page.
+
+*   **Mobile Defects to Flag:**
+    *   **None Significant:** The layout appears robust. Text is legible, cards stack vertically without breaking, icons are properly aligned, and there are no visible white edges or clipped images. The hierarchy is clear for mobile reading.
+
+==============================================================================
+### mobile_05
+==============================================================================
+Based on the provided 391px wide mobile segment of the "Geospatial Labs" homepage:
+
+*   **Visible Sections:**
+    *   **Value Proposition / "How it works" cards:** Specifically the tail end of a card regarding "**earlier focuses diligence**" and a full card titled "**Surface the questions sooner**" (with icon '2').
+    *   **Disclaimer/Value Statement:** A paragraph starting with "**No implied savings figures.** We do not quote ROI..."
+    *   **FAQ Section:** Labeled with a small "**— FAQ**" header. Contains the heading "**Straight answers to the obvious questions**", an introductory paragraph, and an accordion list including the expanded item "**Is Geospatial Labs an engineering firm?**" and several collapsed items (e.g., "**Does a site screen guarantee...**", "**Where does the information come from?**").
+    *   **About Section:** Labeled with a small "**— ABOUT**" header. Contains the heading "**Building an evidence-first research workflow**", an intro paragraph, and a detailed card for "**Geospatial Labs**" (Preliminary site intelligence for energy development).
+
+*   **Layout Reflow:**
+    *   Yes, the layout reflows cleanly into a single column. There is no visible horizontal overflow; all content is contained within the 391px width with appropriate margins.
+
+*   **Sample Report Preview Data Table:**
+    *   **Not visible.** This specific vertical segment does not contain a data table or any "Swipe to view all columns" hints.
+
+*   **Mobile Defects to Flag:**
+    *   **None significant.** The typography is legible, buttons/accordions are full-width and properly styled, images/icons (like the '2' and the Geospatial Labs logo) are contained within their cards, and there is no awkward stacking or horizontal clipping. The spacing between sections (FAQ to About) is consistent.
+
+==============================================================================
+### mobile_06
+==============================================================================
+Based on the provided 391px wide mobile segment of the "Geospatial Labs" homepage:
+
+*   **Visible Sections:**
+    *   **Product/Methodology Intro:** Text describing the evidence-first research workflow and a preliminary site screen (mentions "Sample Report shows the structure...").
+    *   **"What we won't claim" / Claims Section:** A list of disclaimers (e.g., "That we replace engineering...", "That we guarantee interconnection capacity...") followed by a highlighted green box for **"What we will claim"**.
+    *   **Final CTA:** A section with the heading "Before deeper diligence, get the evidence organized." It includes a description, a primary green button ("Request a Site Screen"), and a secondary outline button ("See a Sample Report").
+    *   **Footer:** Contains the Geospatial Labs logo/tagline, a brief mission statement, a tagline pill, and a multi-column sitemap (PRODUCT, METHODOLOGY, COMPANY, CONTACT).
+
+*   **Layout Reflow:**
+    *   Yes, the layout reflows cleanly into a single column. There is no visible horizontal overflow; content is contained within the 391px width with appropriate padding.
+
+*   **"Sample Report Preview" Data Table:**
+    *   **Not Visible:** A data table preview is *not* visible in this specific vertical segment. The text mentions the Sample Report, and there is a button to "See a Sample Report," but the actual table/grid is not rendered here.
+
+*   **Mobile Defects to Flag:**
+    *   **Potential Footer Clipping:** The footer sitemap (PRODUCT/METHODOLOGY/COMPANY/CONTACT) uses a two-column grid. While it fits the width, the bottom-most items (specifically under "COMPANY" and "CONTACT") appear to be cut off at the very edge of the image, suggesting potential vertical clipping or an incomplete screenshot.
+    *   **Text Density:** The introductory paragraphs are quite dense for mobile, though legible at this zoom level.
+    *   **No Horizontal Issues:** No white edges, horizontal scrollbars, or broken full-width buttons are observed. The buttons stack correctly.
+
+==============================================================================
+### mobile_07
+==============================================================================
+Based on the provided 391px wide mobile segment of the "Geospatial Labs" homepage, here is the analysis:
+
+*   **Visible Sections:**
+    *   **Navigation/Feature Links:** A grid of links including "What it brings together," "Evidence-first approach," "How it works," and "Why early screening matters."
+    *   **Footer:** Divided into "COMPANY" (About Geospatial Labs, Who it's for, FAQ, Contact) and "CONTACT" (Request a screen, email address) columns.
+    *   **Legal/Disclaimer:** Copyright text ("© 2026 Geospatial Labs. All rights reserved.") and a lengthy disclaimer regarding preliminary research.
+
+*   **Layout Reflow:**
+    *   **Yes**, the layout reflows cleanly to a single-column (or two-column grid) format within the 391px width. There is no visible horizontal overflow or horizontal scrollbar in this segment.
+
+*   **Sample Report Preview:**
+    *   **Not Visible:** This specific segment does not contain a "Sample Report Preview" data table; it shows the lower navigation and footer area.
+
+*   **Mobile Defects to Flag:**
+    *   **Tiny Text / Readability:** The legal disclaimer text at the bottom is very small and dense for a mobile screen, which may cause accessibility issues.
+    *   **Link Density:** The top section packs many links into a small space, which could lead to "fat finger" errors when tapping on a mobile device.
+    *   **Email Overflow Risk:** The email address `hello@geospatiallabs.com` is long; while it fits here, on slightly narrower viewports (e.g., iPhone SE), it might wrap awkwardly or overflow its container.
+    *   **Visual Hierarchy:** The footer links ("COMPANY" vs "CONTACT") use the same font size and weight as the feature links above them, making it slightly difficult to distinguish the main navigation from the site map at a glance.
+
+==============================================================================
+### report_00
+==============================================================================
+Based on the image provided, here is the analysis of the "Geospatial Labs" sample report:
+
+*   **Visible Report Sections:** The view covers the **Header/Cover** (including site metadata), **Executive Summary** (Section 01), **Candidate Site Overview** (Section 02), **Project/Use Assumptions** (Section 03), **Utility & Jurisdiction Context** (Section 04), **Published Grid / Interconnection Context** (Section 05), and the beginning of **Parcel/Site Context** (Section 06).
+*   **DEMO DATA Disclaimer:** Yes, a disclaimer is highly prominent. It appears in a dedicated banner at the very top of the content area: *"Illustrative sample. This brief is built on demo data..."* It is also repeated as a yellow pill badge labeled **"Demo data"** next to the version number, and within the text of Section 01.
+*   **Status Pills/Badges:** Yes, several status pills are visible with specific styling:
+    *   **"Demo data":** Light yellow background, dark text/border.
+    *   **"Unknown":** Light gray background, dark text, circular icon (used for Queue Position and Capacity).
+    *   **"Requires deeper diligence":** Light blue background, blue text, icon (used for Nearby Line).
+    *   **Source Tags:** Small green dots followed by text (e.g., "County assessor / parcel GIS") used to indicate data sources.
+*   **Credibility & Aesthetics:** The report looks highly **credible and professional**. It uses a clean, structured layout with clear typography hierarchy, organized card-based sections, and specific technical terminology (e.g., APN, CPUC, CAISO). While it is a sample, it mimics the look of a high-end due diligence deliverable rather than a rough wireframe.
+*   **Visual Defects:**
+    *   **No major layout breaks:** The alignment is precise and tables are not clipped.
+    *   **No Placeholder Text:** There is no "lorem ipsum"; all text is contextual and relevant to a BESS (Battery Energy Storage System) screening.
+    *   **Minor UI Element:** There is a floating black circle with an "N" on the left margin (likely a navigation or accessibility widget) that overlaps the whitespace but does not obscure report content.
+
+==============================================================================
+### report_01
+==============================================================================
+Here are the answers based on the provided image:
+
+*   **Visible Report Sections:** The image displays the **Findings Table** (Section 10: "All findings, with status and source") at the bottom. Above it are detailed **Context/Analysis sections** including:
+    *   Section 06: "Parcel basics and constraints"
+    *   Section 07: "Permitting / Planning context" ("Conflicting public records")
+    *   Section 08: "Environmental / Siting context" ("Mapped public layers")
+    *   Section 09: "Relevant project signals" ("Nearby public-record activity")
+
+*   **Disclaimer Visibility:** There is no "DEMO DATA" watermark or banner. However, the word **"(illustrative)"** is appended to almost every data point (e.g., "Heavy industrial use... (illustrative)", "Conditional Use Permit... (illustrative)"). This serves as a persistent, inline disclaimer that the content is sample data.
+
+*   **Status Pills/Badges:** Yes, status pills are used extensively in both the analysis cards and the final table.
+    *   **Verified:** Light green background with dark green text and a checkmark icon.
+    *   **Conflicting:** Light orange/yellow background with dark text and a warning triangle icon.
+    *   **Unknown:** Light grey background with dark text and a question mark icon.
+    *   **Requires deeper diligence:** Light blue background with dark text and a magnifying glass icon.
+    *   Styling is consistent: rounded rectangles (pills), small font size, right-aligned in their containers.
+
+*   **Credibility & Professionalism:** The report looks highly **credible and professional**. It uses a clean, structured layout with clear hierarchy (numbered sections, bold headings). The inclusion of specific source references (e.g., "Source: SRC-05") and nuanced status classifications (like "Conflicting" vs just "False") makes it look like a high-quality proof-of-concept rather than a rough mockup.
+
+*   **Visual Defects:** There are **no significant visual defects**.
+    *   **Layout:** Tables and cards are well-aligned with consistent padding.
+    *   **Text:** There is no "lorem ipsum"; all text is realistic domain-specific content (zoning, permitting, environmental overlays).
+    *   **Clipping:** No content appears clipped or overflowing.
+    *   **Contrast:** Text contrast is high and readable.
+
+==============================================================================
+### report_02
+==============================================================================
+Based on the image provided, here is the analysis of the report segment:
+
+*   **Visible Report Sections:** The image displays the tail end of a **Findings Table** (rows F-10 through F-14), followed by a **Legend**, a **Source Register** (Section 11: "Identified sources for this brief"), a **Next-Stage Diligence** section (Section 12: "What to pursue next — and why"), and a **Scope & Limitations** section (Section 13).
+*   **"DEMO DATA" Disclaimer:** Yes, a disclaimer is visible. It is located in Section 13 ("Scope & Limitations") and states: *"This is an illustrative sample built on demo data. It is not a customer engagement..."*. It is also mentioned in the intro to the Source Register: *"...Illustrative sample sources are placeholders that real source-backed data would replace."*
+*   **Status Pills/Badges:** Yes, four distinct status pills are used in the findings table and legend:
+    *   **Verified:** Light green background with green text and a checkmark icon.
+    *   **Unknown:** Light gray background with dark gray text and a question mark icon.
+    *   **Conflicting:** Light orange/peach background with orange text and a warning triangle icon.
+    *   **Requires deeper diligence:** Light blue background with blue text and a magnifying glass icon.
+    *   *Styling:* All pills feature rounded corners (full radius), subtle background fills, and accompanying icons for quick visual scanning.
+*   **Credibility & Professionalism:** The report looks highly **credible, professional, and "proof-like."** The layout is clean, utilizing a structured grid system, consistent typography (likely a sans-serif like Inter), and a muted, professional color palette (grays, whites, and functional accent colors). The content uses specific industry terminology (e.g., "115 kV line," "BESS," "IOU service territory") rather than generic filler.
+*   **Visual Defects:** There are **no significant visual defects**. The tables are aligned, text is fully legible (no "lorem ipsum"), and there is no evidence of clipped content or overflowing elements. The contrast ratios appear accessible, and the hierarchy between headings (e.g., "11 · SOURCE REGISTER"), subheadings, and body text is clear and well-spaced.
+
+==============================================================================
+### report_03
+==============================================================================
+Based on the image provided, here is the analysis of the report segment:
+
+*   **Visible Section:** The image displays the **Scope/Limitations** (or Disclaimers) section at the top, followed by a **Footer** containing company branding, navigation links, and copyright information.
+*   **Demo Data Disclaimer:** Yes, it is highly prominent. The top section consists entirely of disclaimers, starting with: *"This is an illustrative sample built on demo data."* The footer also repeats: *"Illustrative sample brief · Built on demo data."*
+*   **Status Pills/Badges:** There are no status pills or badges indicating specific findings (like "Clear" or "Unverified") visible in this segment. There is, however, a styled "value proposition" badge/pill near the bottom left that reads: **"Source-backed research · clear unknowns · preliminary diligence"**. It features a green shield icon and light gray background with dark text.
+*   **Credibility/Aesthetic:** The report looks **professional and credible**. It uses clean typography, a structured layout with clear headings ("PRODUCT", "METHODOLOGY", "COMPANY"), and consistent branding (logo, color scheme). It does not look like a rough mockup.
+*   **Visual Defects:** There are **no significant visual defects**. The text is fully legible (no "lorem ipsum"), alignment is precise, contrast is high, and nothing appears clipped or overflowing.

@@ -1,0 +1,6 @@
+This is a high-resolution crop of the HERO region (top of desktop page, 1440px wide) for "Geospatial Labs". Focus ONLY on the hero. Answer precisely:
+1) Is there a "report preview" card visible (e.g. "Site Screen / Illustrative sample")? Describe it.
+2) CRITICAL: Are there any STACKED "depth cards" visible BEHIND or AROUND the main report preview card (offset cards creating a layered/stacked depth effect)? If yes describe how many, their position (behind top-left, behind bottom-right, etc), color, and whether they look intentional. If NO stacked cards at all, say "NO stacked depth cards" explicitly.
+3) The headline "Know what deserves a deeper look." - is the phrase "a deeper look" underlined, and is that underline a clean straight line or wavy/squiggly/jagged?
+4) Is the hero cramped or clean/spacious? Any overflow, clipping, weird gutters?
+Be concrete and concise.

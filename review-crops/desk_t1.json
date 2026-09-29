@@ -1,0 +1,28 @@
+{
+  "choices": [
+    {
+      "finish_reason": "stop",
+      "index": 0,
+      "message": {
+        "content": "VISIBLE_SECTIONS:\n- **Scope Note / Disclaimer**: Background is off-white #FAFBFC. No topographic motif.\n- **\"How It Works\" (Workflow Section)**: Background is off-white #FAFBFC. Contains a white card with 4 steps. No topographic motif.\n- **\"Sample Report Preview\" (Report Section)**: Background is off-white #FAFBFC with a subtle, light-gray dot-grid/parcel-grid SVG motif behind it. Contains a large \"Preliminary Site Intelligence Brief\" card and a sidebar \"What a full brief includes\" card.\n- **\"Who It's For\" (Audience Section - Eyebrow only)**: Background is off-white #FAFBFC. No visible topographic motif in this slice.\n\nHEADINGS_OCR:\n- HOW IT WORKS\n- From candidate site to organized evidence\n- SAMPLE REPORT PREVIEW\n- See what a paid preliminary site screen looks like\n- WHO IT'S FOR\n- Built for teams making expensive site decisions\n\nSERIF_CHECK: **SERIF (Newsreader)**. The headings clearly have serifs (feet). Evidence: \"From candidate site to organized evidence\" — the 'F', 'r', 'o', 'm', 's', 'i', 't' all show distinct terminal serifs characteristic of an editorial serif font.\n\nEMERALD_ACCENT:\n- Used for the eyebrow labels (\"HOW IT WORKS\", \"SAMPLE REPORT PREVIEW\", \"WHO IT'S FOR\") with a preceding emerald dash.\n- Used for the step numbers (01, 02, 03, 04).\n- Used for the primary CTA button background at the bottom right (\"View full sample report\").\n- Used for the arrow icon in that button and the \"Open full brief\" link.\n- Used for the status badges (\"Verified\", \"Conflicting\").\n- **Verdict**: It feels premium and restrained. The emerald is a deep, professional forest green, not neon or garish.\n\nDEFECTS:\n- None. The layout is clean, text is well-aligned, gutters are even, and there is no horizontal overflow or clipping at the edges of this tile.\n\nHERO_REPORT_PREVIEW:\n- This is not the hero section, but it *is* a **Report Preview** section.\n- There are no stacked \"depth cards\" visible behind the main report card in this specific vertical slice (it appears to be a single primary card with a sidebar).\n- The phrase \"**a deeper look**\" is present inside a light-blue pill-shaped badge within the \"Interconnection\" row of the table. It does not have an underline (straight or wavy) in this view; it is just text inside a styled container.\n- The section feels clean and spacious, not cramped.\n\nTRUSTBAR_EYEBROW:\n- Not visible in this tile.\n\nSCORE_THIS_TILE: **9/10**\n(The design perfectly matches the brief: premium B2B editorial feel, correct font usage, excellent whitespace, and sophisticated use of the emerald accent. The dot-grid motif in the report section adds great texture without being distracting.)\n\nNOTES:\n- The \"Scope note\" at the very top suggests this tile starts mid-page or just below a header/hero area.\n- The typography hierarchy is excellent, using the serif for major impact and sans-serif (Inter) for the dense data in the report preview, which aids readability.\n- The use of status badges (Verified vs. Conflicting) inside the report preview adds a layer of realistic \"intelligence\" UI that fits the brand promise.",
+        "role": "assistant"
+      }
+    }
+  ],
+  "created": 1790683812,
+  "id": "20260929200958d2df5c8a2a834a0b",
+  "model": "glm-5v-turbo",
+  "object": "chat.completion",
+  "request_id": "20260929200958d2df5c8a2a834a0b",
+  "usage": {
+    "completion_tokens": 731,
+    "completion_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "prompt_tokens": 4687,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "total_tokens": 5418
+  }
+}
