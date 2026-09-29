@@ -1,5 +1,5 @@
 /**
- * Mapbox GL JS & Geocoding configuration for Geospatial Labs.
+ * Mapbox GL JS & Geocoding configuration for GeoSpatia Labs.
  *
  * TRUST & SECURITY RULES:
  * - Only use client-side public tokens with restricted URL/domain scopes.

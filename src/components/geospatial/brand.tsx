@@ -8,7 +8,7 @@ const EMERALD_PATH_D =
   "M 501.0 341.0 L 522.0 341.0 L 535.0 345.0 L 547.0 352.0 L 557.0 361.0 L 563.0 369.0 L 569.0 382.0 L 571.0 390.0 L 570.0 416.0 L 566.0 427.0 L 560.0 437.0 L 548.0 449.0 L 542.0 453.0 L 534.0 457.0 L 519.0 461.0 L 503.0 461.0 L 494.0 459.0 L 482.0 454.0 L 472.0 447.0 L 465.0 440.0 L 458.0 430.0 L 453.0 418.0 L 451.0 408.0 L 452.0 387.0 L 455.0 378.0 L 463.0 364.0 L 474.0 353.0 L 480.0 349.0 L 487.0 345.0 L 501.0 341.0 Z M 681.0 564.0 L 720.0 564.0 L 751.0 568.0 L 788.0 577.0 L 823.0 589.0 L 829.0 592.0 L 829.0 594.0 L 813.0 623.0 L 798.0 617.0 L 771.0 609.0 L 732.0 602.0 L 718.0 602.0 L 717.0 601.0 L 689.0 602.0 L 658.0 608.0 L 633.0 617.0 L 608.0 631.0 L 540.0 682.0 L 512.0 699.0 L 474.0 715.0 L 410.0 736.0 L 383.0 749.0 L 367.0 760.0 L 357.0 769.0 L 343.0 787.0 L 338.0 798.0 L 308.0 762.0 L 313.0 752.0 L 326.0 737.0 L 339.0 726.0 L 355.0 716.0 L 396.0 698.0 L 405.0 696.0 L 456.0 678.0 L 493.0 661.0 L 535.0 635.0 L 589.0 596.0 L 618.0 580.0 L 646.0 570.0 L 681.0 564.0 Z";
 
 /**
- * Geospatial Labs brand mark.
+ * GeoSpatia Labs brand mark.
  * Clean navy/slate location marker with a central emerald grid node and subtle terrain contours.
  */
 export function BrandMark({
@@ -43,8 +43,8 @@ export function BrandMark({
 }
 
 /**
- * Geospatial Labs horizontal wordmark.
- * Renders the clean location marker beside the exact text "Geospatial Labs".
+ * GeoSpatia Labs horizontal wordmark.
+ * Renders the clean location marker beside "GeoSpatia Labs" with "Labs" highlighted in emerald.
  */
 export function BrandWordmark({
   className,
@@ -57,19 +57,19 @@ export function BrandWordmark({
     <span className={cn("inline-flex items-center", className)}>
       <Image
         src="/geospatial-labs-wordmark.svg"
-        alt="Geospatial Labs"
-        width={184}
-        height={36}
+        alt="GeoSpatia Labs"
+        width={192}
+        height={40}
         priority={priority}
-        className="h-8 w-auto dark:hidden"
+        className="h-9 md:h-10 w-auto dark:hidden"
       />
       <Image
         src="/geospatial-labs-wordmark-dark.svg"
-        alt="Geospatial Labs"
-        width={184}
-        height={36}
+        alt="GeoSpatia Labs"
+        width={192}
+        height={40}
         priority={priority}
-        className="hidden h-8 w-auto dark:block"
+        className="hidden h-9 md:h-10 w-auto dark:block"
       />
     </span>
   );
@@ -92,7 +92,7 @@ export function Logo({
         onNavigateHome && "cursor-pointer rounded-md outline-none focus-visible:ring-2 focus-visible:ring-ring/50",
         className,
       )}
-      aria-label="Geospatial Labs — home"
+      aria-label="GeoSpatia Labs — home"
     >
       <BrandWordmark priority />
     </Comp>

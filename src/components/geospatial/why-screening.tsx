@@ -42,7 +42,7 @@ export function WhyScreening() {
       <SectionHeading
         eyebrow="Why early screening matters"
         title="Less research friction. Earlier questions."
-        intro="Geospatial Labs is designed to reduce the cost of organizing early evidence — so teams can focus deeper diligence where it’s most warranted. No inflated savings claims, just a cleaner starting point."
+        intro="GeoSpatia Labs is designed to reduce the cost of organizing early evidence — so teams can focus deeper diligence where it’s most warranted. No inflated savings claims, just a cleaner starting point."
       />
 
       <div className="mt-12 grid grid-cols-1 gap-4 md:grid-cols-2">

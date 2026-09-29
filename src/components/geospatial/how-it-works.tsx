@@ -15,7 +15,7 @@ const steps = [
     n: "02",
     title: "We gather and reconcile evidence",
     detail:
-      "Geospatial Labs pulls relevant public-source evidence across grid, parcel, permitting, environmental, and project layers — and reconciles it.",
+      "GeoSpatia Labs pulls relevant public-source evidence across grid, parcel, permitting, environmental, and project layers — and reconciles it.",
     tag: "Identified sources only",
   },
   {

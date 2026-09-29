@@ -29,11 +29,11 @@ const newsreader = Newsreader({
 export const metadata: Metadata = {
   metadataBase: new URL("https://geospatialabs.com"),
   title: {
-    default: "Geospatial Labs — Preliminary Site Intelligence for Energy Development",
-    template: "%s · Geospatial Labs",
+    default: "GeoSpatia Labs — Preliminary Site Intelligence for Energy Development",
+    template: "%s · GeoSpatia Labs",
   },
   description:
-    "Geospatial Labs brings together source-backed grid, interconnection, parcel, permitting, environmental, and project context to help California BESS development teams screen candidate sites before committing deeper resources.",
+    "GeoSpatia Labs brings together source-backed grid, interconnection, parcel, permitting, environmental, and project context to help California BESS development teams screen candidate sites before committing deeper resources.",
   keywords: [
     "site intelligence",
     "preliminary site screening",
@@ -44,9 +44,9 @@ export const metadata: Metadata = {
     "site diligence",
     "source-backed research",
   ],
-  authors: [{ name: "Geospatial Labs" }],
-  creator: "Geospatial Labs",
-  publisher: "Geospatial Labs",
+  authors: [{ name: "GeoSpatia Labs" }],
+  creator: "GeoSpatia Labs",
+  publisher: "GeoSpatia Labs",
   icons: {
     icon: [
       { url: "/favicon.svg", type: "image/svg+xml" },
@@ -60,17 +60,17 @@ export const metadata: Metadata = {
     shortcut: ["/favicon.svg"],
   },
   openGraph: {
-    title: "Geospatial Labs — Preliminary Site Intelligence for Energy Development",
+    title: "GeoSpatia Labs — Preliminary Site Intelligence for Energy Development",
     description:
       "Source-backed preliminary site screens for California BESS development teams. Bring the evidence together before committing deeper resources.",
     url: "https://geospatialabs.com",
-    siteName: "Geospatial Labs",
+    siteName: "GeoSpatia Labs",
     type: "website",
     locale: "en_US",
   },
   twitter: {
     card: "summary_large_image",
-    title: "Geospatial Labs — Preliminary Site Intelligence for Energy Development",
+    title: "GeoSpatia Labs — Preliminary Site Intelligence for Energy Development",
     description:
       "Source-backed preliminary site screens for California BESS development teams. Bring the evidence together before committing deeper resources.",
   },

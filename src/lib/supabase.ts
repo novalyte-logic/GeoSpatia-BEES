@@ -1,7 +1,7 @@
 import { createClient, type SupabaseClient } from "@supabase/supabase-js";
 
 /**
- * Client-safe Supabase configuration for Geospatial Labs.
+ * Client-safe Supabase configuration for GeoSpatia Labs.
  *
  * TRUST & SECURITY RULES:
  * - NEVER import or expose a service_role key, database password, or private secret.

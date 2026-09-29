@@ -43,7 +43,7 @@
   --radius-lg: var(--radius);
   --radius-xl: calc(var(--radius) + 4px);
 
-  /* Geospatial Labs brand tokens */
+  /* GeoSpatia Labs brand tokens */
   --color-canvas: var(--canvas);
   --color-ink: var(--ink);
   --color-ink-soft: var(--ink-soft);

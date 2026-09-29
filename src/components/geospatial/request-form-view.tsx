@@ -722,7 +722,7 @@ function SuccessView({
             </div>
             <h1 className="mt-6 display-md text-ink">Inquiry received.</h1>
             <p className="mx-auto mt-4 max-w-xl text-[1.0625rem] leading-relaxed text-muted-foreground">
-              We have received your site screening inquiry. The Geospatial Labs
+              We have received your site screening inquiry. The GeoSpatia Labs
               team will review whether your candidate site fits our current
               California BESS screening scope and follow up directly by email.
             </p>

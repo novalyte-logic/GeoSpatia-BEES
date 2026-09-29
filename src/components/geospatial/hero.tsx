@@ -49,7 +49,7 @@ export function Hero() {
           </h1>
 
           <p className="mt-6 max-w-xl text-[1.0625rem] leading-relaxed text-muted-foreground text-pretty">
-            Geospatial Labs brings together source-backed grid, interconnection,
+            GeoSpatia Labs brings together source-backed grid, interconnection,
             parcel, permitting, environmental, and project context into a
             manually prepared brief — helping California BESS development teams
             screen candidate sites before committing deeper engineering or legal

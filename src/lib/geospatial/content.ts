@@ -1,4 +1,4 @@
-/** Shared types + content for the Geospatial Labs marketing site. */
+/** Shared types + content for the GeoSpatia Labs marketing site. */
 
 export type ViewId = "home" | "sample-report" | "request";
 
@@ -24,7 +24,7 @@ export const footerNav = {
     { label: "Scope & limitations", href: "/sample-report#scope" },
   ],
   Company: [
-    { label: "About Geospatial Labs", href: "/#about" },
+    { label: "About GeoSpatia Labs", href: "/#about" },
     { label: "Who it's for", href: "/#audience" },
     { label: "FAQ", href: "/#faq" },
     { label: "Contact", href: "/request" },

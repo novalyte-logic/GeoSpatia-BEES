@@ -10,7 +10,7 @@ export function About() {
       <SectionHeading
         eyebrow="About"
         title="Building an evidence-first research workflow"
-        intro="Geospatial Labs is a small, focused effort to build an evidence-first research workflow for early infrastructure development decisions — starting with California battery-energy-storage site screening."
+        intro="GeoSpatia Labs is a small, focused effort to build an evidence-first research workflow for early infrastructure development decisions — starting with California battery-energy-storage site screening."
       />
 
       <div className="mt-12 grid grid-cols-1 gap-6 lg:grid-cols-12">
@@ -20,7 +20,7 @@ export function About() {
               <BrandMark size={40} />
               <div>
                 <p className="text-base font-semibold text-ink">
-                  Geospatial Labs
+                  GeoSpatia <span className="text-emerald">Labs</span>
                 </p>
                 <p className="text-sm text-muted-foreground">
                   Preliminary site intelligence for energy development
@@ -30,7 +30,7 @@ export function About() {
 
             <div className="space-y-4 text-[15px] leading-relaxed text-muted-foreground">
               <p>
-                Geospatial Labs is building an evidence-first research workflow
+                GeoSpatia Labs is building an evidence-first research workflow
                 for early infrastructure development decisions. The starting
                 point is a real, repeated problem: development teams evaluate
                 many candidate sites, and the relevant public information is

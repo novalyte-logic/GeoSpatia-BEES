@@ -12,7 +12,7 @@ export function SiteFooter() {
         <div className="grid grid-cols-2 gap-8 md:grid-cols-12">
           {/* Brand + positioning */}
           <div className="col-span-2 md:col-span-5">
-            <Link href="/" className="inline-block" aria-label="Geospatial Labs home">
+            <Link href="/" className="inline-block" aria-label="GeoSpatia Labs home">
               <Logo />
             </Link>
             <p className="mt-4 max-w-sm text-sm leading-relaxed text-muted-foreground">
@@ -75,7 +75,7 @@ export function SiteFooter() {
         </div>
 
         <div className="mt-10 flex flex-col items-start justify-between gap-3 border-t border-line pt-6 text-xs text-muted-foreground sm:flex-row sm:items-center">
-          <p>© {new Date().getFullYear()} Geospatial Labs. All rights reserved.</p>
+          <p>© {new Date().getFullYear()} GeoSpatia Labs. All rights reserved.</p>
           <p className="max-w-xl leading-relaxed">
             Preliminary research only — not engineering, utility, legal, or
             agency determination. Final feasibility, cost, capacity, and

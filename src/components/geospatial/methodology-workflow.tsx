@@ -349,7 +349,7 @@ export function MethodologyWorkflow() {
               <svg
                 viewBox="0 0 960 210"
                 className="w-full h-auto select-none"
-                aria-label="Geospatial Labs 6-stage methodology flow"
+                aria-label="GeoSpatia Labs 6-stage methodology flow"
               >
                 <defs>
                   {/* Gradients */}
@@ -850,14 +850,14 @@ export function MethodologyWorkflow() {
               </ul>
             </div>
 
-            {/* Geospatial Labs Architecture Box */}
+            {/* GeoSpatia Labs Architecture Box */}
             <div className="rounded-xl border border-emerald/40 bg-emerald/5 p-6 relative overflow-hidden">
               <div className="flex items-center gap-2.5">
                 <div className="flex size-8 items-center justify-center rounded-lg bg-emerald/20 text-emerald">
                   <ShieldCheck className="size-4.5" />
                 </div>
                 <div>
-                  <h4 className="font-semibold text-ink">Geospatial Labs Methodology</h4>
+                  <h4 className="font-semibold text-ink">GeoSpatia Labs Methodology</h4>
                   <p className="text-xs text-emerald font-semibold">Evidence first · AI second</p>
                 </div>
               </div>

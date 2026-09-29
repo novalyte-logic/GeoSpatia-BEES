@@ -211,7 +211,7 @@ export function SampleReportView() {
             What a preliminary site intelligence brief covers.
           </h1>
           <p className="mt-4 max-w-3xl text-[1.0625rem] leading-relaxed text-muted-foreground text-pretty">
-            When you engage Geospatial Labs for a candidate California BESS site,
+            When you engage GeoSpatia Labs for a candidate California BESS site,
             we prepare a structured intelligence brief drawn from published,
             verifiable public records. Here is the exact nine-part framework used
             to organize findings, unknowns, and next-stage diligence.
@@ -231,7 +231,7 @@ export function SampleReportView() {
               The 4-Part Evidence Classification Framework
             </h2>
             <p className="mt-2 text-sm leading-relaxed text-muted-foreground">
-              Every finding in a Geospatial Labs brief is strictly tagged with one of four
+              Every finding in a GeoSpatia Labs brief is strictly tagged with one of four
               evidentiary statuses. We do not blend inferred commentary with statutory fact.
             </p>
           </div>
@@ -351,9 +351,9 @@ export function SampleReportView() {
                 Clear Scope & Diligence Boundaries
               </h3>
               <p className="mt-2 text-sm leading-relaxed text-muted-foreground">
-                Geospatial Labs provides preliminary research and decision intelligence
+                GeoSpatia Labs provides preliminary research and decision intelligence
                 designed to organize public information before deeper expenditure.
-                Geospatial Labs does not provide final engineering designs, guarantee
+                GeoSpatia Labs does not provide final engineering designs, guarantee
                 interconnection capacity or queue feasibility, make utility determinations,
                 render legal opinions, or issue environmental clearance.
               </p>

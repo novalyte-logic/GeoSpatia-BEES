@@ -87,7 +87,7 @@ export function WhoItsFor() {
 
       <p className="mt-8 text-sm text-muted-foreground">
         <span className="font-medium text-ink">Scope note:</span> at launch,
-        Geospatial Labs focuses on California battery-energy-storage screening.
+        GeoSpatia Labs focuses on California battery-energy-storage screening.
         Other geographies, technologies, and use cases are added deliberately —
         not implied.
       </p>

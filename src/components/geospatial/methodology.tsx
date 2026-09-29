@@ -22,7 +22,7 @@ export function Methodology() {
       <SectionHeading
         eyebrow="Methodology & Diligence Standards"
         title="Evidence first. Transparent unknowns."
-        intro="Geospatial Labs executes a disciplined, manually prepared research process. We assemble verifiable public records across agencies, identify material unknowns, and surface discrepancies before deeper capital commitments."
+        intro="GeoSpatia Labs executes a disciplined, manually prepared research process. We assemble verifiable public records across agencies, identify material unknowns, and surface discrepancies before deeper capital commitments."
       />
 
       {/* Interactive Workflow Diagram & Stage Inspector */}
@@ -92,7 +92,7 @@ export function Methodology() {
               4. Fact vs Inference Distinction
             </h3>
             <p className="mt-2 text-sm leading-relaxed text-muted-foreground">
-              What is published statutory fact versus what Geospatial Labs infers or recommends is clearly demarcated in distinct report sections and confidence tiers.
+              What is published statutory fact versus what GeoSpatia Labs infers or recommends is clearly demarcated in distinct report sections and confidence tiers.
             </p>
           </div>
           <div className="mt-4 pt-3 border-t border-line-soft font-mono text-[11px] text-azure">
@@ -109,7 +109,7 @@ export function Methodology() {
               5. Preliminary Intelligence, Not Final Engineering
             </h3>
             <p className="mt-2 text-sm leading-relaxed text-muted-foreground">
-              Geospatial Labs arms development teams with early-stage site intelligence to decide whether to advance to option agreements. Final approvals, capacity, and stamps rest with utilities, structural/civil engineers, and regulatory authorities.
+              GeoSpatia Labs arms development teams with early-stage site intelligence to decide whether to advance to option agreements. Final approvals, capacity, and stamps rest with utilities, structural/civil engineers, and regulatory authorities.
             </p>
           </div>
           <div className="mt-4 pt-3 border-t border-line-soft font-mono text-[11px] text-emerald">

@@ -10,8 +10,8 @@ import {
 
 const faqs = [
   {
-    q: "Is Geospatial Labs an engineering firm?",
-    a: "No. Geospatial Labs provides preliminary research and decision intelligence. It does not replace formal engineering, utility studies, interconnection studies, legal advice, environmental consulting, or agency determinations. Final feasibility, cost, capacity, and approvals remain with the appropriate licensed professionals and authorities.",
+    q: "Is GeoSpatia Labs an engineering firm?",
+    a: "No. GeoSpatia Labs provides preliminary research and decision intelligence. It does not replace formal engineering, utility studies, interconnection studies, legal advice, environmental consulting, or agency determinations. Final feasibility, cost, capacity, and approvals remain with the appropriate licensed professionals and authorities.",
   },
   {
     q: "Does a site screen guarantee interconnection capacity or project feasibility?",
@@ -48,7 +48,7 @@ export function Faq() {
       <SectionHeading
         eyebrow="FAQ"
         title="Straight answers to the obvious questions"
-        intro="If something here is unclear, ask us. We’d rather tell you what Geospatial Labs doesn’t do than imply it does more than it can support."
+        intro="If something here is unclear, ask us. We’d rather tell you what GeoSpatia Labs doesn’t do than imply it does more than it can support."
       />
 
       <div className="mt-12 mx-auto max-w-3xl">

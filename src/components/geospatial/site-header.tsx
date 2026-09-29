@@ -32,7 +32,7 @@ export function SiteHeader() {
       )}
     >
       <div className="mx-auto flex h-16 w-full max-w-[1600px] items-center justify-between px-5 sm:px-6 lg:px-10 xl:px-16">
-        <Link href="/" className="inline-flex items-center" aria-label="Geospatial Labs home">
+        <Link href="/" className="inline-flex items-center" aria-label="GeoSpatia Labs home">
           <Logo />
         </Link>
 
