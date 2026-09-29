@@ -48,7 +48,16 @@ export const metadata: Metadata = {
   creator: "Geospatial Labs",
   publisher: "Geospatial Labs",
   icons: {
-    icon: "/logo.svg",
+    icon: [
+      { url: "/favicon.svg", type: "image/svg+xml" },
+      { url: "/favicon-32x32.png", sizes: "32x32", type: "image/png" },
+      { url: "/favicon-16x16.png", sizes: "16x16", type: "image/png" },
+      { url: "/favicon.ico", sizes: "48x48" },
+    ],
+    apple: [
+      { url: "/apple-touch-icon.png", sizes: "180x180", type: "image/png" },
+    ],
+    shortcut: ["/favicon.svg"],
   },
   openGraph: {
     title: "Geospatial Labs — Preliminary Site Intelligence for Energy Development",
@@ -81,6 +90,11 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" suppressHydrationWarning>
+      <head>
+        <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+        <link rel="alternate icon" href="/favicon.ico" />
+        <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+      </head>
       <body
         className={`${inter.variable} ${jetbrains.variable} ${newsreader.variable} antialiased bg-background text-foreground`}
       >

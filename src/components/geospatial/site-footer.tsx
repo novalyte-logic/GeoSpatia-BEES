@@ -12,7 +12,7 @@ export function SiteFooter() {
         <div className="grid grid-cols-2 gap-8 md:grid-cols-12">
           {/* Brand + positioning */}
           <div className="col-span-2 md:col-span-5">
-            <Link href="/">
+            <Link href="/" className="inline-block" aria-label="Geospatial Labs home">
               <Logo />
             </Link>
             <p className="mt-4 max-w-sm text-sm leading-relaxed text-muted-foreground">
