@@ -80,10 +80,15 @@ export async function insertSiteScreenRequest(
   }
 
   try {
-    const { data, error } = await client
+    const id = crypto.randomUUID();
+    const createdAt = new Date().toISOString();
+
+    const { error, status } = await client
       .from("site_screen_requests")
       .insert([
         {
+          id,
+          created_at: createdAt,
           full_name: input.fullName.trim(),
           work_email: input.workEmail.trim().toLowerCase(),
           company: input.company.trim(),
@@ -97,12 +102,10 @@ export async function insertSiteScreenRequest(
           additional_notes: input.additionalNotes?.trim() || null,
           status: "new",
         },
-      ])
-      .select("id, created_at")
-      .single();
+      ]);
 
-    if (error) {
-      console.error("[supabase] insert failed:", error.message);
+    if (error || (status && status >= 400)) {
+      console.error("[supabase] insert failed:", error?.message || `HTTP ${status}`);
       return {
         success: false,
         error:
@@ -110,17 +113,10 @@ export async function insertSiteScreenRequest(
       };
     }
 
-    if (!data?.id) {
-      return {
-        success: false,
-        error: "Database insert completed without returning a confirmation ID.",
-      };
-    }
-
     return {
       success: true,
-      id: data.id,
-      createdAt: data.created_at,
+      id,
+      createdAt,
     };
   } catch (err) {
     console.error("[supabase] network exception during insert:", err);

@@ -526,8 +526,13 @@ export function RequestFormView({ onBack }: { onBack?: () => void } = {}) {
                       <p className="mt-1">
                         We use the information you submit solely to review whether
                         your candidate site fits our research scope and to respond
-                        to your inquiry. We do not sell data or share candidate site
-                        locations with third parties.
+                        to your inquiry. Submission data is stored via Supabase and
+                        hosted on Vercel. We do not sell data or share candidate site
+                        locations beyond the processors necessary to provide this service.
+                        Read our full{" "}
+                        <Link href="/privacy" className="underline text-emerald hover:text-emerald-soft">
+                          privacy policy
+                        </Link>.
                       </p>
                     </div>
                   </label>

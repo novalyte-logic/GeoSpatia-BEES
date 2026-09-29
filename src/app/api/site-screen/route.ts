@@ -94,14 +94,52 @@ const schema = z.object({
   hp_website: z.string().max(0, "Submission rejected.").optional().or(z.literal("")),
 });
 
+// In-memory rate limiting and deduplication store
+type RateLimitRecord = { count: number; firstSeen: number };
+const rateLimitMap = new Map<string, RateLimitRecord>();
+const recentSubmissions = new Map<string, number>();
+
+const RATE_LIMIT_WINDOW_MS = 10 * 60 * 1000; // 10 minutes
+const MAX_REQUESTS_PER_WINDOW = 5;
+const DEDUP_WINDOW_MS = 30 * 1000; // 30 seconds
+
+function checkRateLimit(ip: string): boolean {
+  const now = Date.now();
+  const rec = rateLimitMap.get(ip);
+  if (!rec || now - rec.firstSeen > RATE_LIMIT_WINDOW_MS) {
+    rateLimitMap.set(ip, { count: 1, firstSeen: now });
+    return true;
+  }
+  if (rec.count >= MAX_REQUESTS_PER_WINDOW) {
+    return false;
+  }
+  rec.count += 1;
+  return true;
+}
+
 export async function POST(req: NextRequest) {
+  // Extract client IP for abuse prevention (fallback to header or remote address)
+  const forwardedFor = req.headers.get("x-forwarded-for");
+  const ip = forwardedFor ? forwardedFor.split(",")[0].trim() : "127.0.0.1";
+
+  if (!checkRateLimit(ip)) {
+    return NextResponse.json(
+      {
+        ok: false,
+        error:
+          "Too many inquiries received from this address. Please wait a few minutes before submitting another request or contact hello@geospatialabs.com directly.",
+      },
+      { status: 429 }
+    );
+  }
+
   let json: unknown;
   try {
     json = await req.json();
   } catch {
     return NextResponse.json(
       { ok: false, error: "Invalid request payload." },
-      { status: 400 },
+      { status: 400 }
     );
   }
 
@@ -118,7 +156,7 @@ export async function POST(req: NextRequest) {
         error: "Please review the highlighted fields.",
         fieldErrors,
       },
-      { status: 422 },
+      { status: 422 }
     );
   }
 
@@ -128,9 +166,25 @@ export async function POST(req: NextRequest) {
   if (d.hp_website && d.hp_website.length > 0) {
     return NextResponse.json(
       { ok: false, error: "Submission rejected." },
-      { status: 400 },
+      { status: 400 }
     );
   }
+
+  // Deduplication check: reject immediate identical submission within 30 seconds
+  const dedupKey = `${d.email}:${d.siteLocation.slice(0, 50)}`;
+  const now = Date.now();
+  const lastSubmitted = recentSubmissions.get(dedupKey);
+  if (lastSubmitted && now - lastSubmitted < DEDUP_WINDOW_MS) {
+    return NextResponse.json(
+      {
+        ok: false,
+        error:
+          "A request for this candidate site was already submitted moments ago. Our team has received it.",
+      },
+      { status: 409 }
+    );
+  }
+  recentSubmissions.set(dedupKey, now);
 
   if (!isSupabaseConfigured) {
     console.warn(
@@ -142,10 +196,11 @@ export async function POST(req: NextRequest) {
         error:
           "Database connection is currently pending setup. The site administrator must configure NEXT_PUBLIC_SUPABASE_URL and NEXT_PUBLIC_SUPABASE_ANON_KEY. Please email your inquiry directly to hello@geospatialabs.com in the meantime.",
       },
-      { status: 503 },
+      { status: 503 }
     );
   }
 
+  // Privacy rule: Do NOT log candidate coordinates or personal details in console logs
   const result = await insertSiteScreenRequest({
     fullName: d.name,
     workEmail: d.email,
@@ -166,7 +221,7 @@ export async function POST(req: NextRequest) {
         ok: false,
         error: result.error,
       },
-      { status: 500 },
+      { status: 500 }
     );
   }
 
@@ -178,7 +233,7 @@ export async function POST(req: NextRequest) {
       message:
         "We have received your site screening inquiry. Our team will review the candidate location against our current California research scope and follow up directly by email.",
     },
-    { status: 201 },
+    { status: 201 }
   );
 }
 

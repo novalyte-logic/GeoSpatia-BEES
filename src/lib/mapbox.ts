@@ -77,7 +77,8 @@ export async function searchAddress(
     const params = new URLSearchParams({
       access_token: MAPBOX_PUBLIC_TOKEN,
       country: "us",
-      // Proximity to California center biases results without excluding other US locations
+      bbox: CALIFORNIA_BBOX.join(","),
+      // Proximity to California center biases results within the California bounding box
       proximity: `${CALIFORNIA_CENTER[0]},${CALIFORNIA_CENTER[1]}`,
       types: "address,postcode,place,locality,poi",
       limit: "5",

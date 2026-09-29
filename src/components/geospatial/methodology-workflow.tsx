@@ -878,7 +878,7 @@ export function MethodologyWorkflow() {
                 <li className="flex items-start gap-2.5">
                   <CheckCircle2 className="mt-0.5 size-4 shrink-0 text-emerald" />
                   <span>
-                    <strong className="text-ink">100% Traceable Source Register:</strong> Every claim links to an identifiable public reference (SRC-01 to SRC-12) with portal docket numbers.
+                    <strong className="text-ink">Source-Referenced Register:</strong> Material findings include identifiable public references (SRC-01 to SRC-12) with portal docket numbers where available.
                   </span>
                 </li>
                 <li className="flex items-start gap-2.5">

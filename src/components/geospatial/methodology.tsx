@@ -38,10 +38,10 @@ export function Methodology() {
               <FileCheck2 className="size-5" />
             </div>
             <h3 className="mt-4 text-base font-semibold text-ink">
-              1. 100% Traceable Evidence
+              1. Source-Referenced Evidence
             </h3>
             <p className="mt-2 text-sm leading-relaxed text-muted-foreground">
-              Every material finding is documented directly to identified statutory records, utility filings, and recorded county documents with exact citations.
+              Material findings include public source references where available. Source availability varies by jurisdiction, and not all data points may be publicly indexed.
             </p>
           </div>
           <div className="mt-4 pt-3 border-t border-line-soft font-mono text-[11px] text-emerald">

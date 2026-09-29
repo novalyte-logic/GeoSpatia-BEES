@@ -75,7 +75,16 @@ export function SiteFooter() {
         </div>
 
         <div className="mt-10 flex flex-col items-start justify-between gap-3 border-t border-line pt-6 text-xs text-muted-foreground sm:flex-row sm:items-center">
-          <p>© {new Date().getFullYear()} GeoSpatia Labs. All rights reserved.</p>
+          <div className="flex items-center gap-3">
+            <p>© {new Date().getFullYear()} GeoSpatia Labs. All rights reserved.</p>
+            <span className="text-line hidden sm:inline">·</span>
+            <Link
+              href="/privacy"
+              className="text-muted-foreground hover:text-ink transition-colors"
+            >
+              Privacy Policy
+            </Link>
+          </div>
           <p className="max-w-xl leading-relaxed">
             Preliminary research only — not engineering, utility, legal, or
             agency determination. Final feasibility, cost, capacity, and

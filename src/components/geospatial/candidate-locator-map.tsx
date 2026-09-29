@@ -17,7 +17,7 @@ export function CandidateLocatorMap() {
       />
 
       <div className="mt-10 mx-auto w-full max-w-[1400px]">
-        <InteractiveLocatorMap />
+        <InteractiveLocatorMap lazyMount={true} />
       </div>
     </Section>
   );
