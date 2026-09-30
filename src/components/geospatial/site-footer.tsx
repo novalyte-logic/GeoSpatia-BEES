@@ -92,6 +92,10 @@ export function SiteFooter() {
             engineers, and authorities.
           </p>
         </div>
+
+        <div className="mt-6 border-t border-line/50 pt-4 text-center text-xs text-muted-foreground">
+          <p>Made with ❤️ in San Francisco</p>
+        </div>
       </div>
     </footer>
   );
