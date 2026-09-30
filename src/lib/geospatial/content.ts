@@ -6,6 +6,7 @@ export const navLinks: { label: string; href: string; target?: string }[] = [
   { label: "Product", href: "/#product", target: "product" },
   { label: "Methodology", href: "/#methodology", target: "methodology" },
   { label: "What a Brief Covers", href: "/sample-report" },
+  { label: "Pricing", href: "/#pricing", target: "pricing" },
   { label: "Who It's For", href: "/#audience", target: "audience" },
   { label: "About", href: "/#about", target: "about" },
 ];
@@ -15,7 +16,8 @@ export const footerNav = {
     { label: "What it brings together", href: "/#product" },
     { label: "How it works", href: "/#how-it-works" },
     { label: "What a brief covers", href: "/sample-report" },
-    { label: "Request a site screen", href: "/request" },
+    { label: "Pricing", href: "/#pricing" },
+    { label: "Reserve a paid screen", href: "/request" },
   ],
   Methodology: [
     { label: "Evidence-first approach", href: "/#methodology" },

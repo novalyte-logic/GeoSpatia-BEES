@@ -80,7 +80,7 @@ export function SiteHeader() {
             className="gap-1.5 bg-emerald text-emerald-foreground shadow-sm hover:bg-emerald-soft"
           >
             <Link href="/request">
-              Request a Site Screen
+              Reserve a Screen
               <ArrowRight className="size-3.5" />
             </Link>
           </Button>
@@ -126,7 +126,7 @@ export function SiteHeader() {
                 className="w-full bg-emerald text-emerald-foreground hover:bg-emerald-soft"
               >
                 <Link href="/request" onClick={() => setMobileOpen(false)}>
-                  Request a Site Screen
+                  Reserve a Paid Site Screen
                 </Link>
               </Button>
             </div>

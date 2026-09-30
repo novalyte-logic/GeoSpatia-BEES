@@ -84,8 +84,8 @@ export default function PrivacyPage() {
             </ul>
             <p className="mt-3">
               We do <strong className="text-ink">not</strong> collect payment
-              information through this form. No payment is requested at the
-              inquiry stage.
+              information through this form. Payment, when applicable, is
+              requested separately only after scope confirmation.
             </p>
           </section>
 

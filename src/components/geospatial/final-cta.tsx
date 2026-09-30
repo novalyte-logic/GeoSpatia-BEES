@@ -22,16 +22,17 @@ export function FinalCta() {
         <div className="relative">
           <span className="eyebrow inline-flex items-center gap-2 text-emerald">
             <span className="h-px w-5 bg-emerald/50" />
-            Final CTA
+            Founder-led launch offer
           </span>
           <h2 className="mt-3 display-md text-ink text-balance">
-            Before deeper diligence, get the evidence organized.
+            Before option spend, get the public evidence organized.
           </h2>
           <p className="mt-4 max-w-2xl text-[1.0625rem] leading-relaxed text-muted-foreground text-pretty">
             Send us a candidate California BESS site and tell us what you are
-            evaluating. We'll review whether it fits the current screening scope
-            — and if it does, we'll return a structured preliminary intelligence
-            brief with sources, findings, unknowns, and next-step questions.
+            evaluating. They can inspect the public sample brief first. If the
+            site fits current scope, we confirm the paid screen by email and
+            deliver a structured brief with sources, findings, unknowns,
+            conflicts, and next-step questions — no call required.
           </p>
 
           <div className="mt-8 flex flex-col gap-3 sm:flex-row sm:items-center">
@@ -41,7 +42,7 @@ export function FinalCta() {
               className="gap-2 bg-emerald text-emerald-foreground shadow-sm hover:bg-emerald-soft"
             >
               <Link href="/request">
-                Request a Site Screen
+                Reserve a Paid Site Screen
                 <ArrowRight className="size-4" />
               </Link>
             </Button>
@@ -59,9 +60,8 @@ export function FinalCta() {
           </div>
 
           <p className="mt-6 text-sm text-muted-foreground">
-            Privacy: we use the information you submit solely to evaluate and
-            respond to your request. We don't sell data and won't pretend a
-            submission succeeded when it hasn't.
+            Launch pricing begins at $1,500/site. We review scope first; payment
+            is handled after written confirmation, not through a sales call.
           </p>
         </div>
       </div>

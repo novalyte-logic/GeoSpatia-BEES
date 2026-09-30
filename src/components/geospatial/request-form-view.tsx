@@ -262,7 +262,7 @@ export function RequestFormView({ onBack }: { onBack?: () => void } = {}) {
           )}
           <div className="inline-flex items-center gap-1.5 rounded-md border border-line-soft bg-muted/40 px-2.5 py-1 text-[11px] text-muted-foreground">
             <ShieldCheck className="size-3.5 text-emerald" />
-            No payment requested at this stage
+            Scope reviewed before payment
           </div>
         </div>
       </div>
@@ -275,15 +275,16 @@ export function RequestFormView({ onBack }: { onBack?: () => void } = {}) {
         <div className="relative mx-auto w-full max-w-[1600px] px-5 py-12 sm:px-6 lg:px-10 xl:px-16 lg:py-16">
           <span className="eyebrow inline-flex items-center gap-2 text-emerald">
             <span className="h-px w-5 bg-emerald/50" />
-            Request a Site Screen
+            Reserve a Paid Site Screen
           </span>
           <h1 className="mt-3 display-md text-ink text-balance">
-            Tell us about a candidate California BESS site.
+            Reserve a founder-led California BESS site screen.
           </h1>
           <p className="mt-3 max-w-2xl text-[1.0625rem] leading-relaxed text-muted-foreground text-pretty">
-            You’re requesting a manually prepared preliminary site intelligence
-            brief. We’ll review whether the site fits our current research scope
-            and follow up directly by email.
+            Review the sample brief first, then submit the candidate location and
+            decision question. We review scope by email; if it fits current
+            coverage, we send the payment link before research begins. No sales
+            call is required.
           </p>
         </div>
       </header>
@@ -309,12 +310,13 @@ export function RequestFormView({ onBack }: { onBack?: () => void } = {}) {
             >
               <div className="border-b border-line bg-muted/40 px-6 py-4 sm:px-8">
                 <h2 className="text-lg font-semibold text-ink">
-                  Site screen request
+                  Paid site screen scope request
                 </h2>
                 <p className="mt-1 text-sm text-muted-foreground">
                   Fields marked <span className="text-emerald">*</span> are
-                  required. We respond by email — no call required unless you
-                  request one.
+                  required. We respond by email with scope fit, timing, and the
+                  correct launch package before any payment is requested — no
+                  call required.
                 </p>
               </div>
 
@@ -584,8 +586,8 @@ export function RequestFormView({ onBack }: { onBack?: () => void } = {}) {
 
               <div className="flex flex-col items-start justify-between gap-4 border-t border-line bg-muted/30 px-6 py-4 sm:flex-row sm:items-center sm:px-8">
                 <p className="text-xs text-muted-foreground">
-                  No payment is requested at this stage. Scope and fees are
-                  confirmed directly before any engagement begins.
+                  Payment is not collected in this form. Launch pricing starts at
+                  $1,500/site after scope confirmation.
                 </p>
                 <Button
                   type="submit"
@@ -598,7 +600,7 @@ export function RequestFormView({ onBack }: { onBack?: () => void } = {}) {
                       Submitting inquiry...
                     </>
                   ) : (
-                    "Submit site screen inquiry"
+                    "Submit scope request"
                   )}
                 </Button>
               </div>
@@ -658,13 +660,13 @@ function WhatHappensNext() {
       n: "2",
       title: "Scope & fee confirmation",
       detail:
-        "If the site fits our screening scope, we confirm delivery scope and fee directly by email before beginning research.",
+        "If the site fits our screening scope, we confirm the launch package, delivery timing, and payment link by email before beginning research.",
     },
     {
       n: "3",
       title: "Deliverable delivery",
       detail:
-        "You receive a structured preliminary intelligence brief with verified findings, clear unknowns, and specific questions for next-stage diligence.",
+        "After paid kickoff, you receive a structured preliminary intelligence brief and written handoff with verified findings, clear unknowns, and next-stage diligence questions.",
     },
   ];
 
@@ -752,9 +754,10 @@ function SuccessView({
             </div>
             <h1 className="mt-6 display-md text-ink">Inquiry received.</h1>
             <p className="mx-auto mt-4 max-w-xl text-[1.0625rem] leading-relaxed text-muted-foreground">
-              We have received your site screening inquiry. The GeoSpatia Labs
-              team will review whether your candidate site fits our current
-              California BESS screening scope and follow up directly by email.
+              We have received your site screen scope request. The GeoSpatia Labs
+              team will review whether your candidate site fits current
+              California BESS coverage and follow up by email with scope, timing,
+              and payment details if it qualifies. No call is required.
             </p>
 
             {referenceId && (

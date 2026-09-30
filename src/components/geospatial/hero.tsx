@@ -63,7 +63,7 @@ export function Hero() {
               className="gap-2 bg-emerald text-emerald-foreground shadow-sm hover:bg-emerald-soft cursor-pointer"
             >
               <Link href="/request">
-                Request a Site Screen
+                Reserve a Paid Site Screen
                 <ArrowRight className="size-4" />
               </Link>
             </Button>
@@ -83,7 +83,7 @@ export function Hero() {
           <div className="mt-6 flex flex-wrap items-center gap-4 text-xs text-muted-foreground">
             <span className="inline-flex items-center gap-1.5">
               <ShieldCheck className="size-4 text-emerald" />
-              Source-backed research · Transparent unknowns
+              Launch pricing from $1,500/site · Scope reviewed first
             </span>
             <span className="inline-flex items-center gap-1.5">
               <Compass className="size-4 text-emerald" />

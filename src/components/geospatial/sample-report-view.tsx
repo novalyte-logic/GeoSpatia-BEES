@@ -227,7 +227,7 @@ export function SampleReportView() {
               className="gap-2 bg-emerald text-emerald-foreground hover:bg-emerald-soft cursor-pointer text-xs"
             >
               <Link href="/request">
-                Request a Site Screen
+                Reserve a Paid Site Screen
                 <ArrowRight className="size-3.5" />
               </Link>
             </Button>
@@ -666,7 +666,7 @@ export function SampleReportView() {
                   Evaluate your California BESS candidate location
                 </h3>
                 <p className="text-xs sm:text-sm text-muted-foreground mt-1 max-w-xl">
-                  We prepare bespoke, source-backed preliminary intelligence briefs for specific candidate parcels across California. Submit your location to begin.
+                  Preview the worked example first, then submit your location online. Launch pricing starts at $1,500/site after written scope confirmation.
                 </p>
               </div>
               <Button
@@ -675,7 +675,7 @@ export function SampleReportView() {
                 className="gap-2 bg-emerald text-emerald-foreground hover:bg-emerald-soft shrink-0 cursor-pointer"
               >
                 <Link href="/request">
-                  Request a Site Screen
+                  Reserve a Paid Site Screen
                   <ArrowRight className="size-4" />
                 </Link>
               </Button>
@@ -840,8 +840,8 @@ export function SampleReportView() {
                   Ready to evaluate a California BESS site?
                 </h3>
                 <p className="text-sm text-muted-foreground mt-1">
-                  Submit your candidate location and evaluation question. We will review
-                  scope and confirm details before any research begins.
+                  Submit your candidate location and evaluation question online. We review
+                  scope by email, then confirm the paid engagement before research begins.
                 </p>
               </div>
               <Button
@@ -850,7 +850,7 @@ export function SampleReportView() {
                 className="gap-2 bg-emerald text-emerald-foreground hover:bg-emerald-soft shrink-0 cursor-pointer"
               >
                 <Link href="/request">
-                  Request a Site Screen
+                  Reserve a Paid Site Screen
                   <ArrowRight className="size-4" />
                 </Link>
               </Button>

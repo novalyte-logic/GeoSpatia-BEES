@@ -24,6 +24,7 @@ import {
   Mountain,
   Sparkles,
   RefreshCw,
+  CheckCircle2,
 } from "lucide-react";
 import {
   MAPBOX_PUBLIC_TOKEN,
@@ -58,6 +59,33 @@ export type InteractiveLocatorMapProps = {
 
 const MAP_DISCLAIMER =
   "Preliminary geographic reference only. A geocoded point is not a verified parcel boundary and does not establish grid capacity, interconnection feasibility, or project suitability.";
+
+const GIS_PREVIEW_ITEMS = [
+  {
+    label: "Parcel & jurisdiction",
+    detail: "APN, county/city authority, cadastral source trail",
+  },
+  {
+    label: "Zoning & permitting",
+    detail: "Published zoning code, CUP signals, planning records",
+  },
+  {
+    label: "Grid context",
+    detail: "Nearby substations, transmission corridors, queue signals",
+  },
+  {
+    label: "Environmental overlays",
+    detail: "Fire, flood, habitat, agricultural, and siting constraints",
+  },
+  {
+    label: "Nearby project activity",
+    detail: "Operating, queued, withdrawn, and comparable public records",
+  },
+  {
+    label: "Unknowns & conflicts",
+    detail: "What public records do not show or where agencies disagree",
+  },
+];
 
 /**
  * Injects 3D Digital Elevation Model (DEM) terrain, realistic sky/fog atmosphere,
@@ -1145,6 +1173,93 @@ export function InteractiveLocatorMap({
             </div>
           )}
 
+          {/* Paid GIS Evidence Preview Panel */}
+          <aside
+            className={cn(
+              "absolute right-3 top-3 z-20 hidden w-[330px] max-w-[calc(100%-1.5rem)] surface-card border border-line p-4 shadow-xl lg:block",
+              selectedLocation && "top-3",
+              isExpanded && "w-[360px]"
+            )}
+            aria-label="Paid GIS evidence preview"
+          >
+            <div className="flex items-start justify-between gap-3">
+              <div>
+                <span className="text-[10px] font-semibold uppercase tracking-[0.16em] text-emerald">
+                  Paid screen evidence preview
+                </span>
+                <h3 className="mt-1 text-sm font-semibold text-ink">
+                  What the brief verifies after checkout
+                </h3>
+              </div>
+              <div className="flex size-8 shrink-0 items-center justify-center rounded-md border border-emerald/30 bg-emerald/10 text-emerald">
+                <Layers className="size-4" />
+              </div>
+            </div>
+
+            {selectedLocation ? (
+              <div className="mt-3 rounded-lg border border-emerald/25 bg-emerald/5 p-3">
+                <p className="text-[10px] font-semibold uppercase tracking-wider text-emerald">
+                  Candidate location selected
+                </p>
+                <p className="mt-1 truncate text-xs font-semibold text-ink">
+                  {selectedLocation.address}
+                </p>
+                <p className="mt-1 font-mono text-[10px] text-muted-foreground">
+                  {selectedLocation.coordinates[1].toFixed(5)}°N, {Math.abs(selectedLocation.coordinates[0]).toFixed(5)}°W
+                </p>
+              </div>
+            ) : (
+              <p className="mt-3 rounded-lg border border-line-soft bg-muted/40 p-3 text-xs leading-relaxed text-muted-foreground">
+                Search or drop a pin to preview the order flow. The map confirms location context; the paid screen verifies evidence from public GIS, agency, and utility records.
+              </p>
+            )}
+
+            <ul className="mt-3 space-y-2.5">
+              {GIS_PREVIEW_ITEMS.map((item) => (
+                <li key={item.label} className="flex items-start gap-2.5">
+                  <CheckCircle2 className="mt-0.5 size-3.5 shrink-0 text-emerald" />
+                  <div>
+                    <p className="text-xs font-semibold text-ink">{item.label}</p>
+                    <p className="text-[10.5px] leading-relaxed text-muted-foreground">
+                      {item.detail}
+                    </p>
+                  </div>
+                </li>
+              ))}
+            </ul>
+
+            <div className="mt-4 rounded-lg border border-amber/25 bg-amber/5 p-3 text-[10.5px] leading-relaxed text-muted-foreground">
+              <span className="font-semibold text-ink">Boundary:</span> this public map is a preview, not a feasibility result. Capacity, approvals, parcel boundaries, and legal/engineering conclusions remain outside the free preview.
+            </div>
+
+            <div className="mt-4 grid grid-cols-1 gap-2">
+              <Button
+                size="sm"
+                variant="outline"
+                asChild
+                className="h-8 border-line bg-card text-xs hover:bg-muted"
+              >
+                <Link href="/sample-report">View sample brief first</Link>
+              </Button>
+              {selectedLocation && (
+                <Button
+                  size="sm"
+                  asChild
+                  className="h-8 gap-1.5 bg-emerald text-xs text-emerald-foreground hover:bg-emerald-soft"
+                >
+                  <Link
+                    href={`/request?location=${encodeURIComponent(
+                      `${selectedLocation.address} (${selectedLocation.coordinates[1].toFixed(5)}°N, ${Math.abs(selectedLocation.coordinates[0]).toFixed(5)}°W)`
+                    )}`}
+                  >
+                    Continue to no-call order
+                    <ArrowRight className="size-3" />
+                  </Link>
+                </Button>
+              )}
+            </div>
+          </aside>
+
           {/* Interactive Selected Location Card Overlay */}
           {selectedLocation && (
             <div className="absolute bottom-3 inset-x-3 sm:inset-x-auto sm:left-3 z-20 max-w-sm w-full surface-card border border-line p-3.5 shadow-xl">
@@ -1185,9 +1300,25 @@ export function InteractiveLocatorMap({
                   {isReverseGeocoding ? (
                     <span className="text-emerald font-medium">Resolving new location...</span>
                   ) : (
-                    "Drag pin on map to refine site position."
+                    "Drag pin on map to refine site position before ordering."
                   )}
                 </span>
+              </div>
+
+              <div className="mt-2 rounded-md border border-line-soft bg-card/90 p-2 text-[10px] text-muted-foreground">
+                <p className="font-semibold uppercase tracking-wider text-emerald">
+                  Preview before you order
+                </p>
+                <ul className="mt-1 space-y-1">
+                  <li className="flex items-start gap-1.5">
+                    <span className="mt-1 size-1 shrink-0 rounded-full bg-emerald" />
+                    <span>Confirm the correct candidate location and surrounding context.</span>
+                  </li>
+                  <li className="flex items-start gap-1.5">
+                    <span className="mt-1 size-1 shrink-0 rounded-full bg-emerald" />
+                    <span>The paid screen adds parcel, zoning, permitting, environmental, project, and source-register GIS evidence.</span>
+                  </li>
+                </ul>
               </div>
 
               {!selectedLocation.isCalifornia && (
@@ -1208,7 +1339,7 @@ export function InteractiveLocatorMap({
                       `${selectedLocation.address} (${selectedLocation.coordinates[1].toFixed(5)}°N, ${Math.abs(selectedLocation.coordinates[0]).toFixed(5)}°W)`
                     )}`}
                   >
-                    Request Site Screen for This Location
+                    Continue to No-Call Order Flow
                     <ArrowRight className="size-3" />
                   </Link>
                 </Button>
@@ -1224,7 +1355,7 @@ export function InteractiveLocatorMap({
             <span>{MAP_DISCLAIMER}</span>
           </div>
           <span className="text-[10px] text-muted-foreground/80">
-            Mapbox Geocoding & High-Res Satellite
+            Mapbox Geocoding & High-Res Satellite · GIS overlays available in the paid screen
           </span>
         </footer>
       </div>

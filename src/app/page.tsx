@@ -4,6 +4,7 @@ import { WhatItBrings } from "@/components/geospatial/what-it-brings";
 import { HowItWorks } from "@/components/geospatial/how-it-works";
 import { CandidateLocatorMap } from "@/components/geospatial/candidate-locator-map";
 import { SamplePreview } from "@/components/geospatial/sample-preview";
+import { Pricing } from "@/components/geospatial/pricing";
 import { WhoItsFor } from "@/components/geospatial/who-its-for";
 import { Methodology } from "@/components/geospatial/methodology";
 import { WhyScreening } from "@/components/geospatial/why-screening";
@@ -20,6 +21,7 @@ export default function Home() {
       <HowItWorks />
       <CandidateLocatorMap />
       <SamplePreview />
+      <Pricing />
       <WhoItsFor />
       <Methodology />
       <WhyScreening />

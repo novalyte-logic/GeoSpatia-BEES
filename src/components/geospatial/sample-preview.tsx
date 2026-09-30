@@ -152,7 +152,7 @@ export function SamplePreview() {
                 className="gap-2 bg-emerald text-emerald-foreground hover:bg-emerald-soft cursor-pointer"
               >
                 <Link href="/request">
-                  Request a Site Screen
+                  Reserve a Paid Site Screen
                   <ArrowRight className="size-4" />
                 </Link>
               </Button>

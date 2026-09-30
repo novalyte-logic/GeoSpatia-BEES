@@ -34,7 +34,7 @@ export const metadata: Metadata = {
     template: "%s · GeoSpatia Labs",
   },
   description:
-    "GeoSpatia Labs brings together source-backed grid, interconnection, parcel, permitting, environmental, and project context to help California BESS development teams screen candidate sites before committing deeper resources.",
+    "Source-backed preliminary site screens for California BESS development teams, with founder-led launch pricing from $1,500/site after scope confirmation.",
   keywords: [
     "site intelligence",
     "preliminary site screening",
