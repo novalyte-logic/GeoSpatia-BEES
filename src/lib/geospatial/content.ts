@@ -5,6 +5,7 @@ export type ViewId = "home" | "sample-report" | "request";
 export const navLinks: { label: string; href: string; target?: string }[] = [
   { label: "Product", href: "/#product", target: "product" },
   { label: "Methodology", href: "/#methodology", target: "methodology" },
+  { label: "Blog", href: "/blog" },
   { label: "What a Brief Covers", href: "/sample-report" },
   { label: "Pricing", href: "/#pricing", target: "pricing" },
   { label: "Who It's For", href: "/#audience", target: "audience" },
@@ -20,6 +21,8 @@ export const footerNav = {
     { label: "Reserve a paid screen", href: "/request" },
   ],
   Methodology: [
+    { label: "Blog", href: "/blog" },
+    { label: "BESS site screening guide", href: "/blog/bess-site-screening" },
     { label: "Evidence-first approach", href: "/#methodology" },
     { label: "Why early screening matters", href: "/#why-screening" },
     { label: "Source handling", href: "/#methodology" },
