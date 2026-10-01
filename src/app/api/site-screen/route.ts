@@ -178,11 +178,12 @@ export async function POST(req: NextRequest) {
   if (lastSubmitted && now - lastSubmitted < DEDUP_WINDOW_MS) {
     return NextResponse.json(
       {
-        ok: false,
-        error:
+        ok: true,
+        duplicate: true,
+        message:
           "A request for this candidate site was already submitted moments ago. Our team has received it.",
       },
-      { status: 409 }
+      { status: 200 }
     );
   }
   recentSubmissions.set(dedupKey, now);
