@@ -39,12 +39,7 @@ export function SiteHeader() {
         {/* Desktop nav */}
         <nav className="hidden items-center gap-1 md:flex" aria-label="Primary">
           {navLinks.map((link) => {
-            const isActive =
-              link.href === "/sample-report"
-                ? pathname === "/sample-report"
-                : link.href === "/request"
-                  ? pathname === "/request"
-                  : false;
+            const isActive = pathname === link.href || pathname.startsWith(`${link.href}/`);
             return (
               <Link
                 key={link.label}
