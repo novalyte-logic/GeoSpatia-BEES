@@ -19,7 +19,7 @@ export function TopographicParcelBg({
     return (
       <svg
         aria-hidden="true"
-        className={cn("pointer-events-none absolute inset-0 h-full w-full", className)}
+        className={cn("pointer-events-none absolute inset-0 h-full w-full overflow-hidden max-w-full", className)}
         preserveAspectRatio="xMidYMid slice"
       >
         <defs>
@@ -43,7 +43,7 @@ export function TopographicParcelBg({
   return (
     <svg
       aria-hidden="true"
-      className={cn("pointer-events-none absolute inset-0 h-full w-full", className)}
+      className={cn("pointer-events-none absolute inset-0 h-full w-full overflow-hidden max-w-full", className)}
       viewBox="0 0 1200 700"
       preserveAspectRatio="xMidYMid slice"
     >

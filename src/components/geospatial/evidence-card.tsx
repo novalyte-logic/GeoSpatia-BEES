@@ -31,15 +31,15 @@ export function EvidenceCard({
   return (
     <article
       className={cn(
-        "surface-card group relative flex flex-col gap-3 p-5 transition-shadow duration-300 hover:shadow-md",
+        "surface-card group relative flex flex-col gap-3 p-4 sm:p-5 transition-shadow duration-300 hover:shadow-md min-w-0",
         className,
       )}
     >
-      <div className="flex items-start justify-between gap-3">
+      <div className="flex flex-wrap items-start justify-between gap-2">
         <span className="eyebrow text-emerald/85">{category}</span>
         <StatusPill status={status} />
       </div>
-      <h3 className="text-[1.0625rem] font-semibold leading-snug text-ink text-balance">
+      <h3 className="text-[1.0625rem] font-semibold leading-snug text-ink text-balance break-words">
         {finding}
       </h3>
       <p className="text-sm leading-relaxed text-muted-foreground text-pretty">

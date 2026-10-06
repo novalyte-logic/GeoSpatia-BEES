@@ -236,7 +236,7 @@ export function RequestFormView({ onBack }: { onBack?: () => void } = {}) {
     <div className="bg-background">
       {/* Top return bar */}
       <div className="border-b border-line bg-card/60">
-        <div className="mx-auto flex w-full max-w-[1600px] items-center justify-between px-5 py-3 sm:px-6 lg:px-10 xl:px-16">
+        <div className="mx-auto flex w-full max-w-[1600px] flex-wrap items-center justify-between gap-2 px-4 min-[375px]:px-5 py-3 sm:px-6 lg:px-10 xl:px-16">
           {onBack ? (
             <Button
               variant="ghost"
@@ -260,27 +260,27 @@ export function RequestFormView({ onBack }: { onBack?: () => void } = {}) {
               </Link>
             </Button>
           )}
-          <div className="inline-flex items-center gap-1.5 rounded-md border border-line-soft bg-muted/40 px-2.5 py-1 text-[11px] text-muted-foreground">
-            <ShieldCheck className="size-3.5 text-emerald" />
-            Scope reviewed before payment
+          <div className="inline-flex max-w-full items-center gap-1.5 rounded-md border border-line-soft bg-muted/40 px-2.5 py-1 text-[11px] text-muted-foreground">
+            <ShieldCheck className="size-3.5 shrink-0 text-emerald" />
+            <span className="truncate">Scope reviewed before payment</span>
           </div>
         </div>
       </div>
 
       {/* Hero band */}
       <header className="relative overflow-hidden border-b border-line bg-background">
-        <div className="absolute inset-0 text-ink" aria-hidden="true">
+        <div className="absolute inset-0 text-ink overflow-hidden pointer-events-none" aria-hidden="true">
           <TopographicParcelBg variant="soft" />
         </div>
-        <div className="relative mx-auto w-full max-w-[1600px] px-5 py-12 sm:px-6 lg:px-10 xl:px-16 lg:py-16">
+        <div className="relative mx-auto w-full max-w-[1600px] px-4 min-[375px]:px-5 py-8 sm:py-12 sm:px-6 lg:px-10 xl:px-16 lg:py-16">
           <span className="eyebrow inline-flex items-center gap-2 text-emerald">
             <span className="h-px w-5 bg-emerald/50" />
             Reserve a Paid Site Screen
           </span>
-          <h1 className="mt-3 display-md text-ink text-balance">
+          <h1 className="mt-3 display-md text-ink text-balance break-words">
             Reserve a founder-led California BESS site screen.
           </h1>
-          <p className="mt-3 max-w-2xl text-[1.0625rem] leading-relaxed text-muted-foreground text-pretty">
+          <p className="mt-3 max-w-2xl text-[0.9375rem] sm:text-[1.0625rem] leading-relaxed text-muted-foreground text-pretty">
             Review the sample brief first, then submit the candidate location and
             decision question. We review scope by email; if it fits current
             coverage, we send the payment link before research begins. No sales
@@ -289,10 +289,10 @@ export function RequestFormView({ onBack }: { onBack?: () => void } = {}) {
         </div>
       </header>
 
-      <main className="mx-auto w-full max-w-[1600px] px-5 py-10 sm:px-6 lg:px-10 xl:px-16">
+      <main className="mx-auto w-full max-w-[1600px] px-4 min-[375px]:px-5 py-8 sm:py-10 sm:px-6 lg:px-10 xl:px-16">
         <div className="grid grid-cols-1 gap-8 lg:grid-cols-12">
           {/* What happens next — left rail */}
-          <aside className="lg:col-span-4">
+          <aside className="lg:col-span-4 min-w-0">
             <div className="flex flex-col gap-4 lg:sticky lg:top-20">
               <WhatHappensNext />
               <WhatItSupports />
@@ -301,14 +301,14 @@ export function RequestFormView({ onBack }: { onBack?: () => void } = {}) {
           </aside>
 
           {/* Form — right rail */}
-          <div className="lg:col-span-8">
+          <div className="lg:col-span-8 min-w-0">
             <form
               onSubmit={submit}
               noValidate
               className="surface-card overflow-hidden"
               aria-label="Request a site screen form"
             >
-              <div className="border-b border-line bg-muted/40 px-6 py-4 sm:px-8">
+              <div className="border-b border-line bg-muted/40 px-4 py-4 sm:px-8">
                 <h2 className="text-lg font-semibold text-ink">
                   Paid site screen scope request
                 </h2>
@@ -334,7 +334,7 @@ export function RequestFormView({ onBack }: { onBack?: () => void } = {}) {
                 />
               </div>
 
-              <div className="grid grid-cols-1 gap-5 px-6 py-6 sm:px-8 sm:py-8 md:grid-cols-2">
+              <div className="grid grid-cols-1 gap-5 px-4 py-5 sm:px-8 sm:py-8 md:grid-cols-2">
                 <Field
                   label="Full name"
                   required
@@ -533,7 +533,7 @@ export function RequestFormView({ onBack }: { onBack?: () => void } = {}) {
                   <label
                     htmlFor="privacyAck"
                     className={cn(
-                      "flex cursor-pointer items-start gap-3 rounded-lg border p-4 transition-colors",
+                      "flex cursor-pointer items-start gap-3 rounded-lg border p-3.5 sm:p-4 transition-colors",
                       fieldErrors.privacyAck
                         ? "border-rose/40 bg-rose/5"
                         : "border-line-soft bg-muted/30 hover:bg-muted/60",
@@ -544,8 +544,9 @@ export function RequestFormView({ onBack }: { onBack?: () => void } = {}) {
                       checked={form.privacyAck}
                       onCheckedChange={(c) => update("privacyAck", c === true)}
                       aria-invalid={!!fieldErrors.privacyAck}
+                      className="shrink-0 mt-0.5"
                     />
-                    <div className="text-xs leading-relaxed text-muted-foreground">
+                    <div className="min-w-0 flex-1 text-xs leading-relaxed text-muted-foreground break-words">
                       <p className="font-medium text-ink">
                         Privacy notice acknowledgment{" "}
                         <span className="text-emerald">*</span>
@@ -565,18 +566,18 @@ export function RequestFormView({ onBack }: { onBack?: () => void } = {}) {
                   </label>
                   {fieldErrors.privacyAck && (
                     <p className="mt-1.5 flex items-center gap-1 text-xs text-rose" role="alert">
-                      <CircleAlert className="size-3.5" />
-                      {fieldErrors.privacyAck}
+                      <CircleAlert className="size-3.5 shrink-0" />
+                      <span>{fieldErrors.privacyAck}</span>
                     </p>
                   )}
                 </div>
               </div>
 
               {serverError && (
-                <div className="border-t border-rose/30 bg-rose/10 px-6 py-4 sm:px-8" role="alert">
+                <div className="border-t border-rose/30 bg-rose/10 px-4 py-3.5 sm:px-8 sm:py-4" role="alert">
                   <div className="flex items-start gap-2.5 text-sm text-rose">
                     <AlertTriangle className="mt-0.5 size-4 shrink-0" />
-                    <div>
+                    <div className="min-w-0 flex-1 break-words">
                       <p className="font-medium">Submission incomplete</p>
                       <p className="mt-0.5 text-rose/90">{serverError}</p>
                     </div>
@@ -584,7 +585,7 @@ export function RequestFormView({ onBack }: { onBack?: () => void } = {}) {
                 </div>
               )}
 
-              <div className="flex flex-col items-start justify-between gap-4 border-t border-line bg-muted/30 px-6 py-4 sm:flex-row sm:items-center sm:px-8">
+              <div className="flex flex-col items-start justify-between gap-4 border-t border-line bg-muted/30 px-4 py-4 sm:flex-row sm:items-center sm:px-8">
                 <p className="text-xs text-muted-foreground">
                   Payment is not collected in this form. Launch pricing starts at
                   $1,500/site after scope confirmation.
@@ -628,7 +629,7 @@ function Field({
   children: React.ReactNode;
 }) {
   return (
-    <div className={cn("flex flex-col gap-1.5", className)}>
+    <div className={cn("flex flex-col gap-1.5 min-w-0", className)}>
       <Label htmlFor={htmlFor} className="text-sm font-medium text-ink">
         {label}
         {required && <span className="ml-1 text-emerald">*</span>}
@@ -636,8 +637,8 @@ function Field({
       {children}
       {error && (
         <p className="flex items-center gap-1 text-xs text-rose" role="alert">
-          <CircleAlert className="size-3.5" />
-          {error}
+          <CircleAlert className="size-3.5 shrink-0" />
+          <span>{error}</span>
         </p>
       )}
     </div>
@@ -645,7 +646,7 @@ function Field({
 }
 
 function FieldHint({ children }: { children: React.ReactNode }) {
-  return <p className="text-xs text-muted-foreground">{children}</p>;
+  return <p className="text-xs text-muted-foreground break-words">{children}</p>;
 }
 
 function WhatHappensNext() {
@@ -671,7 +672,7 @@ function WhatHappensNext() {
   ];
 
   return (
-    <div className="surface-card p-5">
+    <div className="surface-card p-4 sm:p-5">
       <h3 className="text-sm font-semibold text-ink">What happens next</h3>
       <ol className="mt-3 space-y-3">
         {steps.map((s) => (
@@ -679,7 +680,7 @@ function WhatHappensNext() {
             <span className="flex size-5 shrink-0 items-center justify-center rounded-full bg-emerald/10 font-mono text-[11px] font-semibold text-emerald">
               {s.n}
             </span>
-            <div className="text-xs leading-relaxed">
+            <div className="min-w-0 flex-1 text-xs leading-relaxed break-words">
               <p className="font-medium text-ink">{s.title}</p>
               <p className="text-muted-foreground">{s.detail}</p>
             </div>
@@ -692,7 +693,7 @@ function WhatHappensNext() {
 
 function WhatItSupports() {
   return (
-    <div className="surface-card p-5">
+    <div className="surface-card p-4 sm:p-5">
       <h3 className="text-sm font-semibold text-ink">What a screen helps with</h3>
       <ul className="mt-3 space-y-2 text-xs leading-relaxed text-muted-foreground">
         {[
@@ -703,7 +704,7 @@ function WhatItSupports() {
         ].map((item, i) => (
           <li key={i} className="flex items-start gap-2">
             <span className="mt-1 size-1 shrink-0 rounded-full bg-emerald" />
-            <span>{item}</span>
+            <span className="min-w-0 flex-1 break-words">{item}</span>
           </li>
         ))}
       </ul>
@@ -713,7 +714,7 @@ function WhatItSupports() {
 
 function WhatItDoesNotReplace() {
   return (
-    <div className="surface-card p-5">
+    <div className="surface-card p-4 sm:p-5">
       <h3 className="text-sm font-semibold text-ink">
         What it does not replace
       </h3>
@@ -726,7 +727,7 @@ function WhatItDoesNotReplace() {
         ].map((item) => (
           <li key={item} className="flex items-start gap-2.5">
             <span className="mt-1.5 size-1.5 shrink-0 rounded-full bg-amber" />
-            <span>{item}</span>
+            <span className="min-w-0 flex-1 break-words">{item}</span>
           </li>
         ))}
       </ul>
@@ -793,10 +794,10 @@ function SuccessView({
               )}
               <a
                 href="mailto:admin@geospatialabs.com"
-                className="inline-flex items-center gap-2 rounded-md border border-line bg-card px-4 py-2 text-sm font-medium text-ink-soft transition-colors hover:bg-muted"
+                className="inline-flex max-w-full items-center gap-2 rounded-md border border-line bg-card px-4 py-2 text-sm font-medium text-ink-soft transition-colors hover:bg-muted break-all"
               >
-                <Mail className="size-4" />
-                admin@geospatialabs.com
+                <Mail className="size-4 shrink-0" />
+                <span className="break-all">admin@geospatialabs.com</span>
               </a>
             </div>
 

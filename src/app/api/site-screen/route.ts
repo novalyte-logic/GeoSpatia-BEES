@@ -105,13 +105,19 @@ const MAX_REQUESTS_PER_WINDOW = 5;
 const DEDUP_WINDOW_MS = 30 * 1000; // 30 seconds
 
 function checkRateLimit(ip: string): boolean {
+  // Allow higher threshold during local development testing
+  const maxAllowed =
+    process.env.NODE_ENV === "development" && (ip === "127.0.0.1" || ip === "localhost")
+      ? 100
+      : MAX_REQUESTS_PER_WINDOW;
+
   const now = Date.now();
   const rec = rateLimitMap.get(ip);
   if (!rec || now - rec.firstSeen > RATE_LIMIT_WINDOW_MS) {
     rateLimitMap.set(ip, { count: 1, firstSeen: now });
     return true;
   }
-  if (rec.count >= MAX_REQUESTS_PER_WINDOW) {
+  if (rec.count >= maxAllowed) {
     return false;
   }
   rec.count += 1;

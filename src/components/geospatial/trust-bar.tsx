@@ -29,20 +29,20 @@ export function TrustBar({ className }: { className?: string }) {
   ];
   return (
     <section className={cn("border-b border-line bg-background", className)}>
-      <div className="mx-auto w-full max-w-[1600px] px-5 sm:px-6 lg:px-10 xl:px-16 py-10">
-        <p className="text-center text-sm font-medium uppercase tracking-[0.14em] text-emerald">
+      <div className="mx-auto w-full max-w-[1600px] px-4 min-[375px]:px-5 sm:px-6 lg:px-10 xl:px-16 py-8 sm:py-10 min-w-0">
+        <p className="text-center text-xs sm:text-sm font-medium uppercase tracking-[0.14em] text-emerald">
           What you’re actually getting
         </p>
-        <div className="mt-7 grid grid-cols-1 gap-px overflow-hidden rounded-xl border border-line bg-line sm:grid-cols-2 lg:grid-cols-4">
+        <div className="mt-6 sm:mt-7 grid grid-cols-1 gap-px overflow-hidden rounded-xl border border-line bg-line sm:grid-cols-2 lg:grid-cols-4">
           {signals.map((s) => (
             <div
               key={s.title}
-              className="flex flex-col gap-2 bg-card px-5 py-5"
+              className="flex flex-col gap-2 bg-card px-4 py-4 sm:px-5 sm:py-5 min-w-0"
             >
-              <h3 className="text-sm font-semibold leading-snug text-ink">
+              <h3 className="text-sm font-semibold leading-snug text-ink break-words">
                 {s.title}
               </h3>
-              <p className="text-[13px] leading-relaxed text-muted-foreground">
+              <p className="text-[13px] leading-relaxed text-muted-foreground break-words">
                 {s.detail}
               </p>
             </div>

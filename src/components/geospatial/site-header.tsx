@@ -31,8 +31,8 @@ export function SiteHeader() {
           : "border-b border-transparent bg-background/40 backdrop-blur-[2px]",
       )}
     >
-      <div className="mx-auto flex h-16 w-full max-w-[1600px] items-center justify-between px-5 sm:px-6 lg:px-10 xl:px-16">
-        <Link href="/" className="inline-flex items-center" aria-label="GeoSpatia Labs home">
+      <div className="mx-auto flex h-16 w-full max-w-[1600px] items-center justify-between px-4 min-[375px]:px-5 sm:px-6 lg:px-10 xl:px-16 min-w-0">
+        <Link href="/" className="inline-flex items-center min-w-0 shrink" aria-label="GeoSpatia Labs home">
           <Logo />
         </Link>
 
@@ -99,7 +99,7 @@ export function SiteHeader() {
       {/* Mobile panel */}
       {mobileOpen && (
         <div className="border-t border-line bg-background md:hidden">
-          <div className="mx-auto flex w-full max-w-[1600px] flex-col gap-1 px-5 py-4 sm:px-6">
+          <div className="mx-auto flex w-full max-w-[1600px] flex-col gap-1 px-4 min-[375px]:px-5 py-4 sm:px-6 min-w-0">
             {navLinks.map((link) => (
               <Link
                 key={link.label}

@@ -15,7 +15,7 @@ export function Section({
       className={cn("scroll-mt-24", className)}
       {...props}
     >
-      <div className={cn("mx-auto w-full max-w-[1600px] px-5 sm:px-6 lg:px-10 xl:px-16", containerClassName)}>
+      <div className={cn("mx-auto w-full max-w-[1600px] px-4 min-[375px]:px-5 sm:px-6 lg:px-10 xl:px-16 min-w-0", containerClassName)}>
         {children}
       </div>
     </section>
@@ -62,19 +62,19 @@ export function SectionHeading({
   return (
     <div
       className={cn(
-        "flex flex-col gap-3",
+        "flex flex-col gap-3 min-w-0",
         align === "center" && "items-center text-center",
         className,
       )}
     >
       {eyebrow && <Eyebrow>{eyebrow}</Eyebrow>}
-      <h2 className={cn("display-md text-ink text-balance", titleClassName)}>
+      <h2 className={cn("display-md text-ink text-balance break-words", titleClassName)}>
         {title}
       </h2>
       {intro && (
         <p
           className={cn(
-            "max-w-2xl text-[1.0625rem] leading-relaxed text-muted-foreground text-pretty",
+            "max-w-2xl text-[0.9375rem] sm:text-[1.0625rem] leading-relaxed text-muted-foreground text-pretty",
             align === "center" && "mx-auto",
           )}
         >

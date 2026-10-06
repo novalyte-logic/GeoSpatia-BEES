@@ -109,7 +109,7 @@ export function SamplePreview() {
             return (
               <article
                 key={s.number}
-                className="surface-card group flex flex-col justify-between p-6 transition-all duration-200 hover:border-emerald/40 hover:shadow-sm"
+                className="surface-card group flex flex-col justify-between p-5 sm:p-6 transition-all duration-200 hover:border-emerald/40 hover:shadow-sm min-w-0"
               >
                 <div>
                   <div className="flex items-center justify-between">
@@ -120,10 +120,10 @@ export function SamplePreview() {
                       <Icon className="size-4" />
                     </div>
                   </div>
-                  <h3 className="mt-3 text-base font-semibold text-ink">
+                  <h3 className="mt-3 text-base font-semibold text-ink break-words">
                     {s.title}
                   </h3>
-                  <p className="mt-2 text-sm leading-relaxed text-muted-foreground">
+                  <p className="mt-2 text-sm leading-relaxed text-muted-foreground break-words">
                     {s.description}
                   </p>
                 </div>
@@ -133,33 +133,33 @@ export function SamplePreview() {
         </div>
 
         {/* Deliverable Scope & CTA Bar */}
-        <div className="mt-10 rounded-xl border border-line bg-card p-6 sm:p-8">
+        <div className="mt-8 sm:mt-10 rounded-xl border border-line bg-card p-4 sm:p-8 min-w-0">
           <div className="flex flex-col gap-6 lg:flex-row lg:items-center lg:justify-between">
-            <div className="max-w-2xl">
-              <h4 className="text-base font-semibold text-ink">
+            <div className="max-w-2xl min-w-0">
+              <h4 className="text-base font-semibold text-ink break-words">
                 Clear diligence handoff, zero fabricated scores
               </h4>
-              <p className="mt-1.5 text-sm leading-relaxed text-muted-foreground">
+              <p className="mt-1.5 text-sm leading-relaxed text-muted-foreground break-words">
                 We do not invent customer case studies or display mock sites with
                 fake capacity numbers. The brief gives your team a source-backed
                 summary of what public records show — and equips you with the exact
                 questions to ask formal study engineers and local planning officials.
               </p>
             </div>
-            <div className="flex flex-col gap-3 sm:flex-row sm:items-center shrink-0">
+            <div className="flex flex-col gap-3 sm:flex-row sm:items-center shrink-0 w-full sm:w-auto">
               <Button
                 asChild
-                className="gap-2 bg-emerald text-emerald-foreground hover:bg-emerald-soft cursor-pointer"
+                className="w-full sm:w-auto gap-2 bg-emerald text-emerald-foreground hover:bg-emerald-soft cursor-pointer text-sm sm:text-base h-11 sm:h-12"
               >
                 <Link href="/request">
                   Reserve a Paid Site Screen
-                  <ArrowRight className="size-4" />
+                  <ArrowRight className="size-4 shrink-0" />
                 </Link>
               </Button>
               <Button
                 variant="outline"
                 asChild
-                className="border-line bg-card hover:bg-muted cursor-pointer"
+                className="w-full sm:w-auto border-line bg-card hover:bg-muted cursor-pointer text-sm sm:text-base h-11 sm:h-12"
               >
                 <Link href="/sample-report">
                   View Detailed Brief Guide

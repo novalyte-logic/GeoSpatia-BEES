@@ -8,10 +8,10 @@ import { ShieldCheck } from "lucide-react";
 export function SiteFooter() {
   return (
     <footer className="relative mt-auto border-t border-line bg-muted">
-      <div className="mx-auto w-full max-w-[1600px] px-5 py-12 sm:px-6 lg:px-10 xl:px-16">
-        <div className="grid grid-cols-2 gap-8 md:grid-cols-12">
+      <div className="mx-auto w-full max-w-[1600px] px-4 min-[375px]:px-5 py-10 sm:py-12 sm:px-6 lg:px-10 xl:px-16 min-w-0">
+        <div className="grid grid-cols-1 min-[440px]:grid-cols-2 gap-8 md:grid-cols-12 min-w-0">
           {/* Brand + positioning */}
-          <div className="col-span-2 md:col-span-5">
+          <div className="min-[440px]:col-span-2 md:col-span-5 min-w-0">
             <Link href="/" className="inline-block" aria-label="GeoSpatia Labs home">
               <Logo />
             </Link>
@@ -21,24 +21,24 @@ export function SiteFooter() {
               environmental, and project context — into a source-backed screen
               before deeper diligence.
             </p>
-            <div className="mt-5 inline-flex items-center gap-2 rounded-md border border-line bg-card px-3 py-2 text-xs text-muted-foreground">
-              <ShieldCheck className="size-4 text-emerald" />
-              Source-backed research · clear unknowns · preliminary diligence
+            <div className="mt-5 inline-flex max-w-full items-center gap-2 rounded-md border border-line bg-card px-3 py-2 text-xs text-muted-foreground">
+              <ShieldCheck className="size-4 shrink-0 text-emerald" />
+              <span className="break-words">Source-backed research · clear unknowns · preliminary diligence</span>
             </div>
           </div>
 
           {/* Nav columns */}
           {Object.entries(footerNav).map(([group, items]) => (
-            <div key={group} className="md:col-span-2">
+            <div key={group} className="min-w-0 md:col-span-2">
               <h3 className="text-xs font-semibold uppercase tracking-[0.14em] text-ink">
                 {group}
               </h3>
               <ul className="mt-3 space-y-2.5">
                 {items.map((item) => (
-                  <li key={item.label}>
+                  <li key={item.label} className="min-w-0">
                     <Link
                       href={item.href}
-                      className="text-sm text-muted-foreground transition-colors hover:text-ink"
+                      className="text-sm text-muted-foreground transition-colors hover:text-ink break-words"
                     >
                       {item.label}
                     </Link>
@@ -49,11 +49,11 @@ export function SiteFooter() {
           ))}
 
           {/* Contact column */}
-          <div className="md:col-span-1">
+          <div className="min-w-0 min-[440px]:col-span-2 md:col-span-1">
             <h3 className="text-xs font-semibold uppercase tracking-[0.14em] text-ink">
               Contact
             </h3>
-            <ul className="mt-3 space-y-2.5 text-sm text-muted-foreground">
+            <ul className="mt-3 space-y-2.5 text-sm text-muted-foreground min-w-0">
               <li>
                 <Link
                   href="/request"
@@ -62,10 +62,10 @@ export function SiteFooter() {
                   Request a screen
                 </Link>
               </li>
-              <li>
+              <li className="min-w-0">
                 <a
                   href="mailto:admin@geospatialabs.com"
-                  className="transition-colors hover:text-ink"
+                  className="transition-colors hover:text-ink break-all inline-block max-w-full"
                 >
                   admin@geospatialabs.com
                 </a>

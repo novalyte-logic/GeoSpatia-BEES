@@ -50,7 +50,7 @@ export function HowItWorks() {
         {steps.map((s, i) => (
           <li
             key={s.n}
-            className="relative flex flex-col gap-3 bg-card p-6"
+            className="relative flex flex-col gap-3 bg-card p-5 sm:p-6 min-w-0"
           >
             <div className="flex items-center justify-between">
               <span className="font-mono text-sm font-medium text-emerald">
@@ -60,10 +60,10 @@ export function HowItWorks() {
                 {s.tag}
               </span>
             </div>
-            <h3 className="text-lg font-semibold leading-snug text-ink">
+            <h3 className="text-lg font-semibold leading-snug text-ink break-words">
               {s.title}
             </h3>
-            <p className="text-sm leading-relaxed text-muted-foreground">
+            <p className="text-sm leading-relaxed text-muted-foreground break-words">
               {s.detail}
             </p>
             {i < steps.length - 1 && (

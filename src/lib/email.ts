@@ -8,8 +8,8 @@ export interface SiteScreenNotificationData {
   role?: string | null;
   candidateSite: string;
   projectType: string;
-  approximateCapacityMw?: number | null;
-  approximateDurationHours?: number | null;
+  approximateCapacityMw?: string | number | null;
+  approximateDurationHours?: string | number | null;
   developmentStage: string;
   primaryDecisionQuestion: string;
   additionalNotes?: string | null;

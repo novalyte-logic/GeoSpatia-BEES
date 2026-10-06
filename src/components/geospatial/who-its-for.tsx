@@ -58,7 +58,7 @@ export function WhoItsFor() {
           return (
             <article
               key={a.title}
-              className="surface-card group flex flex-col gap-4 p-6 transition-shadow hover:shadow-md"
+              className="surface-card group flex flex-col gap-4 p-5 sm:p-6 transition-shadow hover:shadow-md min-w-0"
             >
               <div
                 className={cn(
@@ -67,16 +67,16 @@ export function WhoItsFor() {
               >
                 <Icon className="size-5" />
               </div>
-              <div>
-                <h3 className="text-lg font-semibold leading-snug text-ink">
+              <div className="min-w-0">
+                <h3 className="text-lg font-semibold leading-snug text-ink break-words">
                   {a.title}
                 </h3>
-                <p className="mt-2 text-sm leading-relaxed text-muted-foreground">
+                <p className="mt-2 text-sm leading-relaxed text-muted-foreground break-words">
                   {a.detail}
                 </p>
               </div>
-              <div className="mt-auto rounded-lg border border-line-soft bg-muted/40 px-4 py-3">
-                <p className="text-[13px] leading-relaxed text-ink-soft">
+              <div className="mt-auto rounded-lg border border-line-soft bg-muted/40 px-3.5 py-2.5 sm:px-4 sm:py-3 min-w-0">
+                <p className="text-[13px] leading-relaxed text-ink-soft break-words">
                   <span className="font-medium text-ink">{a.use}</span>
                 </p>
               </div>

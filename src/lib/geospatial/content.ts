@@ -32,6 +32,6 @@ export const footerNav = {
     { label: "About GeoSpatia Labs", href: "/about" },
     { label: "Use cases", href: "/use-cases" },
     { label: "FAQ", href: "/methodology#faq" },
-    { label: "Contact", href: "/request" },
+    { label: "Contact", href: "/contact" },
   ],
 };

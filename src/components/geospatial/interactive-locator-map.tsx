@@ -380,7 +380,7 @@ export function InteractiveLocatorMap({
         // Verify WebGL capability
         if (
           typeof mapboxgl.supported === "function" &&
-          !mapboxgl.supported({ failIfMajorPerformanceCaveat: false })
+          !(mapboxgl.supported as (opt?: unknown) => boolean)({ failIfMajorPerformanceCaveat: false })
         ) {
           if (isMounted) {
             setMapError("WebGL is not supported or hardware acceleration is disabled in this browser.");
