@@ -17,16 +17,16 @@ import {
   CheckCircle2,
   HelpCircle,
   MapPin,
-  Zap,
 } from "lucide-react";
 import { TopographicParcelBg } from "./topographic-bg";
+import { SampleSiteMapPreview } from "./sample-site-map-preview";
 
 const deliverablePreviews = [
   {
     label: "BESS site screen",
     title: "Preliminary BESS site-screen preview",
     icon: BatteryCharging,
-    site: "Candidate BESS parcel · Review-stage screen",
+    site: "Gates 230kV / 500kV Intertie · APN 085-120-04S (Fresno County)",
     summary:
       "Candidate parcel context, approval signals, and development-risk indicators organized into a concise diligence preview.",
     signals: [
@@ -40,14 +40,14 @@ const deliverablePreviews = [
       "Interconnection context needs utility and queue validation.",
       "Access, drainage, and nearby receptors should be checked before deeper spend.",
     ],
-    grid: "Nearby substation / transmission context · capacity not claimed",
+    grid: "PG&E Gates 500kV/230kV Substation (0.6 mi NW) · Gates-Gregg 230kV corridor",
     status: "Source-backed preview",
   },
   {
     label: "Solar + storage screen",
     title: "Solar + storage parcel preview",
     icon: SunMedium,
-    site: "Hybrid shortlist parcel · Land and grid context",
+    site: "Rosamond Antelope Basin · APN 359-020-18 (Kern County)",
     summary:
       "Structured look at acreage, land-use fit, transmission adjacency, constraints, and questions to validate before layout work.",
     signals: [
@@ -61,14 +61,14 @@ const deliverablePreviews = [
       "Environmental constraints should be separated from layout assumptions.",
       "Hybrid interconnection path needs queue and utility review.",
     ],
-    grid: "Transmission corridor and collector-substation context · needs validation",
+    grid: "SCE Whirlwind 500kV/230kV Substation (1.4 mi NE) · Antelope 230kV path",
     status: "Evidence gaps separated",
   },
   {
     label: "EV charging screen",
     title: "Fleet charging site preview",
     icon: PlugZap,
-    site: "Depot / corridor candidate · Utility and access screen",
+    site: "Ontario Logistics Depot · APN 0211-191-05 (San Bernardino County)",
     summary:
       "Site access, utility context, surrounding demand generators, zoning signals, and upgrade-risk questions in one view.",
     signals: [
@@ -82,14 +82,14 @@ const deliverablePreviews = [
       "Ingress, queuing, and fleet circulation can reshape site viability.",
       "Local permitting questions should be separated from power questions.",
     ],
-    grid: "Distribution and substation proximity context · load study still required",
+    grid: "SCE Guasti 66kV Substation (0.4 mi E) · Commercial distribution circuit",
     status: "Next-step questions drafted",
   },
   {
     label: "Grid-adjacent land screen",
     title: "Grid-adjacent land preview",
     icon: Layers3,
-    site: "Transmission-adjacent parcel cluster",
+    site: "Wheeler Ridge Intertie Cluster · APN 240-080-22 (Kern County)",
     summary:
       "A source-backed early screen that turns scattered GIS, agency, and project records into a focused decision packet.",
     signals: [
@@ -103,7 +103,7 @@ const deliverablePreviews = [
       "Land-use compatibility should be checked before outreach.",
       "Comparable projects can reveal likely review friction.",
     ],
-    grid: "Transmission-adjacent parcel cluster · source-backed context only",
+    grid: "Wheeler Ridge 230kV Substation (0.8 mi S) · Midway-Vincent 500kV path",
     status: "Decision packet preview",
   },
 ];
@@ -269,26 +269,10 @@ export function Hero() {
                       </div>
                     </div>
 
-                    <div className="relative h-32 sm:h-44 overflow-hidden rounded-lg border border-line bg-muted shadow-inner">
-                      <div
-                        className="absolute inset-0 opacity-35"
-                        style={{
-                          backgroundImage:
-                            "radial-gradient(currentColor 1px, transparent 1px)",
-                          backgroundSize: "14px 14px",
-                        }}
-                      />
-                      <div className="absolute inset-x-0 top-1/2 h-px -rotate-12 bg-emerald/60" />
-                      <div className="absolute left-[18%] top-[30%] h-14 w-20 sm:h-16 sm:w-24 rotate-[-7deg] rounded border-2 border-emerald bg-emerald/15 shadow-sm" />
-                      <div className="absolute right-[20%] top-[22%] flex size-7 sm:size-8 items-center justify-center rounded-full border-2 border-background bg-sky-600 text-white shadow-sm">
-                        <Zap className="size-3.5 sm:size-4" />
-                      </div>
-                      <div className="absolute bottom-2.5 left-2.5 right-2.5 sm:bottom-4 sm:left-4 sm:right-4 rounded-md border border-line bg-background/90 p-1.5 sm:p-2 text-[9.5px] sm:text-[10px] text-muted-foreground shadow-sm backdrop-blur">
-                        <div className="flex items-center justify-between gap-2 min-w-0">
-                          <span className="truncate">{preview.grid}</span>
-                        </div>
-                      </div>
-                    </div>
+                    <SampleSiteMapPreview
+                      activeIndex={activePreview}
+                      onSelectIndex={setActivePreview}
+                    />
                   </div>
 
                   <div className="space-y-3 sm:space-y-4 min-w-0">

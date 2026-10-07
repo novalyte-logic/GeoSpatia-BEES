@@ -54,3 +54,4 @@ server.log
 # Skills directory
 /skills/supabase/.temp/
 screenshot-audit-*.png
+.env*.local
