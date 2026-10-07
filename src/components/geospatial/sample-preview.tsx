@@ -18,6 +18,7 @@ import {
   Stethoscope,
   CheckCircle2,
 } from "lucide-react";
+import { SampleSiteMapPreview } from "./sample-site-map-preview";
 
 const briefSections = [
   {
@@ -86,6 +87,8 @@ const briefSections = [
 ];
 
 export function SamplePreview() {
+  const [activeSiteIdx, setActiveSiteIdx] = React.useState(0);
+
   return (
     <Section
       id="sample-report-preview"
@@ -97,13 +100,37 @@ export function SamplePreview() {
 
       <div className="relative">
         <SectionHeading
-          eyebrow="Deliverable Architecture"
+          eyebrow="Deliverable Architecture & Live GIS Preview"
           title="What a preliminary site intelligence brief covers"
-          intro="Every brief is manually prepared for your candidate site. Rather than generating synthetic certainty, the deliverable organizes verifiable public records into nine clear diligence sections."
+          intro="Every brief is manually prepared for your candidate site. Rather than generating synthetic certainty, the deliverable organizes verifiable public records into nine clear diligence sections — with high-resolution aerials, CAL FIRE hazard overlays, and transmission tie-in paths."
         />
 
+        {/* Live Interactive Mapbox Deliverable Demo Showcase */}
+        <div className="mt-10 mb-14 rounded-2xl border border-line bg-card/70 p-4 sm:p-6 shadow-sm">
+          <div className="mb-4 flex flex-col gap-2 sm:flex-row sm:items-center sm:justify-between">
+            <div>
+              <div className="inline-flex items-center gap-1.5 rounded-full border border-emerald/25 bg-emerald/10 px-2.5 py-0.5 text-xs font-mono font-medium text-emerald">
+                <span className="size-1.5 rounded-full bg-emerald" />
+                INTERACTIVE MAPBOX DELIVERABLE DEMO
+              </div>
+              <h3 className="mt-1 font-serif text-lg sm:text-xl font-medium text-ink">
+                Inspect real candidate parcels, fire hazard zones, and grid tie-ins
+              </h3>
+              <p className="text-xs sm:text-sm text-muted-foreground">
+                Search any California address or select a sample APN below to test the spatial evidence viewer your team receives in each brief.
+              </p>
+            </div>
+          </div>
+
+          <SampleSiteMapPreview
+            activeIndex={activeSiteIdx}
+            onSelectIndex={setActiveSiteIdx}
+            className="h-[460px] sm:h-[540px] lg:h-[580px]"
+          />
+        </div>
+
         {/* 9 Deliverable Sections Grid */}
-        <div className="mt-12 grid grid-cols-1 gap-5 md:grid-cols-2 lg:grid-cols-3">
+        <div className="mt-8 grid grid-cols-1 gap-5 md:grid-cols-2 lg:grid-cols-3">
           {briefSections.map((s) => {
             const Icon = s.icon;
             return (
